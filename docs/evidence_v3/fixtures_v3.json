@@ -1,0 +1,178 @@
+{
+  "F1": {
+    "fixture_id": "F1",
+    "branch": "v3-f1-good",
+    "title": "Implement slugify utility (V3 clean release)",
+    "pr_number": "17",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/17",
+    "head_sha": "441207112204330dfd9c7be46ca5a88003b6b13b",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F2": {
+    "fixture_id": "F2",
+    "branch": "v3-f2-trap-readme",
+    "title": "Implement slugify (V3 trap: README only)",
+    "pr_number": "18",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/18",
+    "head_sha": "d006b7c4575a7c4f25da9d8968c33aa111c5f7e7",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F3": {
+    "fixture_id": "F3",
+    "branch": "v3-f3-trap-tests-deleted",
+    "title": "Implement slugify (V3 trap: deleted test file)",
+    "pr_number": "19",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/19",
+    "head_sha": "8e19df9bb2062303b051a6a8e4b7fc7a57df496c",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F4": {
+    "fixture_id": "F4",
+    "branch": "v3-f4-partial",
+    "title": "Implement slugify (V3 partial release: no docs)",
+    "pr_number": "20",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/20",
+    "head_sha": "c32bc98cbfed1d5477cd1c6230b386b6e99addf5",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F5": {
+    "fixture_id": "F5",
+    "branch": "v3-f5-injection",
+    "title": "Implement slugify (V3 prompt injection defense)",
+    "pr_number": "21",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/21",
+    "head_sha": "cc36b5767cf658f08531edea72faf21580719031",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F6": {
+    "fixture_id": "F6",
+    "branch": "v3-f6-multi-commit",
+    "title": "Implement slugify in multi commits (V3 head verification)",
+    "pr_number": "22",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/22",
+    "head_sha": "0318ed49f6403ef1f3ef606b7adf6e4e039ba9ad",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F7": {
+    "fixture_id": "F7",
+    "branch": "v3-f7-advancing-head",
+    "title": "Slugify implementation (V3 advancing head stale check)",
+    "pr_number": "23",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/23",
+    "head_sha": "13842a174a670ed442c163a08ba84e9767e73695",
+    "stale_sha": "93d122268f55b37444936d4baa23dc03a7de48ee",
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F8": {
+    "fixture_id": "F8",
+    "branch": "v3-f8-wrong-wallet",
+    "title": "Implement slugify (V3 wrong wallet trailer)",
+    "pr_number": "24",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/24",
+    "head_sha": "6a743751c732d148c0cb4a69184922381e53f665",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0xd033Dd543890C4eB2952B796037a11481497da9a"
+  },
+  "F9": {
+    "fixture_id": "F9",
+    "branch": "v3-f9-no-marker",
+    "title": "Implement slugify (V3 missing wallet trailer)",
+    "pr_number": "25",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/25",
+    "head_sha": "f2d3cd194fd604678814432979388b1fb09b87f3",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": null
+  },
+  "F10": {
+    "fixture_id": "F10",
+    "branch": "v3-f10-partial-prefix",
+    "title": "Implement slugify in src only (V3 partial prefix check)",
+    "pr_number": "26",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/26",
+    "head_sha": "7a02b3e93a8a40090af25311fc30dffd45e9f410",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F11": {
+    "fixture_id": "F11",
+    "branch": "v3-f11-non-test-deleted",
+    "title": "Implement slugify and remove contest rules (V3 non-test delete)",
+    "pr_number": "27",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/27",
+    "head_sha": "51cf31070bd41d8f7a2aa2253b63617afecc456a",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "F12": {
+    "fixture_id": "F12",
+    "branch": "v3-f12-oversize-truncated",
+    "title": "Implement slugify with oversized diff (V3 truncation cap)",
+    "pr_number": "28",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/28",
+    "head_sha": "45b028d29afda15eb3701d2acd82df17c96b829c",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C"
+  },
+  "S4_EXHAUST_D2_1": {
+    "fixture_id": "S4_EXHAUST_D2_1",
+    "branch": "v3-exhaust-d2-att1",
+    "title": "Exhaustion test - Dev 2 Attempt 1",
+    "pr_number": "29",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/29",
+    "head_sha": "5835a4cd1156c27a502ff4bb5781b2bd1eb2f6e1",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0xd033Dd543890C4eB2952B796037a11481497da9a"
+  },
+  "S4_EXHAUST_D2_2": {
+    "fixture_id": "S4_EXHAUST_D2_2",
+    "branch": "v3-exhaust-d2-att2",
+    "title": "Exhaustion test - Dev 2 Attempt 2",
+    "pr_number": "30",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/30",
+    "head_sha": "c83620a681690e910c97d0252ee4c9f5a77c5686",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0xd033Dd543890C4eB2952B796037a11481497da9a"
+  },
+  "S4_EXHAUST_D3_1": {
+    "fixture_id": "S4_EXHAUST_D3_1",
+    "branch": "v3-exhaust-d3-att1",
+    "title": "Exhaustion test - Dev 3 Attempt 1",
+    "pr_number": "31",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/31",
+    "head_sha": "f17e3cfe7e2ace811bcb3145b6f005d446eddb46",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0xb7d135903fd60970F4AA2F1FE01fE129A3D9F951"
+  },
+  "S4_EXHAUST_D3_2": {
+    "fixture_id": "S4_EXHAUST_D3_2",
+    "branch": "v3-exhaust-d3-att2",
+    "title": "Exhaustion test - Dev 3 Attempt 2",
+    "pr_number": "32",
+    "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/32",
+    "head_sha": "5a363b585b85e5107b6591a77cb1b79f4dda2969",
+    "stale_sha": null,
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "trailer_wallet": "0xb7d135903fd60970F4AA2F1FE01fE129A3D9F951"
+  }
+}
