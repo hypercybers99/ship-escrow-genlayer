@@ -1,0 +1,13 @@
+{
+  "network": "GenLayer Studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorerBase": "https://explorer-studio.genlayer.com",
+  "deployedAt": "2026-10-25T11:47:17.176Z",
+  "escrow_address": "0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e",
+  "escrow_deploy_tx": "0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55",
+  "escrow_source_sha256": "9910f97c02cfbbb45b54295b7668ce44f52af7051a127d874843ecaa217158cf",
+  "reputation_address": "0x6F95d9DD35D1e19A85D9aB7c467F8660f89954AC",
+  "reputation_deploy_tx": "0x65a5bc3899a179ccd26a4cee83314102d05659913290bf5ba2978fc2316f8141",
+  "reputation_source_sha256": "12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7"
+}

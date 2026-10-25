@@ -1,0 +1,20 @@
+{
+  "escrow": {
+    "contract": "ShipEscrowV3_1",
+    "deployTxHash": "0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55",
+    "localFile": "E:/ShipEscrow_V2/contracts/ShipEscrowV3_1.py",
+    "localSha256": "9910f97c02cfbbb45b54295b7668ce44f52af7051a127d874843ecaa217158cf",
+    "onchainSha256": "9910f97c02cfbbb45b54295b7668ce44f52af7051a127d874843ecaa217158cf",
+    "byteIdentical": true,
+    "diffEmpty": true
+  },
+  "reputation": {
+    "contract": "ShipReputationV2",
+    "deployTxHash": "0x65a5bc3899a179ccd26a4cee83314102d05659913290bf5ba2978fc2316f8141",
+    "localFile": "E:/ShipEscrow_V2/contracts/ShipReputationV2.py",
+    "localSha256": "12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7",
+    "onchainSha256": "12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7",
+    "byteIdentical": true,
+    "diffEmpty": true
+  }
+}
