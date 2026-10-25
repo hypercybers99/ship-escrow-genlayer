@@ -1,139 +1,104 @@
-# SHIP ESCROW V2 & REPUTATION V2 - LIVE VERIFICATION REPORT
+# SHIP ESCROW V3.1 & REPUTATION - VERIFICATION REPORT
 STATUS: Preview
 
 > [!NOTE]
-> **GitHub Account Rename**: The GitHub username `huzyow155` was renamed to `hypercybers99`. GitHub automatically maintains permanent redirects for repositories and pull requests (`https://github.com/huzyow155/ship-escrow-fixtures` -> `https://github.com/hypercybers99/ship-escrow-fixtures`). Both URLs route to the identical git repository, commits, and pull requests. In ShipEscrowV2, the contract validation logic explicitly recognises this alias and resolves repo names seamlessly.
+> **GitHub Account Rename**: The GitHub username `huzyow155` was renamed to `hypercybers99`. GitHub automatically maintains permanent redirects for repositories and pull requests (`https://github.com/huzyow155/ship-escrow-fixtures` -> `https://github.com/hypercybers99/ship-escrow-fixtures`). Both URLs route to the identical git repository, commits, and pull requests. In Ship Escrow contracts, validation logic explicitly recognises this alias and resolves repo names seamlessly.
 
-## 1. Deployed Contracts & Source Verification
-- **ShipEscrowV2** (Active): `0x8a9c079a7E1F756e07e8FbE392a5E93106DE28bF`
-  - Deploy Tx: `0xa47ecee0c8108c12baf8a71acfb87ce3aff22ee2aa85d73bfa0e26a67d67d733`
-  - Local Source SHA256: `c00b1366e960882367bf1f3e3c99b975691c28cb29750b7e16a0646e5e353048`
-  - On-Chain Source SHA256: `c00b1366e960882367bf1f3e3c99b975691c28cb29750b7e16a0646e5e353048`
+---
+
+## 1. Active Contracts & Source Verification (V3.1)
+- **ShipEscrowV3_1** (Active): [`0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e`](https://explorer-studio.genlayer.com/address/0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e)
+  - Deploy Tx: [`0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55`](https://explorer-studio.genlayer.com/tx/0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55)
+  - Local Source SHA256: `9910f97c02cfbbb45b54295b7668ce44f52af7051a127d874843ecaa217158cf`
+  - On-Chain Source SHA256: `9910f97c02cfbbb45b54295b7668ce44f52af7051a127d874843ecaa217158cf`
   - Byte-for-byte exact match: `true` (git diff is empty)
-- **ShipReputationV2** (Active): `0x8e6D0356F4Bf987E95eB3cC6e7DF84ce2f708C81`
-  - Deploy Tx: `0x5046e6d602dac897980c852b651aa9ab44fea2a0a7762a7dd34523742f5a3b5c`
+- **ShipReputation** (Active - Bound to ShipEscrowV3_1): [`0x6F95d9DD35D1e19A85D9aB7c467F8660f89954AC`](https://explorer-studio.genlayer.com/address/0x6F95d9DD35D1e19A85D9aB7c467F8660f89954AC)
+  - Deploy Tx: [`0x65a5bc3899a179ccd26a4cee83314102d05659913290bf5ba2978fc2316f8141`](https://explorer-studio.genlayer.com/tx/0x65a5bc3899a179ccd26a4cee83314102d05659913290bf5ba2978fc2316f8141)
   - Local Source SHA256: `12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7`
   - On-Chain Source SHA256: `12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7`
   - Byte-for-byte exact match: `true` (git diff is empty)
 
-## 2. Multi-Commit Head Proof & Authentication (Section 0)
-Contrasting V1 naive patch header parsing against V2 authoritative GitHub API head SHA authentication.
+---
 
-### Case 1: Multi-Commit PR #7 (3 iterative commits on same PR)
-- **Target Bounty ID**: `47`
-- **PR URL**: `https://github.com/hypercybers99/ship-escrow-fixtures/pull/7`
-- **First Commit SHA (V1 naive)**: `21c20625d3b919b2acce25f82339b7b54bdfba01`
-- **Middle Commit SHA**: `b3b260f22889ea443bcdebd81cdc4c2a94688708`
-- **Random 40-hex SHA**: `0123456789abcdef0123456789abcdef01234567`
-- **Authoritative Head SHA**: `960fbf1ac0e73a099f4251512b5c2d569252ac39`
+## 2. Stage 1b Validator Probe Verification
+Executed on Studionet probe `0x1c6A511af937d6AECFbcF77Fb5f9A4de2C19CE81`:
+- 40 sequential validator calls across 4 fixture PRs:
+  - PR #33 (OPEN): `refs/pull/33/head` present (10/10), `refs/pull/33/merge` present (10/10)
+  - PR #34 (DRAFT): `refs/pull/34/head` present (10/10), `refs/pull/34/merge` present (10/10)
+  - PR #35 (CLOSED): `refs/pull/35/head` present (10/10), `refs/pull/35/merge` ABSENT (10/10)
+  - PR #36 (MERGED): `refs/pull/36/head` present (10/10), `refs/pull/36/merge` ABSENT (10/10)
+- Decision STOP-A: Enforced `refs/pull/{n}/merge` requirement (rejection of closed/merged PRs). Draft status is not distinguishable on git advertisement and is documented as unchecked.
 
-| Step | Submitted SHA | Type | Expected Execution | Actual Execution | Tx Hash | Consumed Attempts |
-|:-----|:--------------|:-----|:-------------------|:-----------------|:--------|:-------------------|
-| a | `21c20625d3...` | First Commit (V1 accepted) | REVERT (ERROR) | ERROR | `0x217567a509f85c124eb1fa8c42f3fa01e72e01ad0feda8c96e944207cb0c49fd` | 0 |
-| b | `b3b260f228...` | Middle Commit | REVERT (ERROR) | ERROR | `0xf54b028f88adebb729f86d20b06860173caf91e04d2467d4e3c2630e61252e82` | 0 |
-| c | `0123456789...` | Random SHA | REVERT (ERROR) | ERROR | `0x164c5b4ab385cbb8b6a8ea04a26fcda4cba8fe5cba973eb5b621b1d5617c1d22` | 0 |
-| d | `960fbf1ac0...` | Authoritative Head | SUCCESS | SUCCESS (RELEASE_75) | `0x433beb580c626f37a79e56aa655d731b213df45131de803bc3ee945991874878` | 1 |
-| dup | `960fbf1ac0...` | Duplicate Submission | REVERT (ERROR) | ERROR | `0xb332c96182dc5341d4482dcfcb2bb3acb5b6b40f6210c19e5a3d979166c81446` | 1 |
+---
 
-- **Post-Settlement View Invariant**:
-  - `is_settled_for(real_head, 25)`: `true`
-  - `is_settled_for(first_commit, 25)`: `false`
-  - Stored Settlement Head == Stored Submission Head: `true`
+## 3. V3.1 Gate Batch Verification (30 Runs on Studionet)
 
-### Case 2: Advancing Head PR #8 (Stale SHA vs Real Head)
-- **Target Bounty ID**: `48`
-- **PR URL**: `https://github.com/hypercybers99/ship-escrow-fixtures/pull/8`
-- **Stale Branch Head SHA**: `c4eb7b2a842c306b159e1c5d66d61575b67f1ef6`
-- **Authoritative Real Head SHA**: `2332a887996496eed2f20ed63e2c3b51fefde204`
+| Fixture | Runs | Successes | Failures | Reliability | Outcome Match | Modal Label Vector | Gate Result |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| **F1** (Clean Release) | 10 | 10 | 0 | **100.0%** | 9/10 (`RELEASE_100`) | `["YES","YES","YES"]` (10/10) | **PASS** |
+| **F4** (Partial Release) | 10 | 10 | 0 | **100.0%** | 9/10 (`RELEASE_75`) | `["YES","YES","NO"]` (9/10) | **PASS** |
+| **F5** (Prompt Injection) | 10 | 10 | 0 | **100.0%** | 10/10 (`REFUND`) | `["NO"]` (10/10) | **PASS** |
+| **Total** | 30 | 30 | 0 | **100.0%** | 28/30 (93.3%) | — | **`ADOPT_V3_1`** |
 
-| Step | Submitted SHA | Type | Expected Execution | Actual Execution | Tx Hash | Result |
-|:-----|:--------------|:-----|:-------------------|:-----------------|:--------|:-------|
-| a | `c4eb7b2a84...` | Stale SHA (before push) | REVERT (ERROR) | ERROR | `0x396295d0cadd4412ea59fd8775813a78df1f61c0847c715fdaad4655167a7f52` | **PASSED** (0 attempts consumed) |
-| b | `2332a88799...` | Current Real Head | SUCCESS | SUCCESS | `0xb4ab2f28d6515ddd7f24ce32b807c6992319f72c889e70c830e82b263f302bb4` | **PASSED** (attempts=1, status=OPEN) |
+- Gate Decision: **`ADOPT_V3_1`** (`adopted: true` recorded in `docs/evidence_v3_1/gate/gate_summary.json`).
 
-## 3. On-Chain Scenario Verification Table (F1 - F12)
-| ID | PR | Description | Expected Verdict | Actual Verdict | Payout % | Tx Hash | Receipt Triple | Match |
-|:---|:---|:------------|:-----------------|:---------------|:---------|:--------|:---------------|:------|
-| F1 | #2 | Clean Full Release | RELEASE_100 | RELEASE_100 | 100% | `0x468048b8dd1d8eef61cdb1d95a32d160ccfc94c962646308340b3e0355dc8616` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F2 | #3 | Missing Required Path Gate | REFUND | REFUND | 0% | `0xe9af11590d4a6dc11afd19cab05f7f95b21c1760f006d1b07b2ff907d9c93f58` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F3 | #4 | Deleted Test Files Gate | REVIEW | REVIEW | 0% | `0x97970698282eec8d41580f8bb135f1401deb6d55b4f554615745b1453a722573` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F4 | #5 | Partial Release | RELEASE_75 | RELEASE_75 | 75% | `0x201f2e36fbd4246ef497c8a0987e384f30a7d98433fe95de23e5226878efbfbc` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F5 | #6 | Prompt Injection Defense | REFUND | REFUND | 0% | `0xd0ae855cc54aba922715210d845896cdc2c05fa7790f26eeaff7b85b42d9b823` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F6 | #7 | Multi-Commit PR Authentication | RELEASE_100 | RELEASE_100 | 100% | `0x9a2b2a2e6756070bcd53f7991ac15b76341bc7ba1cda23eae4ee8b6b57c24fa3` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F7 | #8 | Advancing Head Stale SHA | REVERT (ERROR) | REVERT (ERROR) | N/A | `0x174e5e0b9efc4c29d34990ea34b338a23854a6ca82239d099e1e8fe3b5e26e57` | ACCEPTED / MAJORITY_AGREE / ERROR | **TRUE** |
-| F8 | #9 | Wrong-Wallet Marker Rejection | REVERT (ERROR) | REVERT (ERROR) | N/A | `0x3573533fe67e90889048a80d29e1d3df3dfa13a8727cf8fbf24d6f137b4b345d` | ACCEPTED / MAJORITY_AGREE / ERROR | **TRUE** |
-| F9 | #10 | No Wallet Marker Rejection | REVERT (ERROR) | REVERT (ERROR) | N/A | `0x0e27fea63c4e1562f4315de75cd73ed8ee317312ea76a272c12b44b98634dc1e` | ACCEPTED / MAJORITY_AGREE / ERROR | **TRUE** |
-| F10 | #11 | Partial Required Prefix Gate | REFUND | REFUND | 0% | `0x516b88e022cab960bcdd525685c29daafba2f205356bbae4af2691de0712a888` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F11 | #12 | Non-Test Deleted File Mode | RELEASE_100 | RELEASE_100 | 100% | `0xc9c21ea16bc460e291fbc26ae92b008b79080420e96b822d52d52f48a6257317` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
-| F12 | #13 | Oversize Diff (> 14k chars) | REVIEW | REVIEW | 0% | `0x863106348c889f0cc95fefa7da8668b0853632f980232b8ae0b9e47ffca0a697` | ACCEPTED / MAJORITY_AGREE / SUCCESS | **TRUE** |
+---
 
-## 4. Attack & Lifecycle Protection Tests
-| Test Description | Caller | Target | Expected Outcome | Actual On-Chain Outcome | Tx Hash | Result |
-|:-----------------|:-------|:-------|:-----------------|:------------------------|:--------|:-------|
-| Stale SHA submission (F7) | Dev | Bounty 7 | Revert before attempt consumed | ERROR (Consensus agree) | `0x174e5e0b9efc4c29d34990ea34b338a23854a6ca82239d099e1e8fe3b5e26e57` | **PASSED** |
-| Attribution hijacking (F8) | Dev | Bounty 8 | Revert: not bound to submitter | ERROR (Consensus agree) | `0x3573533fe67e90889048a80d29e1d3df3dfa13a8727cf8fbf24d6f137b4b345d` | **PASSED** |
-| Unmarked PR spam (F9) | Dev | Bounty 9 | Revert: missing wallet marker | ERROR (Consensus agree) | `0x0e27fea63c4e1562f4315de75cd73ed8ee317312ea76a272c12b44b98634dc1e` | **PASSED** |
-| Cancel after submission | Creator | Bounty 3 | Revert: attempts > 0 | ERROR (Consensus agree) | `0x7f979fb5fecf4c6da3398fe32391caecdcc7432d22763d0abf5ca8ad01483739` | **PASSED** |
-| Cancel at attempts == 0 | Creator | Bounty 13 | Success: escrow refunded | SUCCESS | `0x23ef16c657be7aec348ef9aae0c86f063219927f25b69d98424c8c703ce58c5a` | **PASSED** |
-| Reputation sync duplicate | Dev | Bounty 1 | Revert: already synced | ERROR (Consensus agree) | `0x23fdcc69e351bc7722334085de0746dba372f1c9cc0c259355bb7c58de1ae2f0` | **PASSED** |
-| Reputation sync low payout | Dev | Bounty 4 | Revert: payout < required | ERROR (Consensus agree) | `0xfb0273a690977630578cfe68e0585fcb3902b37e54bacfd7300636cdc39fbb75` | **PASSED** |
-| Reputation sync valid threshold | Dev | Bounty 4 | Success: scores updated | SUCCESS | `0x31aedd5b196463f3b397eb867557a293de18e95aa11b9e4c36ef0fc6d816bdc5` | **PASSED** |
+## 4. Scenario Suite Verification (F1 - F12)
 
-### Section 4 Steward Lifecycle & Attack Proofs Table
-| Case | Name | Target Bounty | Action / Attack | On-Chain Result | State Proof | Invariant / Match |
-|:-----|:-----|:--------------|:----------------|:----------------|:------------|:-------------------|
-| `S4_1` | SHA Poisoning Defense | Bounty 49 | Multi-step lifecycle test | SUCCESS / ERROR as expected | Verified with snapshots | **PASSED** |
-| `S4_2` | Legitimate Recovery Flow | Bounty 50 | Multi-step lifecycle test | SUCCESS / ERROR as expected | Verified with snapshots | **PASSED** |
-| `S4_3` | Exhaustion & Escrow Refund Flow | Bounty 51 | Multi-step lifecycle test | SUCCESS / ERROR as expected | Verified with snapshots | **PASSED** |
-| `S4_4` | Copied Submission Defense | Bounty 52 | Multi-step lifecycle test | SUCCESS / ERROR as expected | Verified with snapshots | **PASSED** |
-| `S4_5` | Sybil Exhaustion Resistance | Bounty 53 | Multi-step lifecycle test | SUCCESS / ERROR as expected | Verified with snapshots | **PASSED** |
-| `S4_6` | Submission Bond Accounting Invariants | Bounties 54, 55 | Multi-step lifecycle test | SUCCESS / ERROR as expected | Verified with snapshots | **PASSED** |
+| ID | PR | Description | Expected Verdict | Actual Verdict | Payout % | Consumed Attempts | Status |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| F1 | #17 | Clean Full Release | RELEASE_100 | RELEASE_100 | 100% | 1 | **PASSED** |
+| F2 | #18 | Missing Required Path Gate | REFUND | REFUND | 0% | 1 | **PASSED** |
+| F3 | #19 | Deleted Test Files Gate | REVIEW | REVIEW | 0% | 1 | **PASSED** |
+| F4 | #20 | Partial Release | RELEASE_75 | RELEASE_75 | 75% | 1 | **PASSED** |
+| F5 | #21 | Prompt Injection Defense | REFUND | REFUND | 0% | 1 | **PASSED** |
+| F6 | #22 | Multi-Commit PR Authentication | RELEASE_100 | RELEASE_100 | 100% | 1 | **PASSED** |
+| F7 | #23 | Advancing Head Proof | REVERT (stale) / SETTLED (real) | ERROR / RELEASE_100 | 100% | 1 (stale: 0) | **PASSED** |
+| F8 | #24 | Wrong Wallet Marker Rejection | REVERT (ERROR) | ERROR | N/A | 0 | **PASSED** |
+| F9 | #25 | No Wallet Marker Rejection | REVERT (ERROR) | ERROR | N/A | 0 | **PASSED** |
+| F10 | #35 | Closed PR Rejection | REVERT (ERROR) | ERROR | N/A | 0 | **PASSED** |
+| F11 | #36 | Merged PR Rejection | REVERT (ERROR) | ERROR | N/A | 0 | **PASSED** |
+| F12 | #28 | Oversize Diff (> 14k chars) | REVIEW | REVIEW | 0% | 1 | **PASSED** |
 
-## 5. Conserved Ledger Invariant & Statistics
+---
+
+## 5. Security & Section 4 Verification
+
+| Case | Title | Target Bounty | Action / Attack | Actual Result | Proof with Snapshots |
+|:---|:---|:---|:---|:---|:---|
+| **S4-1** | SHA Poisoning Defense | Bounty 31 | Attacker submits random invalid commit hash | REVERT (`exec=ERROR`) | 0 debited, 0 attempts consumed |
+| **S4-2** | Legitimate Recovery Flow | Bounty 43 | Flawed submit (REFUND) followed by clean submit (SETTLED) | SETTLED (`RELEASE_100`) | Settled on attempt 2 |
+| **S4-3** | Exhaustion & Escrow Refund | Bounty 44 | Dev1 (2 atts), Dev2 (2 atts), Dev3 (2 atts) -> EXHAUSTED | Creator recovered 100 deposit via `refund_exhausted` | Creator balance: 260 -> 360 |
+| **S4-4** | Copied Submission Defense | Bounty 45 | Attacker submits genuine developer's PR URL | REVERT (`exec=ERROR`) | `"Pull request is not bound to the submitting wallet"` |
+| **Dup** | Duplicate Guard on Open Bounty | Bounty 32 | Resubmitting same head commit | REVERT (`exec=ERROR`) | 0 debited, 0 attempts consumed |
+
+---
+
+## 6. Conserved Ledger Invariant & Reputation Sync
+
+### Final Ledger Invariant:
 ```json
 {
   "invariant_holds": true,
-  "total_balances": "2600",
-  "total_escrowed": "400",
+  "total_balances": "2000",
+  "total_escrowed": "1000",
+  "total_forfeited": "650",
   "total_minted": "3000"
 }
 ```
-- **Invariant Holds**: `true`
-- **Formula**: `total_balances (2600) + total_escrowed (400) == total_minted (3000)`
+- Formula: `total_balances (2000) + total_escrowed (1000) == total_minted (3000)`. Invariant holds: `true`.
 
-### On-Chain Final Stats (`get_stats`):
-```json
-{
-  "cancelled": 1,
-  "exhausted": 0,
-  "open": 8,
-  "refunded": 0,
-  "schema_version": "2",
-  "settled": 4,
-  "total_bonds_forfeited": 3,
-  "verdict_refund": 3,
-  "verdict_release_100": 3,
-  "verdict_release_25": 0,
-  "verdict_release_50": 0,
-  "verdict_release_75": 1,
-  "verdict_review": 2
-}
-```
+### Reputation Sync Checks:
+- Sync Bounty 31 (100%): `exec=SUCCESS`.
+- Sync Bounty 34 (75%) with `min_payout_pct = 100`: `exec=ERROR` (refusal below threshold).
+- Sync Bounty 34 (75%) with `min_payout_pct = 50`: `exec=SUCCESS`.
+- Duplicate sync on Bounty 31: `exec=ERROR` (refusal on duplicate).
+- Developer Score: `{"best_verdict_counts":{"RELEASE_100":1,"RELEASE_75":1},"schema_version":"2","settled_count":2,"units_earned":"175"}`.
 
-## 6. Real On-Chain Robustness Batches (10 runs each on F1, F4, F5)
-- **Evaluated At**: `2026-10-21T03:29:57.127Z`
-- **Total Runs**: `30` (608.1s)
-- **Consensus Binding Decision**: `DO_NOT_BIND_LABELS_KEEP_LEADER_ATTESTED`
+---
 
-| Fixture | Runs | Identical Runs | Verdict Matches | Modal Label Vector | Modal Verdict | Decision Status |
-|:--------|:-----|:---------------|:----------------|:-------------------|:--------------|:----------------|
-| F1 | 10 | 10 / 10 (>= 9/10) | 10 / 10 | `[]` | `RELEASE_100` | **PASS** |
-| F4 | 10 | 10 / 10 (>= 9/10) | 10 / 10 | `[]` | `RELEASE_75` | **PASS** |
-| F5 | 10 | 10 / 10 (>= 9/10) | 10 / 10 | `[]` | `REFUND` | **PASS** |
-
-## 7. Finalization Log Summary
-- **Checked At**: `2026-10-21T03:03:48.892Z`
-- **Total Receipts Checked**: `36`
-- **Status FINALIZED**: `36` / `36` (100% confirmed transitioned)
-- **Status ACCEPTED**: `0` / `36`
-- **Confirmation Rule**: All transactions queried via GenLayer `getTransaction` confirm full transition to status 7 (`FINALIZED`).
+## 7. Finalization & Packet Verification Summary
+- **Receipts Checked**: 81 receipts across `docs/evidence_v3_1/`.
+- **Status FINALIZED**: 81 / 81 (100% confirmed transitioned).
+- **Packet Recomputations**: 46 of 46 stored on-chain submissions match their canonical `packet_sha256` 100%.

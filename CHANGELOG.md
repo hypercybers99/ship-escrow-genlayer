@@ -4,6 +4,30 @@ All notable changes to the Ship Escrow intelligent contracts will be documented 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [3.1.0] - 2026-10-25
+
+### Added
+- **Milestone 1 V3.1 Pre-Registration**: Committed `docs/MILESTONE_V3_1_PLAN.md`, `docs/PROBE_V3_1_PLAN.md`, and `docs/EXPECTED_V3_1_AMENDMENT.md` before runs, specifying fallback consensus comparison (7 core fields), leader-attested label vectors, and PR state probe.
+- **Candidate V3 Archiving**: Moved candidate V3 contract to `contracts/candidates/ShipEscrowV3_labels_bound_not_adopted.py` and maintained candidate test coverage (`tests/test_candidate_v3.py`, `tests/direct/test_direct_candidate_v3.py`). Verified exact on-chain SHA256 match `4d3a561d7309234436aa567116f95fd431f590a0ccb0d1d681639ec535728186`.
+- **Stage 1b PR State Validator Probe**: Deployed probe contract at `0x1c6A511af937d6AECFbcF77Fb5f9A4de2C19CE81` and executed 40 sequential validator calls across PRs #33, #34, #35, #36. Confirmed presence of `refs/pull/{n}/merge` on open/draft PRs and absence on closed/merged PRs. Recorded decision STOP-A: ENFORCE_REFS_PULL_MERGE (`docs/PROBE_V3_1_DECISION.md`).
+- **ShipEscrowV3_1 & Companion Reputation Deployment**:
+  - Deployed `ShipEscrowV3_1` at `0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e` (tx `0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55`, SHA256: `9910f97c02cfbbb45b54295b7668ce44f52af7051a127d874843ecaa217158cf`, empty `diff`).
+  - Deployed `ShipReputation` at `0x6F95d9DD35D1e19A85D9aB7c467F8660f89954AC` (tx `0x65a5bc3899a179ccd26a4cee83314102d05659913290bf5ba2978fc2316f8141`, SHA256: `12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7`, empty `diff`).
+- **Empirical Gate Batch & Formal Adoption**:
+  - Executed 30 on-chain submissions across F1, F4, F5 with pacing >= 7.5s.
+  - Achieved **100.0% execution reliability** (30 of 30 successful runs).
+  - Outcome matches: F1 (9/10 `RELEASE_100`), F4 (9/10 `RELEASE_75`), F5 (10/10 `REFUND`).
+  - Pre-registered gate evaluated to **`ADOPT_V3_1`** (`adopted: true` in `docs/evidence_v3_1/gate/gate_summary.json`). V3.1 adopted as the active contract deployment.
+- **Complete On-Chain Scenario & Security Suite**:
+  - Scenarios F1 to F12 executed and verified against expectations.
+  - Advancing head proof on PR #23: stale submit rejected (`exec=ERROR`, 0 debited, 0 attempts consumed), real submit accepted (`exec=SUCCESS`).
+  - Duplicate guard on open bounty rejected (`exec=ERROR`, 0 debited).
+  - Section 4 security flows: S4-1 (SHA poisoning defense), S4-2 (recovery flow: REFUND -> SETTLED), S4-3 (exhaustion: per-dev limit = 2, total limit = 6, creator recovered full 100 reward via `refund_exhausted`), S4-4 (copied PR submission defense).
+  - Synchronous reputation sync and refusal checks (`min_payout_pct` enforcement, duplicate refusal).
+  - Conserved ledger invariant verified (`total_balances 2000 + total_escrowed 1000 == total_minted 3000`).
+  - All 46 stored on-chain submissions verified: 100% match with canonical `packet_sha256`.
+  - Finalization log verified: 81 of 81 checked receipts confirmed in `FINALIZED` status.
+
 ## [3.0.0-candidate] - 2026-10-25
 
 ### Added

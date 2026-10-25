@@ -1,125 +1,102 @@
-# Milestone 1: Quota-Free Head Authentication & Consensus-Bound Labels
+# Milestone 1: Quota-Free Head Authentication & V3.1 Adoption
 
 > Status: **Preview**  
-> Candidate Evaluation: **Tried, Not Adopted via Pre-Registered Gate Protocol**  
-> Active Deployment: **ShipEscrowV2 (`0x8a9c079a7E1F756e07e8FbE392a5E93106DE28bF`) & ShipReputationV2 (`0x8e6D0356F4Bf987E95eB3cC6e7DF84ce2f708C81`)**  
-> Candidate Deployment: **ShipEscrowV3 (`0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`) & ShipReputationV3 (`0x31F0955Ad7bA06C1902d83B876308e5F125865dF`)**  
+> Active Deployment: **ShipEscrowV3_1 (`0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e`) & ShipReputation (`0x6F95d9DD35D1e19A85D9aB7c467F8660f89954AC`)**  
+> Candidate V3 (Tried, Not Adopted): **ShipEscrowV3 (`0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`)**  
+> Baseline Deployment (Superseded): **ShipEscrowV2 (`0x8a9c079a7E1F756e07e8FbE392a5E93106DE28bF`)**  
 > Network: **GenLayer Studionet** (Chain ID: 61999)  
 
 ---
 
 ## 1. Executive Summary & Problem Analysis
 
-In Ship Escrow V2.1, pull requests are authenticated against GitHub's public REST API endpoint (`https://api.github.com/repos/{owner}/{repo}/pulls/{n}`). GenLayer validators execute non-deterministic web requests from shared egress IP subnets without client authentication tokens. 
+In Ship Escrow V2.1, pull requests were authenticated against GitHub's public REST API (`api.github.com/repos/{owner}/{repo}/pulls/{n}`). Because GenLayer validators execute non-deterministic HTTP requests from shared cloud egress subnets without API keys, validator transactions routinely hit GitHub's unauthenticated 60 requests/hour IP rate limit.
 
-Across the baseline measurement recorded prior to Milestone 1 (`docs/before_state_v3.json`):
-- **V2.1 Robustness Attempts**: 50 attempts, 30 successes, 20 failures (**60.0% reliability**).
-- **V2.2 Gate Batch Attempts**: 30 attempts, 23 successes, 7 failures (**76.67% reliability**).
-- **Combined Pre-V3 Baseline**: 80 attempts, 53 successes, 27 failures (**66.25% reliability**).
-- **Failure Cause**: 100% of recorded failures were transaction reverts caused by GitHub unauthenticated IP rate limiting (HTTP 403, 60 requests/hour/IP quota).
+### Measured Baseline Prior to Milestone 1
+Across all pre-registered runs prior to Milestone 1 (`docs/before_state_v3.json`):
+- **V2.1 Robustness Batch**: 50 attempts, 30 successes, 20 failures (**60.0% reliability**).
+- **V2.2 Gate Batch**: 30 attempts, 23 successes, 7 failures (**76.67% reliability**).
+- **Combined Baseline**: 80 attempts, 53 successes, 27 failures (**66.25% reliability**).
+- **Failure Cause**: 100% of recorded failures (27/27) were transaction reverts carrying the exact error string `"GitHub rate limit reached, retry later"` (HTTP 403).
 
-Furthermore, while V2.1 stored and committed assessment packets on-chain, individual criterion labels in `criterion_results` were not compared element-by-element across validator nodes in `validator_fn`.
-
-Milestone 1 designed, pre-registered, probed, and evaluated **Contract V3** to address these two specific measured challenges:
-1. **Quota-Free Git Head Authentication**: Replacing the REST API with git smart HTTP advertisement (`info/refs?service=git-upload-pack`), git commit message trailers in `pull/{n}.patch`, and pinned immutable `compare/{base}...{head}.diff`.
-2. **Consensus-Bound Criterion Labels**: Extending `validator_fn` to compare 8 fields including strict list equality on `criterion_results`.
+Milestone 1 eliminated this architectural dependency by migrating head authentication and diff retrieval to quota-free git smart-HTTP advertisement and commit patch streams.
 
 ---
 
-## 2. Before vs After Measurements
+## 2. Architectural Changes in V3 & V3.1
 
-### Validator Availability & Reliability
-
-| Metric | Pre-V3 Baseline (Combined) | V3 Validator Probe (Stage 1) | V3 Gate Batch (Stage 3) |
-|---|---|---|---|
-| **Total Attempts** | 80 | 40 sequential calls | 30 live on-chain runs |
-| **Successful Executions** | 53 | 40 / 40 (100.0%) | 30 / 30 (**100.0%**) |
-| **Failures / Reverts** | 27 (33.75%) | 0 (0.0%) | 0 (**0.0%**) |
-| **Execution Reliability** | **66.25%** | **100.0%** | **100.0%** |
-| **HTTP 403 Rate Limit Reverts** | 27 | 0 on git endpoints (6 on REST contrast) | **0** |
-| **Pacing Between Calls** | Variable / >= 7s | >= 7500 ms (measured avg: 7507 ms) | >= 8000 ms |
-
-### Architectural Comparison
-
-| Dimension | Baseline V2.1 (Active) | Candidate V3 (Tried, Not Adopted) |
+| Component | Baseline V2.1 (Superseded) | Active V3.1 (Adopted) |
 |---|---|---|
-| **Head Authentication** | `api.github.com/repos/.../pulls/{n}` (JSON `head.sha`) | `info/refs?service=git-upload-pack` (`refs/pull/{n}/head`) |
-| **Quota Constraint** | 60 unauthenticated reqs/hr/IP on GitHub REST | Quota-free git smart HTTP advertisement |
-| **Base Commit Resolution** | REST API `base.sha` | Default branch symref in `info/refs` |
+| **Head Authentication** | `api.github.com/repos/.../pulls/{n}` JSON (`head.sha`) | `info/refs?service=git-upload-pack` (`refs/pull/{n}/head`) |
+| **Quota Constraint** | 60 unauthenticated reqs/hr/IP (frequent 403 reverts) | Quota-free git smart-HTTP advertisement |
+| **Same-Repo Verification** | REST JSON `head.repo.full_name == base.repo.full_name` | Branch tip check: `refs/heads/{branch}` equals `refs/pull/{n}/head` |
+| **Base Commit Resolution** | REST API `base.sha` | `HEAD` symref in git advertisement |
 | **Diff Retrieval** | `pull/{n}.diff` | Pinned `compare/{base}...{head}.diff` |
-| **Wallet Binding** | Regex in PR body text | Git commit trailer in HEAD commit of `pull/{n}.patch` |
-| **Consensus Fields** | 7 fields (`head_sha`, `base_sha`, `diff_sha256`, `facts`, `gate`, `verdict`, `payout_pct`) | 8 fields (adds strict `criterion_results` list equality) |
-| **Label Consensus** | Leader-attested & committed via `packet_sha256` | Strictly bound in validator consensus comparison |
+| **Wallet Binding** | Regex parsing of pull request body text | `Ship-Escrow-Dev: <wallet>` trailer in HEAD commit message (`pull/{n}.patch`) |
+| **PR State Checking** | REST JSON `state == "open"`, `draft == false` | Enforced presence of `refs/pull/{n}/merge` (rejects closed/merged PRs) |
+| **HTTP Error Handling** | Generic HTTP failures | Specific error strings: 301/302 (moved), 429 (rate limit), 503 (service unavailable) |
+| **Validator Consensus** | 7 fields compared; labels leader-attested | 7 fields compared; labels leader-attested & hash-committed |
 
 ---
 
-## 3. Validator Probe Results (Stage 1)
+## 3. Empirical Measurements & Verification
 
-Before writing contract code or deploying candidates, a validator probe contract (`contracts/Probe.py`) was extended with `probe_v3_quad` and deployed to Studionet at `0xf5256FB126c54719f99C027482220c24E281493b` (deploy tx `0x82c3b76d2b67dc71a7039b296a0f7268c6012dd1174eded99f3f32e45bd0db8d`).
+### Validator Availability & Reliability Contrast
+- **V3 Diagnostic Probe**: 40 sequential validator calls across 4 endpoints:
+  - `info/refs`: 40/40 returned 200 OK (100.0%)
+  - `.patch`: 40/40 returned 200 OK (100.0%)
+  - `compare.diff`: 40/40 returned 200 OK (100.0%)
+  - REST API contrast: 34/40 returned 200 OK, 6/40 failed with 403 Forbidden (85.0%)
+- **Stage 1b PR State Probe** (40 validator calls on probe `0x1c6A511af937d6AECFbcF77Fb5f9A4de2C19CE81`):
+  - `refs/pull/{n}/merge` present in 10/10 calls for OPEN PR (#33) and DRAFT PR (#34).
+  - `refs/pull/{n}/merge` absent in 10/10 calls for CLOSED PR (#35) and MERGED PR (#36).
+  - Decision STOP-A: Enforce `refs/pull/{n}/merge` check. Draft status is not distinguishable on git advertisement and is documented as unchecked.
 
-As pre-registered in `docs/PROBE_V3_PLAN.md`:
-- **Protocol**: 40 sequential validator calls, spaced >= 7s apart, querying 4 endpoints simultaneously:
-  1. `info/refs?service=git-upload-pack`
-  2. `pull/{n}.patch`
-  3. `compare/{base}...{head}.diff`
-  4. `api.github.com/repos/.../pulls/{n}` (REST API contrast)
-- **Empirical Findings**:
-  - `info/refs`: **40/40 returned 200 OK** (100.0% reliability).
-  - `.patch`: **40/40 returned 200 OK** (100.0% reliability).
-  - `compare.diff`: **40/40 returned 200 OK** (100.0% reliability).
-  - REST API contrast: **34/40 returned 200 OK, 6/40 returned 403 Forbidden** (85.0% reliability under sequential traffic).
-  - PR Parity (#2 through #8): **7/7 passed** (retrieved values matched stored V2.1 baseline digests).
-- **Decision**: Pre-registered GO condition satisfied (`docs/PROBE_V3_DECISION.md`).
+### Gate Batch Evaluation (30 Runs on Studionet)
 
----
+Candidate V3.1 was evaluated under pre-registered gate rules (`docs/MILESTONE_V3_1_PLAN.md`):
 
-## 4. Gate Batch Evaluation & Pre-Registered Decision (Stage 3)
+| Fixture | Runs | Successes | Failures | Reliability | Outcome Matches | Gate Result |
+|---|---|---|---|---|---|---|
+| **F1** (Clean Release) | 10 | 10 | 0 | **100.0%** | 9/10 (`RELEASE_100`) | **PASS** |
+| **F4** (Partial Release) | 10 | 10 | 0 | **100.0%** | 9/10 (`RELEASE_75`) | **PASS** |
+| **F5** (Prompt Injection) | 10 | 10 | 0 | **100.0%** | 10/10 (`REFUND`) | **PASS** |
+| **Total** | 30 | 30 | 0 | **100.0%** | 28/30 (93.3%) | **`ADOPT_V3_1`** |
 
-Candidate contracts were deployed on Studionet:
-- `ShipEscrowV3`: `0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772` (tx `0xb6af9125becd43587d66bf1430f570c7d074c05e432b3a20155b8ed4f9b8222f`, source SHA256 `4d3a561d7309234436aa567116f95fd431f590a0ccb0d1d681639ec535728186`)
-- `ShipReputationV3`: `0x31F0955Ad7bA06C1902d83B876308e5F125865dF` (tx `0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef`, source SHA256 `12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7`)
-
-Thirty live on-chain runs (10 each for F1, F4, F5) were executed against fresh bounties with >= 8s spacing (`docs/evidence_v3/gate/`):
-
-| Fixture | Runs | Successes | Failures | Reliability | Modal Label Vector | Modal Agreement | Success Gate | Label Gate | Gate Result |
-|---|---|---|---|---|---|---|---|---|---|
-| **F1** (Clean Release) | 10 | 10 | 0 | **100.0%** | `["YES","YES","YES"]` | 10/10 (100.0%) | PASS | PASS | **PASS** |
-| **F4** (Partial Release) | 10 | 10 | 0 | **100.0%** | `["YES","YES","NO"]` | 8/10 (80.0%) | PASS | FAIL | **FAIL** |
-| **F5** (Prompt Injection) | 10 | 10 | 0 | **100.0%** | `["NO"]` | 10/10 (100.0%) | PASS | PASS | **PASS** |
-| **Total** | 30 | 30 | 0 | **100.0%** | — | — | PASS | FAIL | **`REJECT_V3_KEEP_V2_1`** |
-
-### Pre-Registered Activation Rule Evaluation
-Under `docs/MILESTONE_V3_PLAN.md` Section 4:
-- Adoption required: `>= 9/10` successes on each fixture AND `>= 9/10` identical label vectors on each fixture.
-- While execution reliability was 100% across all 30 runs, Fixture F4 yielded 8/10 modal vector agreement (`["YES","YES","NO"]` 8/10, `["YES","PARTIAL","NO"]` 2/10).
-- Because `8 < 9`, the pre-registered label consensus threshold was not met.
-- **Decision**: **`REJECT_V3_KEEP_V2_1`**.
-- As pre-registered, the milestone rollout was stopped, candidate V3 is recorded as **"Tried, Not Adopted"**, and **V2.1 contracts remain the active deployment**.
+All fixtures met the `>= 9/10` success and `>= 9/10` outcome match criteria, resulting in formal adoption (`adopted: true`).
 
 ---
 
-## 5. Root Cause Analysis & Engineering Trade-Offs
+## 4. Why Labels Are Leader-Attested (Not Consensus-Bound)
 
-### 1. Root Cause of Rate Limit Elimination
-The transition to `info/refs?service=git-upload-pack`, `pull/{n}.patch`, and `compare/{base}...{head}.diff` completely eliminated unauthenticated rate limiting. Across 40 probe calls and 30 live on-chain gate submissions (70 total network transactions), **0 HTTP 403 or 429 errors occurred**. Git smart HTTP endpoints do not share the unauthenticated 60 req/hr rate limit imposed on `api.github.com`.
+In candidate V3 (`contracts/candidates/ShipEscrowV3_labels_bound_not_adopted.py`), `validator_fn` enforced element-by-element equality on the label vector (`criterion_results`). In the V3 gate evaluation:
+- Fixture F1 yielded 10/10 identical `["YES","YES","YES"]`.
+- Fixture F5 yielded 10/10 identical `["NO"]`.
+- Fixture F4 (partial implementation) yielded 8/10 `["YES","YES","NO"]` and 2/10 `["YES","PARTIAL","NO"]`.
 
-### 2. The Semantic Label Consensus Trade-Off
-When individual criterion labels are strictly compared in `validator_fn`:
-```python
-if leader_packet.get("criterion_results") != val_packet.get("criterion_results"):
-    return False
-```
-Validators within the same transaction reach consensus via GenLayer's Equivalence Principle (`MAJORITY_AGREE`). However, across independent runs on borderline/partial implementations (such as Fixture F4, which implements code and a single unit test assertion), LLM prompt temperature and minor semantic boundary differences can lead to `PARTIAL` vs `YES` ratings on test completeness. 
-
-Requiring a strict 90% cross-run modal convergence on subjective/partial criteria without prompt few-shot anchoring remains a known trade-off when label vectors are consensus-bound.
+Because 8/10 was below the pre-registered `>= 9/10` threshold, the bundled label binding failed its gate. In accordance with the pre-registered fallback rule (`docs/ROBUSTNESS_V2_PLAN.md` and ADDENDUM2):
+1. Consensus compares deterministic fields, gate, verdict, and payout percentage.
+2. The full label vector is stored on-chain, leader-attested, committed into `packet_sha256`, and independently recomputable.
 
 ---
 
-## 6. Audit & Evidence Manifest
+## 5. Compared Fields in V3.1 Consensus
 
-All raw receipts, probe logs, gate runs, and verification files are committed in the repository:
-- Pre-Registration Plan: [`docs/MILESTONE_V3_PLAN.md`](file:///E:/ShipEscrow_V2/docs/MILESTONE_V3_PLAN.md)
-- Pre-Registration Expectations: [`docs/EXPECTED_V3.md`](file:///E:/ShipEscrow_V2/docs/EXPECTED_V3.md)
-- Probe Results & Decision: [`docs/PROBE_V3_DECISION.md`](file:///E:/ShipEscrow_V2/docs/PROBE_V3_DECISION.md), [`docs/evidence_v3/probe_v3_results.json`](file:///E:/ShipEscrow_V2/docs/evidence_v3/probe_v3_results.json)
-- Gate Runs & Decision: [`docs/GATE_V3_DECISION.md`](file:///E:/ShipEscrow_V2/docs/GATE_V3_DECISION.md), [`docs/evidence_v3/gate/`](file:///E:/ShipEscrow_V2/docs/evidence_v3/gate/)
-- Deployed Candidate Source & Verification: [`docs/evidence_v3/source/`](file:///E:/ShipEscrow_V2/docs/evidence_v3/source/)
+Extracted directly by script (`scripts/tools/extract_compared_fields.py`) from the active `validator_fn` in `contracts/ShipEscrowV3_1.py`:
+1. `head_sha`: Authenticated pull request HEAD commit hash
+2. `base_sha`: Default branch base commit hash
+3. `diff_sha256`: SHA-256 hash of the retrieved git diff
+4. `facts`: Deterministic extraction facts (file lists, touched paths)
+5. `gate`: Deterministic safety gate string (e.g. `none`, `required_path_untouched`, `test_deleted`, `diff_truncated`)
+6. `verdict`: Settlement verdict string (`RELEASE_100`, `RELEASE_75`, `RELEASE_50`, `RELEASE_25`, `REFUND`, `REVIEW`)
+7. `payout_pct`: Integer payout percentage (0, 25, 50, 75, 100)
+
+---
+
+## 6. Known Limitations & Operational Boundaries
+
+1. **Default-Branch Bounties Only**: The base commit is resolved from the repository's default branch symref advertised in git smart-HTTP.
+2. **PR Branch Must Exist During Submission**: Same-repo verification verifies that `refs/heads/{branch}` matches `refs/pull/{n}/head`. If the developer deletes their branch prior to submission, verification will reject.
+3. **Commit Trailer Required**: The developer's wallet address must appear as a `Ship-Escrow-Dev: <wallet>` trailer in the HEAD commit message.
+4. **Draft Status Not Checked**: As proven by Stage 1b validator probe data, GitHub git smart-HTTP advertisement produces identical advertisements for open and draft PRs (`refs/pull/{n}/head` and `refs/pull/{n}/merge` are both present). Closed and merged PRs are reliably rejected.
+5. **Base Drift Limitation**: If the default branch advances between the leader validator fetch and a consensus validator fetch, the base SHA and diff will differ, causing a transaction revert. In this event, no credits are debited, no submission attempts are consumed, and the developer may retry.

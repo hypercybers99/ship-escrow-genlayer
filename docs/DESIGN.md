@@ -124,16 +124,22 @@ Fuzz tested over 5,000 randomized operations with 100% invariant preservation.
 
 ---
 
-## 6. Candidate V3 Architecture (Milestone 1 Evaluation)
+## 6. Milestone 1 Architecture: Candidate V3 & Adopted V3.1
 
 ### Quota-Free Git Infrastructure
-Candidate V3 replaces the unauthenticated GitHub REST API with Git's smart HTTP transport:
-1. **`info/refs?service=git-upload-pack`**: Provides authoritative PR head commit SHAs (`refs/pull/{n}/head`) and default branch symrefs without consuming unauthenticated REST API quotas.
-2. **`pull/{n}.patch`**: HEAD commit message is parsed for the wallet marker trailer (`ship-escrow-wallet: 0x...`).
+Candidate V3 and Adopted V3.1 replace the unauthenticated GitHub REST API with Git's smart HTTP transport:
+1. **`info/refs?service=git-upload-pack`**: Provides authoritative PR head commit SHAs (`refs/pull/{n}/head`), open status via `refs/pull/{n}/merge`, same-repo verification via `refs/heads/{branch}`, and default branch symrefs without consuming unauthenticated REST API quotas.
+2. **`pull/{n}.patch`**: HEAD commit message is parsed for the wallet marker trailer (`Ship-Escrow-Dev: <caller_address>`).
 3. **`compare/{base}...{head}.diff`**: Pinned immutable comparison diff between the base and head commits.
-4. **Consensus Binding of `criterion_results`**: In `validator_fn`, validators compare 8 fields including strict list equality on `criterion_results`.
 
-### Empirical Findings & Decision
-- **Availability**: 30 of 30 live gate runs succeeded on Studionet (**100.0% execution reliability**), completely resolving the 60 req/hr rate-limiting bottlenecks observed in V2.1.
-- **Label Convergence**: F1 achieved 10/10 modal agreement, F5 achieved 10/10 modal agreement, and F4 achieved 8/10 modal agreement.
-- **Decision**: In accordance with the pre-registered requirement of >= 9/10 modal agreement across all fixtures, V3 was marked as **"Tried, Not Adopted"** (`docs/GATE_V3_DECISION.md`), and **V2.1 remains the active deployment**.
+### V3 Candidate Outcome (Tried, Not Adopted)
+- In candidate V3, `validator_fn` enforced element-by-element equality on `criterion_results`.
+- Reliability was 100.0% (30/30 runs succeeded without rate limits).
+- However, Fixture F4 yielded 8/10 modal agreement (`["YES","YES","NO"]` 8/10, `["YES","PARTIAL","NO"]` 2/10), falling below the pre-registered `>= 9/10` bar. V3 was marked as "Tried, Not Adopted" (`contracts/candidates/ShipEscrowV3_labels_bound_not_adopted.py`).
+
+### V3.1 Architecture (Adopted)
+Under the pre-registered fallback rule (`docs/ROBUSTNESS_V2_PLAN.md` and ADDENDUM2):
+1. **Consensus Comparison**: `validator_fn` compares the 7 core deterministic and settlement fields (`head_sha`, `base_sha`, `diff_sha256`, `facts`, `gate`, `verdict`, `payout_pct`).
+2. **Leader-Attested Labels**: The full label vector is stored in the on-chain assessment packet, committed in `packet_sha256`, and independently recomputable.
+3. **PR State Verification**: Enforces presence of `refs/pull/{n}/merge` (rejecting closed/merged PRs with `"Pull request is not open"`).
+4. **Gate Evaluation & Adoption**: Evaluated across 30 on-chain runs on Studionet: 100% execution reliability (30/30), F1 9/10 `RELEASE_100`, F4 9/10 `RELEASE_75`, F5 10/10 `REFUND`. Formally adopted as active under `ADOPT_V3_1` (`0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e`).
