@@ -1,0 +1,44 @@
+{
+  "attempt_number": 1,
+  "bounty_id": "33",
+  "criterion_results": [],
+  "dev": "0x6325b360db455435bf5e81d0ae18dc3b249f226c",
+  "dev_attempt": 1,
+  "gate": "test_deleted",
+  "head_sha": "e9c4b9b1a16c5110ccecadfe04d9ad9655c2c6bf",
+  "id": "33",
+  "packet": {
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "criteria_hash": "9e218a760ba94c1a2092730d1d7a21bf111475ba009ea6e592a2145cd1add48d",
+    "criterion_results": [],
+    "diff_sha256": "01604f56996721c80c4b69705a600192ac8531d4ae7222bcde3b4eaa4b2866d8",
+    "facts": {
+      "added_lines": 2,
+      "changed_files": [
+        "src/slug.py",
+        "tests/test_basic.py"
+      ],
+      "deleted_files": [
+        "tests/test_basic.py"
+      ],
+      "deleted_lines": 10,
+      "is_truncated": false,
+      "test_files_deleted": [
+        "tests/test_basic.py"
+      ],
+      "test_files_touched": [
+        "tests/test_basic.py"
+      ]
+    },
+    "gate": "test_deleted",
+    "gate_reason": "Test files deleted in diff",
+    "head_commit_message_sha256": "916920bce2d756504be30b27cb0982a592b198c1456b71b74cabc4cf9cc82f40",
+    "head_sha": "e9c4b9b1a16c5110ccecadfe04d9ad9655c2c6bf",
+    "payout_pct": 0,
+    "verdict": "REVIEW"
+  },
+  "packet_sha256": "e4316ca673a115ad62bf77080fdc16c5616caec456875f030feb2ab4fe8c284b",
+  "payout_pct": 0,
+  "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/19",
+  "verdict": "REVIEW"
+}

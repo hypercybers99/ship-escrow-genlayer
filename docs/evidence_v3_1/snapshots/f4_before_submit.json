@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-25T12:24:25.912Z",
+  "label": "f4_before_submit",
+  "bounty_id": "34",
+  "bounty": {
+    "attempts": "0",
+    "creator": "0x79ed3fc4e32d8df7b23a221a27a057170e6d2069",
+    "criteria": [
+      {
+        "description": "Implement slugify in src/slug.py",
+        "importance": "MUST"
+      },
+      {
+        "description": "Add unit tests in tests/test_slug.py",
+        "importance": "MUST"
+      },
+      {
+        "description": "Update README with usage example",
+        "importance": "SHOULD"
+      }
+    ],
+    "criteria_hash": "c3b23b2eab55bd3e2e23de32f355f20c74d01b0e9a4e9395dbfff6b87c0dfd15",
+    "id": "34",
+    "owner_repo": "hypercybers99/ship-escrow-fixtures",
+    "required_paths": [],
+    "reward_amount": "100",
+    "status": "OPEN"
+  },
+  "balances": {
+    "creator": 885,
+    "dev": 715,
+    "attacker": 1000
+  },
+  "ledger_invariant": {
+    "invariant_holds": true,
+    "total_balances": "2600",
+    "total_escrowed": "400",
+    "total_forfeited": "550",
+    "total_minted": "3000"
+  }
+}

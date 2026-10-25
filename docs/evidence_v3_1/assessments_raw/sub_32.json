@@ -1,0 +1,37 @@
+{
+  "attempt_number": 1,
+  "bounty_id": "32",
+  "criterion_results": [],
+  "dev": "0x6325b360db455435bf5e81d0ae18dc3b249f226c",
+  "dev_attempt": 1,
+  "gate": "required_path_untouched",
+  "head_sha": "d15f52cae50021e6bc3a8bb99d13384a704eeab7",
+  "id": "32",
+  "packet": {
+    "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
+    "criteria_hash": "4372ca0daeb61e3399a2743a5e737b6acd0cf5051696736d3d885d8eff9ee660",
+    "criterion_results": [],
+    "diff_sha256": "8f9a73bc0df394a8ea020e1eb57d4b5212dbb574ce8017d8883aaf904c654372",
+    "facts": {
+      "added_lines": 2,
+      "changed_files": [
+        "README.md"
+      ],
+      "deleted_files": [],
+      "deleted_lines": 25,
+      "is_truncated": false,
+      "test_files_deleted": [],
+      "test_files_touched": []
+    },
+    "gate": "required_path_untouched",
+    "gate_reason": "Required path not touched: src/slug.py",
+    "head_commit_message_sha256": "a5e2c6d1e720ae6398acd41bc09ff6c0198db4ad08a67a26cf02ef9b74fbbd53",
+    "head_sha": "d15f52cae50021e6bc3a8bb99d13384a704eeab7",
+    "payout_pct": 0,
+    "verdict": "REFUND"
+  },
+  "packet_sha256": "e26da49357a1d5d262a7f06ed87ce874e8d77e347781ecea058f2ae27e5e52fd",
+  "payout_pct": 0,
+  "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/18",
+  "verdict": "REFUND"
+}

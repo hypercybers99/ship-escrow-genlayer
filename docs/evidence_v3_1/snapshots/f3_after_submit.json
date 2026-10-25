@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-25T12:24:01.640Z",
+  "label": "f3_after_submit",
+  "bounty_id": "33",
+  "bounty": {
+    "attempts": "1",
+    "creator": "0x79ed3fc4e32d8df7b23a221a27a057170e6d2069",
+    "criteria": [
+      {
+        "description": "Implement slugify in src/slug.py",
+        "importance": "MUST"
+      }
+    ],
+    "criteria_hash": "9e218a760ba94c1a2092730d1d7a21bf111475ba009ea6e592a2145cd1add48d",
+    "id": "33",
+    "owner_repo": "hypercybers99/ship-escrow-fixtures",
+    "required_paths": [],
+    "reward_amount": "100",
+    "status": "OPEN"
+  },
+  "balances": {
+    "creator": 985,
+    "dev": 715,
+    "attacker": 1000
+  },
+  "ledger_invariant": {
+    "invariant_holds": true,
+    "total_balances": "2700",
+    "total_escrowed": "300",
+    "total_forfeited": "550",
+    "total_minted": "3000"
+  }
+}

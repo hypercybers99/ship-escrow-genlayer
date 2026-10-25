@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-25T12:21:12.629Z",
+  "label": "initial_state",
+  "bounty_id": null,
+  "bounty": null,
+  "balances": {
+    "creator": 1235,
+    "dev": 665,
+    "attacker": 1000
+  },
+  "ledger_invariant": {
+    "invariant_holds": true,
+    "total_balances": "2900",
+    "total_escrowed": "100",
+    "total_forfeited": "500",
+    "total_minted": "3000"
+  }
+}

@@ -17,7 +17,7 @@ function canonicalJson(obj) {
   return '{' + keys.map(k => JSON.stringify(k) + ':' + canonicalJson(obj[k])).join(',') + '}';
 }
 
-const rawDir = path.join(__dirname, '../docs/evidence_v2/assessments_raw');
+const rawDir = process.argv[2] ? path.resolve(process.argv[2]) : path.join(__dirname, '../docs/evidence_v2/assessments_raw');
 const files = fs.readdirSync(rawDir).filter(f => f.startsWith('sub_') && f.endsWith('.json'));
 files.sort((a, b) => {
   const numA = parseInt(a.replace('sub_', '').replace('.json', ''), 10);
@@ -74,7 +74,9 @@ for (const file of files) {
   });
 }
 
-const outputPath = path.join(__dirname, '../docs/evidence_v2/packet_recomputation_v2.json');
+const outputPath = process.argv[2] 
+  ? path.join(path.dirname(rawDir), 'packet_recomputation.json')
+  : path.join(__dirname, '../docs/evidence_v2/packet_recomputation_v2.json');
 fs.writeFileSync(outputPath, JSON.stringify(verificationResults, null, 2));
 
 console.log("====================================================");
