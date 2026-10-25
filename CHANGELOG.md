@@ -4,6 +4,28 @@ All notable changes to the Ship Escrow intelligent contracts will be documented 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [3.0.0-candidate] - 2026-10-25
+
+### Added
+- **Milestone 1 Pre-Registration**: Committed `docs/MILESTONE_V3_PLAN.md` and `docs/EXPECTED_V3.md` before contract edits or deployments, pre-registering the validator probe protocol, candidate V3 architecture, and gate batch protocol.
+- **Before-State Measurement**: Captured baseline metrics in `docs/before_state_v3.json` (V2.1 baseline: 60.0% reliability; V2.2 gate: 76.67% reliability; combined: 66.25% reliability; 100% of failures caused by unauthenticated GitHub REST API rate limits; 7 compared fields in `validator_fn`).
+- **Validator Probe Contract & Protocol (Stage 1)**: Extended `contracts/Probe.py` with `probe_v3_quad` and deployed to Studionet at `0xf5256FB126c54719f99C027482220c24E281493b`. Executed 40 sequential validator calls (measured minimum spacing: 7500 ms, average: 7507 ms):
+  - `info/refs?service=git-upload-pack`: 40/40 returned 200 OK (100.0%).
+  - `pull/{n}.patch`: 40/40 returned 200 OK (100.0%).
+  - `compare/{base}...{head}.diff`: 40/40 returned 200 OK (100.0%).
+  - REST API contrast: 34/40 returned 200 OK, 6/40 returned 403 Forbidden (85.0% reliability).
+  - PR Parity #2–#8: 7/7 identical to stored V2.1 baseline values. Pre-registered GO condition met (`docs/PROBE_V3_DECISION.md`).
+- **ShipEscrowV3 Implementation**: Created `contracts/ShipEscrowV3.py` implementing quota-free head authentication via `info/refs`, same-repository verification against branch tips, default branch tip base SHA from symref, commit message trailer parsing from HEAD in `.patch`, and consensus-bound 8-field validator comparison including strict list equality on `criterion_results`. All 84 unit, mocked, and direct mode tests passed.
+- **Milestone 1 Fixture PRs**: Provisioned fixture PRs #17–#32 in `hypercybers99/ship-escrow-fixtures` with commit message trailers (`ship-escrow-wallet: 0x...`) in `docs/evidence_v3/fixtures_v3.json`.
+- **Candidate V3 Deployment & Gate Batch (Stage 3)**:
+  - Deployed `ShipEscrowV3` (`0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`) and `ShipReputationV3` (`0x31F0955Ad7bA06C1902d83B876308e5F125865dF`). Decoded on-chain source and verified byte-for-byte exact match.
+  - Executed 30 live on-chain runs (10 each for F1, F4, F5) with pacing >= 8s (`docs/evidence_v3/gate/`).
+  - Achieved **100.0% execution reliability** (30/30 successes, 0 rate limit reverts, 0 network errors).
+  - Consensus label agreement: F1 (10/10 `["YES","YES","YES"]`), F4 (8/10 `["YES","YES","NO"]`, 2/10 `["YES","PARTIAL","NO"]`), F5 (10/10 `["NO"]`).
+  - Evaluated pre-registered activation condition: Because F4 yielded 8/10 modal agreement instead of >= 9/10, the pre-registered decision triggered: **`REJECT_V3_KEEP_V2_1`**.
+  - Rollout stopped, candidate V3 recorded as **"Tried, Not Adopted"**, and **V2.1 contracts remain active**.
+- **Comprehensive Milestone 1 Reports**: Added `docs/MILESTONE_1.md` and `docs/FINAL_REPORT_M1.md` with 100% hash verification across all tokens.
+
 ## [2.2.1] - 2026-10-24
 
 ### Changed

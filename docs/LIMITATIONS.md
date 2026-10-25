@@ -37,6 +37,12 @@ This document outlines the architectural trust assumptions, honest boundaries, a
   - Candidate V2.2 introduced discriminative error messages (`"GitHub rate limit reached, retry later"` for HTTP 403/429 and `"Repository moved..."` for 301 redirects).
   - In the 30-run Addendum 3 Gate Batch, all 23 successful runs had identical label vectors; the gate failed on availability due to unauthenticated GitHub rate limits (`"GitHub rate limit reached, retry later"`), not label disagreement.
   - Pre-registered gate outcome: `labels were identical in all successful runs; binding was not adopted because the pre-registered success threshold was not met under GitHub unauthenticated rate limits; labels are stored, hash-committed, recomputable and leader-attested; validators compare head, base, diff hash, facts, gate, verdict and payout`.
+- **Candidate V3 Milestone 1 Gate Protocol Observations**:
+  - Candidate V3 evaluated quota-free head authentication via `info/refs?service=git-upload-pack`, commit message trailer parsing from HEAD in `.patch`, and consensus-bound label vectors.
+  - Across 40 sequential validator probe calls, `info/refs`, `.patch`, and `compare.diff` all scored 100% 200 OK responses, whereas the unauthenticated REST API contrast suffered a 15% 403 rate-limit failure rate.
+  - Across the 30-run Milestone 1 Gate Batch, execution reliability was 100.0% (30/30 successes without a single rate limit revert).
+  - However, on Fixture F4 (partial release), consensus-bound label vectors yielded 8/10 modal vector agreement (`["YES","YES","NO"]` 8/10, `["YES","PARTIAL","NO"]` 2/10), failing the pre-registered requirement of >= 9/10 identical label vectors.
+  - As pre-registered in `docs/MILESTONE_V3_PLAN.md`, rollout was stopped, V3 was marked as "Tried, Not Adopted", and active deployment remains V2.1 (`0x8a9c079a7E1F756e07e8FbE392a5E93106DE28bF`).
 - **Usage Guidance & Safety Guarantee**:
   - Submissions should be spaced several minutes apart to avoid triggering GitHub's rolling unauthenticated IP rate window.
   - If a rate limit is encountered, developers should simply retry after several minutes.

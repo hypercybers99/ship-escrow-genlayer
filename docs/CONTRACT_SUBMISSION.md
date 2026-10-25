@@ -40,3 +40,12 @@
 - **On-Chain Deployed Source SHA256**: `12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7`
 - **Byte-for-Byte Exact Match**: `true`
 - **Source Artifact Extracted From Deploy Tx**: `docs/evidence_v2/source/shipreputationv2_onchain.py`
+
+---
+
+## 4. Milestone 1 Candidate Reference (Tried, Not Adopted)
+
+- **ShipEscrowV3 Candidate**: [`0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`](https://explorer-studio.genlayer.com/address/0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772)
+- **ShipReputationV3 Candidate**: [`0x31F0955Ad7bA06C1902d83B876308e5F125865dF`](https://explorer-studio.genlayer.com/address/0x31F0955Ad7bA06C1902d83B876308e5F125865dF)
+- **Evaluation Decision**: `REJECT_V3_KEEP_V2_1` (`docs/GATE_V3_DECISION.md`)
+- **Active Contracts**: The active coordinates in Sections 1 and 3 remain unchanged.

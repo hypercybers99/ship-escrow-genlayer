@@ -121,3 +121,19 @@ Fuzz tested over 5,000 randomized operations with 100% invariant preservation.
 - Each bounty can be synced at most once.
 - Developers accumulate `units_earned` and verdict counters (`RELEASE_100`, `RELEASE_75`, etc.).
 - Creators accumulate `units_paid` and `units_refunded`.
+
+---
+
+## 6. Candidate V3 Architecture (Milestone 1 Evaluation)
+
+### Quota-Free Git Infrastructure
+Candidate V3 replaces the unauthenticated GitHub REST API with Git's smart HTTP transport:
+1. **`info/refs?service=git-upload-pack`**: Provides authoritative PR head commit SHAs (`refs/pull/{n}/head`) and default branch symrefs without consuming unauthenticated REST API quotas.
+2. **`pull/{n}.patch`**: HEAD commit message is parsed for the wallet marker trailer (`ship-escrow-wallet: 0x...`).
+3. **`compare/{base}...{head}.diff`**: Pinned immutable comparison diff between the base and head commits.
+4. **Consensus Binding of `criterion_results`**: In `validator_fn`, validators compare 8 fields including strict list equality on `criterion_results`.
+
+### Empirical Findings & Decision
+- **Availability**: 30 of 30 live gate runs succeeded on Studionet (**100.0% execution reliability**), completely resolving the 60 req/hr rate-limiting bottlenecks observed in V2.1.
+- **Label Convergence**: F1 achieved 10/10 modal agreement, F5 achieved 10/10 modal agreement, and F4 achieved 8/10 modal agreement.
+- **Decision**: In accordance with the pre-registered requirement of >= 9/10 modal agreement across all fixtures, V3 was marked as **"Tried, Not Adopted"** (`docs/GATE_V3_DECISION.md`), and **V2.1 remains the active deployment**.

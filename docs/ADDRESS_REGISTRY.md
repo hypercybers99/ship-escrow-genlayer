@@ -11,6 +11,33 @@
 
 ---
 
+## Candidate Contracts (V3 - Tried, Not Adopted via Milestone 1 Gate Protocol)
+
+> [!NOTE]
+> The following candidate contracts were deployed on Studionet and evaluated under the pre-registered Milestone 1 Gate Batch (`docs/MILESTONE_V3_PLAN.md`).
+> The candidate completely resolved the unauthenticated GitHub REST API rate limits: **30 of 30 live runs succeeded with 100.0% execution reliability** (0 HTTP 403 reverts, 0 network errors).
+> However, on Fixture F4 (partial release), the consensus-bound label vector yielded 8/10 modal agreement (`["YES","YES","NO"]` 8/10, `["YES","PARTIAL","NO"]` 2/10), falling short of the pre-registered requirement of >= 9/10 identical label vectors.
+> Under the strict pre-registered rule, the gate evaluated to **`REJECT_V3_KEEP_V2_1`**. As pre-registered, rollout was stopped, V3 is marked as **"Tried, Not Adopted"**, and V2.1 contracts remain the active deployment.
+
+### ShipEscrowV3 (Candidate V3 - Tried, Not Adopted)
+- **Address**: [`0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`](https://explorer-studio.genlayer.com/address/0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772)
+- **Deployment Tx**: [`0xb6af9125becd43587d66bf1430f570c7d074c05e432b3a20155b8ed4f9b8222f`](https://explorer-studio.genlayer.com/tx/0xb6af9125becd43587d66bf1430f570c7d074c05e432b3a20155b8ed4f9b8222f)
+- **Source File**: `contracts/ShipEscrowV3.py`
+- **Source SHA256 (LF Normalized)**: `4d3a561d7309234436aa567116f95fd431f590a0ccb0d1d681639ec535728186`
+- **Byte-for-Byte Exact Match**: `true` (extracted to `docs/evidence_v3/source/shipescrowv3_onchain.py`)
+- **Deployment Status**: `ACCEPTED` / `MAJORITY_AGREE` / `SUCCESS`
+
+### ShipReputationV3 (Candidate V3 - Bound to Escrow V3)
+- **Address**: [`0x31F0955Ad7bA06C1902d83B876308e5F125865dF`](https://explorer-studio.genlayer.com/address/0x31F0955Ad7bA06C1902d83B876308e5F125865dF)
+- **Deployment Tx**: [`0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef`](https://explorer-studio.genlayer.com/tx/0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef)
+- **Source File**: `contracts/ShipReputationV2.py`
+- **Source SHA256**: `12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7`
+- **Byte-for-Byte Exact Match**: `true`
+- **Bound Escrow Address**: `0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`
+- **Deployment Status**: `ACCEPTED` / `MAJORITY_AGREE` / `SUCCESS`
+
+---
+
 ## Candidate Contracts (V2.2 - Tried, Not Adopted via Addendum 3 Gate Protocol)
 
 > [!NOTE]
