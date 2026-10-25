@@ -2,7 +2,7 @@
 
 > Status: **Preview**  
 > Target Network: **GenLayer Studionet** (Chain ID: 61999)  
-> Tag Reference: `se-v3-1-reliable-head`
+> Tag Reference: `se-v3-1-final`
 
 ---
 
@@ -11,8 +11,8 @@
 - **Contract Name**: `ShipEscrowV3_1`
 - **Contract Address**: [`0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e`](https://explorer-studio.genlayer.com/address/0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e)
 - **Deployment Transaction**: [`0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55`](https://explorer-studio.genlayer.com/tx/0xe2415522e46708d3f20f9eaec2dbb33a2f6132e4d3e0fc12afd17dd819d35c55)
-- **Repository URL (at final tag)**: [https://github.com/hypercybers99/ship-escrow-genlayer/tree/se-v3-1-reliable-head](https://github.com/hypercybers99/ship-escrow-genlayer/tree/se-v3-1-reliable-head)
-- **Contract Source Path in Repo**: [`contracts/ShipEscrowV3_1.py`](https://github.com/hypercybers99/ship-escrow-genlayer/blob/se-v3-1-reliable-head/contracts/ShipEscrowV3_1.py)
+- **Repository URL (at final tag)**: [https://github.com/hypercybers99/ship-escrow-genlayer/tree/se-v3-1-final](https://github.com/hypercybers99/ship-escrow-genlayer/tree/se-v3-1-final)
+- **Contract Source Path in Repo**: [`contracts/ShipEscrowV3_1.py`](https://github.com/hypercybers99/ship-escrow-genlayer/blob/se-v3-1-final/contracts/ShipEscrowV3_1.py)
 - **Explorer URL**: [https://explorer-studio.genlayer.com/address/0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e](https://explorer-studio.genlayer.com/address/0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e)
 
 ---
