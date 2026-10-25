@@ -9,7 +9,7 @@ def direct_v3_1_env(direct_vm, direct_deploy, direct_alice, direct_bob, direct_c
     Setup fixture for ShipEscrowV3_1 tests using official Direct Mode (genlayer-test).
     Deploys contracts/ShipEscrowV3_1.py and sets up credited accounts.
     Note: Direct Mode uses local execution with mocked GitHub and LLM responses.
-    Live on-chain execution proofs are performed separately against Studionet.
+    On-chain execution proofs are performed separately against Studionet.
     """
     creator = direct_alice
     dev = direct_bob

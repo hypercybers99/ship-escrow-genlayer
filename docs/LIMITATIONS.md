@@ -33,7 +33,8 @@ This document outlines the architectural trust assumptions, honest boundaries, a
 3. **Same-Repo Verification**: Checked by ensuring `refs/heads/{branch}` matches `refs/pull/{n}/head` in the same git advertisement.
 4. **Wallet Binding**: Checked via the `ship-escrow-wallet: 0x<wallet>` trailer in the HEAD commit message of `pull/{n}.patch`.
 5. **Open Status**: Checked via the presence of `refs/pull/{n}/merge` in git advertisement. If absent, the pull request is rejected with `"Pull request is not open"`.
-   - **Merge Conflicts Limitation**: A PR that GitHub cannot merge (conflicts) has no merge ref and is rejected with `"Pull request is not open"`; rebase the branch and submit again.
+   - **Merge Conflicts Limitation & Empirical Validator Measurement**: A PR that GitHub cannot merge (conflicts) has no merge ref and is rejected with `"Pull request is not open"`; rebase the branch and submit again.
+   - **Measured Empirical Data (Probe V3.1b)**: Across 10 on-chain validator calls querying `probe_v3_state` on Probe `0x1c6A511af937d6AECFbcF77Fb5f9A4de2C19CE81` on PR #37 (Open, non-draft, merge-conflicted PR): `refs/pull/37/head` was present in 10/10 runs (100.0%), while `refs/pull/37/merge` was absent in 10/10 runs (0.0% present). See `docs/PROBE_V3_1B_DECISION.md`.
 
 ### Which Pull Request Facts Are NOT Checked:
 1. **Author Login**: Not checked. Smart-HTTP git advertisement does not include GitHub account usernames. Attribution is enforced solely via cryptographic wallet binding in the commit trailer.

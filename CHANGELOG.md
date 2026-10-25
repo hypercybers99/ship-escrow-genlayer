@@ -43,7 +43,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **Milestone 1 Fixture PRs**: Provisioned fixture PRs #17–#32 in `hypercybers99/ship-escrow-fixtures` with commit message trailers (`ship-escrow-wallet: 0x...`) in `docs/evidence_v3/fixtures_v3.json`.
 - **Candidate V3 Deployment & Gate Batch (Stage 3)**:
   - Deployed `ShipEscrowV3` (`0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772`) and `ShipReputationV3` (`0x31F0955Ad7bA06C1902d83B876308e5F125865dF`). Decoded on-chain source and verified byte-for-byte exact match.
-  - Executed 30 live on-chain runs (10 each for F1, F4, F5) with pacing >= 8s (`docs/evidence_v3/gate/`).
+  - Executed 30 on-chain runs (10 each for F1, F4, F5) with pacing >= 8s (`docs/evidence_v3/gate/`).
   - Achieved **100.0% execution reliability** (30/30 successes, 0 rate limit reverts, 0 network errors).
   - Consensus label agreement: F1 (10/10 `["YES","YES","YES"]`), F4 (8/10 `["YES","YES","NO"]`, 2/10 `["YES","PARTIAL","NO"]`), F5 (10/10 `["NO"]`).
   - Evaluated pre-registered activation condition: Because F4 yielded 8/10 modal agreement instead of >= 9/10, the pre-registered decision triggered: **`REJECT_V3_KEEP_V2_1`**.

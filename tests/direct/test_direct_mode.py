@@ -10,7 +10,7 @@ def direct_env(direct_vm, direct_deploy, direct_alice, direct_bob, direct_charli
     Setup fixture for official Direct Mode tests using genlayer-test.
     Deploys ShipEscrowV2 and sets up credited test accounts.
     Note: Direct Mode uses local execution with mocked GitHub and LLM responses.
-    Live on-chain execution proofs are performed separately against Studionet.
+    On-chain execution proofs are performed separately against Studionet.
     """
     creator = direct_alice
     dev = direct_bob

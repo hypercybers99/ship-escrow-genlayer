@@ -71,7 +71,7 @@ Under the pre-registered Milestone 1 V3.1 Plan (\`docs/MILESTONE_V3_1_PLAN.md\`)
 1. \`>= 9/10\` successful runs (status \`ACCEPTED\` or \`FINALIZED\`, \`MAJORITY_AGREE\`, \`leader_receipt.execution_result == SUCCESS\`).
 2. \`>= 9/10\` verdict and payout percentage matches against pre-registered expectations.
 
-**Measured Results Across 30 Live Runs**:
+**Measured Results Across 30 On-Chain Runs**:
 - Total Attempts: **30**
 - Total Successes: **30** (100.0% execution reliability, 0 rate limits, 0 network errors)
 - Total Failures: **0**
