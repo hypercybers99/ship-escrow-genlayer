@@ -446,3 +446,69 @@ class Probe(gl.Contract):
         decision = gl.vm.run_nondet(leader_fn, validator_fn)
         self.results[run_key] = decision
 
+    @gl.public.write
+    def probe_v3_state(self, owner: str, repo: str, pr_number: str, run_key: str) -> None:
+        """Probe PR state indicators on git info/refs, patch, and diff."""
+        info_refs_url = f"https://github.com/{owner}/{repo}.git/info/refs?service=git-upload-pack"
+        patch_url = f"https://github.com/{owner}/{repo}/pull/{pr_number}.patch"
+        diff_url = f"https://github.com/{owner}/{repo}/pull/{pr_number}.diff"
+
+        def compute_state() -> dict:
+            # 1. info/refs
+            res_refs = gl.nondet.web.get(info_refs_url)
+            status_refs = int(res_refs.status)
+            bytes_refs = res_refs.body if isinstance(res_refs.body, (bytes, bytearray)) else str(res_refs.body).encode("utf-8")
+            text_refs = bytes_refs.decode("utf-8", errors="replace")
+
+            m_head = re.search(r"([0-9a-f]{40})\s+refs/pull/" + str(pr_number) + r"/head", text_refs)
+            head_sha = m_head.group(1).lower() if m_head else ""
+            has_head = bool(m_head)
+
+            m_merge = re.search(r"([0-9a-f]{40})\s+refs/pull/" + str(pr_number) + r"/merge", text_refs)
+            merge_sha = m_merge.group(1).lower() if m_merge else ""
+            has_merge = bool(m_merge)
+
+            # 2. patch
+            res_patch = gl.nondet.web.get(patch_url)
+            status_patch = int(res_patch.status)
+            bytes_patch = res_patch.body if isinstance(res_patch.body, (bytes, bytearray)) else str(res_patch.body).encode("utf-8")
+            patch_len = len(bytes_patch)
+
+            # 3. diff
+            res_diff = gl.nondet.web.get(diff_url)
+            status_diff = int(res_diff.status)
+            bytes_diff = res_diff.body if isinstance(res_diff.body, (bytes, bytearray)) else str(res_diff.body).encode("utf-8")
+            diff_len = len(bytes_diff)
+
+            return {
+                "status_refs": status_refs,
+                "has_head": has_head,
+                "has_merge": has_merge,
+                "head_sha": head_sha,
+                "merge_sha": merge_sha,
+                "status_patch": status_patch,
+                "patch_len": patch_len,
+                "status_diff": status_diff,
+                "diff_len": diff_len,
+            }
+
+        def leader_fn() -> str:
+            data = compute_state()
+            return json.dumps(data)
+
+        def validator_fn(result) -> bool:
+            if not isinstance(result, gl.vm.Return):
+                return False
+            leader_json = gl.vm.unpack_result(result)
+            leader_data = json.loads(leader_json)
+            val_data = compute_state()
+
+            for k in ["status_refs", "has_head", "has_merge", "head_sha", "merge_sha", "status_patch", "status_diff"]:
+                if leader_data.get(k) != val_data.get(k):
+                    return False
+            return True
+
+        decision = gl.vm.run_nondet(leader_fn, validator_fn)
+        self.results[run_key] = decision
+
+
