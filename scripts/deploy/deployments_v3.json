@@ -3,26 +3,26 @@
   "chainId": 61999,
   "rpc": "https://studio.genlayer.com/api",
   "explorerBase": "https://explorer-studio.genlayer.com",
-  "deployedAt": "2026-10-25T07:31:59.886Z",
+  "deployedAt": "2026-10-25T10:32:41.965Z",
   "escrow": {
-    "contractAddress": "0x320cb3C3987B395099E19544F0556347f44D9B36",
-    "deployTxHash": "0x7047a94a53d25bf2711e32bf6aa839826521047fc1373d286146fe5a386eb85b",
+    "contractAddress": "0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772",
+    "deployTxHash": "0xb6af9125becd43587d66bf1430f570c7d074c05e432b3a20155b8ed4f9b8222f",
     "statusName": "ACCEPTED",
     "resultName": "MAJORITY_AGREE",
     "executionResult": "SUCCESS",
     "sourceFile": "contracts/ShipEscrowV3.py",
-    "sourceSha256": "803859db34c9887839cb4402216ba32211d2b8ea2e41522c9cb60c24440071c8",
-    "explorerUrl": "https://explorer-studio.genlayer.com/address/0x320cb3C3987B395099E19544F0556347f44D9B36"
+    "sourceSha256": "4d3a561d7309234436aa567116f95fd431f590a0ccb0d1d681639ec535728186",
+    "explorerUrl": "https://explorer-studio.genlayer.com/address/0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772"
   },
   "reputation": {
-    "contractAddress": "0x796Fe265c97419f259478a486F5d43ff0720D69e",
-    "deployTxHash": "0x60c0ec4425d7f13a74871d3d29df36917f1e340704f9c240ec47e8af68b63fe7",
+    "contractAddress": "0x31F0955Ad7bA06C1902d83B876308e5F125865dF",
+    "deployTxHash": "0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef",
     "statusName": "ACCEPTED",
     "resultName": "MAJORITY_AGREE",
     "executionResult": "SUCCESS",
     "sourceFile": "contracts/ShipReputationV2.py",
     "sourceSha256": "12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7",
-    "explorerUrl": "https://explorer-studio.genlayer.com/address/0x796Fe265c97419f259478a486F5d43ff0720D69e",
-    "escrowAddress": "0x320cb3C3987B395099E19544F0556347f44D9B36"
+    "explorerUrl": "https://explorer-studio.genlayer.com/address/0x31F0955Ad7bA06C1902d83B876308e5F125865dF",
+    "escrowAddress": "0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772"
   }
 }

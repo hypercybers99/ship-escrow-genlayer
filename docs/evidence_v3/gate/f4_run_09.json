@@ -1,43 +1,43 @@
 {
   "fixture_id": "F4",
   "run_index": 9,
-  "bounty_id": "50",
-  "submission_id": "20",
+  "bounty_id": "19",
+  "submission_id": "19",
   "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/20",
   "head_sha": "65682b243ca2f3803f2af058afe5f362e944b829",
-  "create_tx_hash": "0xc658c046a3909f6a9908849145ddc304e1650132f18b3051deb17bc5dbe4735b",
+  "create_tx_hash": "0x5909b6f762fa313cf794017b4290e22b6953940511d0d7299c8b7d939f92394f",
   "create_receipt_status": "ACCEPTED",
-  "submit_tx_hash": "0xb667f9e02842766f10aedd9e28145f710dcd1dbf0ae58153bcff9f3d8ff319f1",
-  "created_at": "2026-10-25T09:49:20.378868+00:00",
+  "submit_tx_hash": "0x97b50e07d6c479624e09158c831b45382f5ed90fc8ccc0fdfc51ed75b94ac58b",
+  "created_at": "2026-10-25T10:49:57.661239+00:00",
   "submit_receipt": {
     "status_name": "ACCEPTED",
     "result_name": "MAJORITY_AGREE",
     "execution_result": "SUCCESS",
     "votes": {
-      "0x007d6451555Df7765c707284F844137927aE4e5E": "disagree",
-      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
       "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
-      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
-      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+      "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
     },
     "leader_receipt": [
       {
         "mode": "leader",
         "vote": null,
         "result": {
-          "raw": "ABQyMA==",
+          "raw": "ABQxOQ==",
           "status": "return",
           "payload": {
             "raw": [
               20,
-              50,
-              48
+              49,
+              57
             ],
-            "readable": "\"20\""
+            "readable": "\"19\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ1MOwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQxOewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -47,8 +47,8 @@
             115,
             29,
             20,
-            53,
-            48,
+            49,
+            57,
             236,
             3,
             104,
@@ -174,7 +174,7 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"50\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"19\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "eq_outputs": {
@@ -1135,57 +1135,57 @@
             "tokens": {
               "node-0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B/policy:prd-kimi": {
                 "input": 476,
-                "total": 511,
-                "output": 35
+                "total": 517,
+                "output": 41
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 753,
+            "STORAGE_READ": 805,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 194.464833568,
+          "host_loop_entered_s": 724.887678992,
           "host_loop_enter_wait_ms": 4,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 72,
+            "STORAGE_READ": 76,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 72,
+          "host_total_handling_time_ms": 76,
           "manager_run_attempt_success": {
             "attempt": 0,
             "duration_ms": 2
           },
-          "host_first_method_received_s": 194.464912901,
+          "host_first_method_received_s": 724.887779273,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 2971,
+        "processing_time": 6240,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "701e9d024192fedfd329a2dc6c8271bfad2c7f9651dd6fa83245bf31179670fc",
+        "contract_state_hash": "3279ee4be12e37e655787cec2cc50203c37a4e5231d85dd7c0119df06b9e54be",
         "pending_transactions": []
       },
       {
         "mode": "validator",
         "vote": "agree",
         "result": {
-          "raw": "ABQyMA==",
+          "raw": "ABQxOQ==",
           "status": "return",
           "payload": {
             "raw": [
               20,
-              50,
-              48
+              49,
+              57
             ],
-            "readable": "\"20\""
+            "readable": "\"19\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ1MOwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQxOewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -1195,8 +1195,8 @@
             115,
             29,
             20,
-            53,
-            48,
+            49,
+            57,
             236,
             3,
             104,
@@ -1322,7 +1322,7 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"50\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"19\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "node_config": {
@@ -1519,51 +1519,45 @@
             "tokens": {
               "node-0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B/policy:prd-kimi": {
                 "input": 476,
-                "total": 511,
-                "output": 35
+                "total": 507,
+                "output": 31
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 753,
+            "STORAGE_READ": 805,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 208.678988896,
-          "host_loop_enter_wait_ms": 11007,
+          "host_loop_entered_s": 731.74269648,
+          "host_loop_enter_wait_ms": 10,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 71,
+            "STORAGE_READ": 239,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 71,
-          "manager_run_attempt_0_error": {
-            "attempt": 0,
-            "error_type": "SocketTimeoutError",
-            "will_retry": true,
-            "duration_ms": 10003
-          },
+          "host_total_handling_time_ms": 239,
           "manager_run_attempt_success": {
-            "attempt": 1,
-            "duration_ms": 3
+            "attempt": 0,
+            "duration_ms": 4
           },
-          "host_first_method_received_s": 208.679069658,
-          "host_accept_to_first_method_ms": 0
+          "host_first_method_received_s": 731.743211968,
+          "host_accept_to_first_method_ms": 1
         },
         "nondet_disagree": null,
-        "processing_time": 15732,
+        "processing_time": 5685,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "701e9d024192fedfd329a2dc6c8271bfad2c7f9651dd6fa83245bf31179670fc",
+        "contract_state_hash": "3279ee4be12e37e655787cec2cc50203c37a4e5231d85dd7c0119df06b9e54be",
         "pending_transactions": []
       }
     ]
   },
   "on_chain_submission": {
     "attempt_number": 1,
-    "bounty_id": "50",
+    "bounty_id": "19",
     "criterion_results": [
       "YES",
       "YES",
@@ -1573,7 +1567,7 @@
     "dev_attempt": 1,
     "gate": "",
     "head_sha": "65682b243ca2f3803f2af058afe5f362e944b829",
-    "id": "20",
+    "id": "19",
     "packet": {
       "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
       "body_sha256": "8977c6bc25e54b61e35c70dffc9c01bb5f7ba0b128b347bc937b199852690838",

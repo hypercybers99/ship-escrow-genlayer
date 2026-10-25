@@ -1,6 +1,6 @@
 {
-  "executedAt": "2026-10-25T10:02:27.406Z",
-  "escrowAddress": "0x320cb3C3987B395099E19544F0556347f44D9B36",
+  "executedAt": "2026-10-25T11:01:56.584Z",
+  "escrowAddress": "0xDf8Adb520FeE510d8793bC5d01C7aF751A4fE772",
   "evaluation": {
     "F1": {
       "attempts": 10,
@@ -19,10 +19,10 @@
       "failures": 0,
       "reliabilityPct": 100,
       "modalVector": "[\"YES\",\"YES\",\"NO\"]",
-      "modalVectorCount": 10,
+      "modalVectorCount": 8,
       "successGate": "PASS",
-      "labelGate": "PASS",
-      "overall": "PASS"
+      "labelGate": "FAIL",
+      "overall": "FAIL"
     },
     "F5": {
       "attempts": 10,
@@ -36,6 +36,6 @@
       "overall": "PASS"
     }
   },
-  "gateDecision": "ADOPT_V3_ACTIVE",
-  "adopted": true
+  "gateDecision": "REJECT_V3_KEEP_V2_1",
+  "adopted": false
 }

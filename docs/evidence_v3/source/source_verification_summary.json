@@ -1,15 +1,15 @@
 {
   "escrow": {
     "contract": "ShipEscrowV3",
-    "deployTxHash": "0x7047a94a53d25bf2711e32bf6aa839826521047fc1373d286146fe5a386eb85b",
-    "localSha256": "803859db34c9887839cb4402216ba32211d2b8ea2e41522c9cb60c24440071c8",
-    "onchainSha256": "803859db34c9887839cb4402216ba32211d2b8ea2e41522c9cb60c24440071c8",
+    "deployTxHash": "0xb6af9125becd43587d66bf1430f570c7d074c05e432b3a20155b8ed4f9b8222f",
+    "localSha256": "4d3a561d7309234436aa567116f95fd431f590a0ccb0d1d681639ec535728186",
+    "onchainSha256": "4d3a561d7309234436aa567116f95fd431f590a0ccb0d1d681639ec535728186",
     "byteIdentical": true,
     "diffEmpty": true
   },
   "reputation": {
     "contract": "ShipReputationV3",
-    "deployTxHash": "0x60c0ec4425d7f13a74871d3d29df36917f1e340704f9c240ec47e8af68b63fe7",
+    "deployTxHash": "0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef",
     "localSha256": "12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7",
     "onchainSha256": "12e4c5e9cf8f480823ff778181b6a0d50ae7d37ec7c3a5b079cf6275779d1ed7",
     "byteIdentical": true,

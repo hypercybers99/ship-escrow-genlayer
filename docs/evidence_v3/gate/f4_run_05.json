@@ -1,43 +1,43 @@
 {
   "fixture_id": "F4",
   "run_index": 5,
-  "bounty_id": "46",
-  "submission_id": "16",
+  "bounty_id": "15",
+  "submission_id": "15",
   "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/20",
   "head_sha": "65682b243ca2f3803f2af058afe5f362e944b829",
-  "create_tx_hash": "0x3d2befa4647ed4f2175c676f1fb78150751c8298c95c8c17dc0e0300caec1976",
+  "create_tx_hash": "0xb3041a21705ff446ba53bfd2adafa129b2c648438b0ec924e7c47833670bc3c6",
   "create_receipt_status": "ACCEPTED",
-  "submit_tx_hash": "0x0fc25fd0b9cbcb560f319ba4e15d63151919149914c5972e0dea3907bdd8ab8a",
-  "created_at": "2026-10-25T09:45:43.902000+00:00",
+  "submit_tx_hash": "0x332fe0e37fd108165e7e4d47db0b391045a807ae53f0ab269525a7af1326ec25",
+  "created_at": "2026-10-25T10:45:41.274526+00:00",
   "submit_receipt": {
     "status_name": "ACCEPTED",
     "result_name": "MAJORITY_AGREE",
     "execution_result": "SUCCESS",
     "votes": {
-      "0x007d6451555Df7765c707284F844137927aE4e5E": "disagree",
-      "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
-      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
-      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
-      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+      "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+      "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+      "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+      "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
     },
     "leader_receipt": [
       {
         "mode": "leader",
         "vote": null,
         "result": {
-          "raw": "ABQxNg==",
+          "raw": "ABQxNQ==",
           "status": "return",
           "payload": {
             "raw": [
               20,
               49,
-              54
+              53
             ],
-            "readable": "\"16\""
+            "readable": "\"15\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ0NuwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQxNewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -47,8 +47,8 @@
             115,
             29,
             20,
-            52,
-            54,
+            49,
+            53,
             236,
             3,
             104,
@@ -174,17 +174,17 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"46\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"15\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "eq_outputs": {
           "0": {
-            "raw": "APwueyJiYXNlX3NoYSI6IjA1ZmVkYzNiNTE2YTkwYzFkZDQ5ZjM0OGRiNDVjODY0YTE5ZDExNDgiLCJib2R5X3NoYTI1NiI6Ijg5NzdjNmJjMjVlNTRiNjFlMzVjNzBkZmZjOWMwMWJiNWY3YmEwYjEyOGIzNDdiYzkzN2IxOTk4NTI2OTA4MzgiLCJjcml0ZXJpYV9oYXNoIjoiYzNiMjNiMmVhYjU1YmQzZTJlMjNkZTMyZjM1NWYyMGM3NGQwMWIwZTlhNGU5Mzk1ZGJmZmY2Yjg3YzBkZmQxNSIsImNyaXRlcmlvbl9yZXN1bHRzIjpbIllFUyIsIllFUyIsIk5PIl0sImRpZmZfc2hhMjU2IjoiZWU2NmRmMWVmZmQwNTQ1NWE0ZjNmZDc5NmEyZTA5N2E4OWQ2MDZiZjAxNWQ3ODE3YWU1ZGFiOGE2OWU2ODhkNCIsImZhY3RzIjp7ImFkZGVkX2xpbmVzIjo2LCJjaGFuZ2VkX2ZpbGVzIjpbInNyYy9zbHVnLnB5IiwidGVzdHMvdGVzdF9zbHVnLnB5Il0sImRlbGV0ZWRfZmlsZXMiOltdLCJkZWxldGVkX2xpbmVzIjowLCJpc190cnVuY2F0ZWQiOmZhbHNlLCJ0ZXN0X2ZpbGVzX2RlbGV0ZWQiOltdLCJ0ZXN0X2ZpbGVzX3RvdWNoZWQiOlsidGVzdHMvdGVzdF9zbHVnLnB5Il19LCJnYXRlIjoiIiwiZ2F0ZV9yZWFzb24iOiIiLCJoZWFkX3NoYSI6IjY1NjgyYjI0M2NhMmYzODAzZjJhZjA1OGFmZTVmMzYyZTk0NGI4MjkiLCJtZXRhZGF0YSI6eyJhdXRob3JfbG9naW4iOiIiLCJjb21taXRzIjoxLCJkcmFmdCI6ZmFsc2UsIm1lcmdlZCI6ZmFsc2UsInN0YXRlIjoib3BlbiJ9LCJwYXlvdXRfcGN0Ijo3NSwidmVyZGljdCI6IlJFTEVBU0VfNzUifQ==",
+            "raw": "AJwveyJiYXNlX3NoYSI6IjA1ZmVkYzNiNTE2YTkwYzFkZDQ5ZjM0OGRiNDVjODY0YTE5ZDExNDgiLCJib2R5X3NoYTI1NiI6Ijg5NzdjNmJjMjVlNTRiNjFlMzVjNzBkZmZjOWMwMWJiNWY3YmEwYjEyOGIzNDdiYzkzN2IxOTk4NTI2OTA4MzgiLCJjcml0ZXJpYV9oYXNoIjoiYzNiMjNiMmVhYjU1YmQzZTJlMjNkZTMyZjM1NWYyMGM3NGQwMWIwZTlhNGU5Mzk1ZGJmZmY2Yjg3YzBkZmQxNSIsImNyaXRlcmlvbl9yZXN1bHRzIjpbIllFUyIsIlBBUlRJQUwiLCJOTyJdLCJkaWZmX3NoYTI1NiI6ImVlNjZkZjFlZmZkMDU0NTVhNGYzZmQ3OTZhMmUwOTdhODlkNjA2YmYwMTVkNzgxN2FlNWRhYjhhNjllNjg4ZDQiLCJmYWN0cyI6eyJhZGRlZF9saW5lcyI6NiwiY2hhbmdlZF9maWxlcyI6WyJzcmMvc2x1Zy5weSIsInRlc3RzL3Rlc3Rfc2x1Zy5weSJdLCJkZWxldGVkX2ZpbGVzIjpbXSwiZGVsZXRlZF9saW5lcyI6MCwiaXNfdHJ1bmNhdGVkIjpmYWxzZSwidGVzdF9maWxlc19kZWxldGVkIjpbXSwidGVzdF9maWxlc190b3VjaGVkIjpbInRlc3RzL3Rlc3Rfc2x1Zy5weSJdfSwiZ2F0ZSI6IiIsImdhdGVfcmVhc29uIjoiIiwiaGVhZF9zaGEiOiI2NTY4MmIyNDNjYTJmMzgwM2YyYWYwNThhZmU1ZjM2MmU5NDRiODI5IiwibWV0YWRhdGEiOnsiYXV0aG9yX2xvZ2luIjoiIiwiY29tbWl0cyI6MSwiZHJhZnQiOmZhbHNlLCJtZXJnZWQiOmZhbHNlLCJzdGF0ZSI6Im9wZW4ifSwicGF5b3V0X3BjdCI6NTAsInZlcmRpY3QiOiJSRUxFQVNFXzUwIn0=",
             "status": "return",
             "payload": {
               "raw": [
-                252,
-                46,
+                156,
+                47,
                 123,
                 34,
                 98,
@@ -432,9 +432,13 @@
                 34,
                 44,
                 34,
-                89,
-                69,
-                83,
+                80,
+                65,
+                82,
+                84,
+                73,
+                65,
+                76,
                 34,
                 44,
                 34,
@@ -910,8 +914,8 @@
                 116,
                 34,
                 58,
-                55,
                 53,
+                48,
                 44,
                 34,
                 118,
@@ -932,20 +936,20 @@
                 83,
                 69,
                 95,
-                55,
                 53,
+                48,
                 34,
                 125
               ],
-              "readable": "\"{\\\"base_sha\\\":\\\"05fedc3b516a90c1dd49f348db45c864a19d1148\\\",\\\"body_sha256\\\":\\\"8977c6bc25e54b61e35c70dffc9c01bb5f7ba0b128b347bc937b199852690838\\\",\\\"criteria_hash\\\":\\\"c3b23b2eab55bd3e2e23de32f355f20c74d01b0e9a4e9395dbfff6b87c0dfd15\\\",\\\"criterion_results\\\":[\\\"YES\\\",\\\"YES\\\",\\\"NO\\\"],\\\"diff_sha256\\\":\\\"ee66df1effd05455a4f3fd796a2e097a89d606bf015d7817ae5dab8a69e688d4\\\",\\\"facts\\\":{\\\"added_lines\\\":6,\\\"changed_files\\\":[\\\"src/slug.py\\\",\\\"tests/test_slug.py\\\"],\\\"deleted_files\\\":[],\\\"deleted_lines\\\":0,\\\"is_truncated\\\":false,\\\"test_files_deleted\\\":[],\\\"test_files_touched\\\":[\\\"tests/test_slug.py\\\"]},\\\"gate\\\":\\\"\\\",\\\"gate_reason\\\":\\\"\\\",\\\"head_sha\\\":\\\"65682b243ca2f3803f2af058afe5f362e944b829\\\",\\\"metadata\\\":{\\\"author_login\\\":\\\"\\\",\\\"commits\\\":1,\\\"draft\\\":false,\\\"merged\\\":false,\\\"state\\\":\\\"open\\\"},\\\"payout_pct\\\":75,\\\"verdict\\\":\\\"RELEASE_75\\\"}\""
+              "readable": "\"{\\\"base_sha\\\":\\\"05fedc3b516a90c1dd49f348db45c864a19d1148\\\",\\\"body_sha256\\\":\\\"8977c6bc25e54b61e35c70dffc9c01bb5f7ba0b128b347bc937b199852690838\\\",\\\"criteria_hash\\\":\\\"c3b23b2eab55bd3e2e23de32f355f20c74d01b0e9a4e9395dbfff6b87c0dfd15\\\",\\\"criterion_results\\\":[\\\"YES\\\",\\\"PARTIAL\\\",\\\"NO\\\"],\\\"diff_sha256\\\":\\\"ee66df1effd05455a4f3fd796a2e097a89d606bf015d7817ae5dab8a69e688d4\\\",\\\"facts\\\":{\\\"added_lines\\\":6,\\\"changed_files\\\":[\\\"src/slug.py\\\",\\\"tests/test_slug.py\\\"],\\\"deleted_files\\\":[],\\\"deleted_lines\\\":0,\\\"is_truncated\\\":false,\\\"test_files_deleted\\\":[],\\\"test_files_touched\\\":[\\\"tests/test_slug.py\\\"]},\\\"gate\\\":\\\"\\\",\\\"gate_reason\\\":\\\"\\\",\\\"head_sha\\\":\\\"65682b243ca2f3803f2af058afe5f362e944b829\\\",\\\"metadata\\\":{\\\"author_login\\\":\\\"\\\",\\\"commits\\\":1,\\\"draft\\\":false,\\\"merged\\\":false,\\\"state\\\":\\\"open\\\"},\\\"payout_pct\\\":50,\\\"verdict\\\":\\\"RELEASE_50\\\"}\""
             }
           }
         },
         "node_config": {
           "stake": 100,
-          "address": "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc",
+          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
           "primary_model": {
-            "model": "policy:prd-grok",
+            "model": "policy:prd-sonnet",
             "config": {
               "policy_ir": [
                 "policy",
@@ -971,7 +975,7 @@
                     "or",
                     [
                       "family_eq",
-                      "grok-4.3"
+                      "claude-sonnet-4-6"
                     ],
                     [
                       "family_eq",
@@ -992,7 +996,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "grok-4.3"
+                        "claude-sonnet-4-6"
                       ],
                       [
                         "lit",
@@ -1103,19 +1107,19 @@
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
             },
-            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
           },
           "secondary_model": {
-            "model": "anthropic/claude-sonnet-4.6",
+            "model": "openai/gpt-5.4",
             "config": {
               "models": [
-                "anthropic/claude-sonnet-4.6",
                 "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
                 "google/gemini-3-flash-preview"
               ]
             },
             "plugin": "openai-compatible",
-            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
             "provider": "openrouter",
             "plugin_config": {
               "api_url": "https://openrouter.ai/api",
@@ -1133,256 +1137,448 @@
         "execution_stats": {
           "llm": {
             "tokens": {
-              "node-0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc/policy:prd-grok": {
-                "input": 411,
-                "total": 767,
-                "output": 356
+              "node-0x336458747913FE397be82c4F0926ACeB3ab13618/policy:prd-sonnet": {
+                "input": 481,
+                "total": 501,
+                "output": 20
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 760,
+            "STORAGE_READ": 664,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 25311.509080356,
-          "host_loop_enter_wait_ms": 5,
+          "host_loop_entered_s": 882.05636778,
+          "host_loop_enter_wait_ms": 4,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 181,
+            "STORAGE_READ": 71,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 181,
+          "host_total_handling_time_ms": 71,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 3
+            "duration_ms": 2
           },
-          "host_first_method_received_s": 25311.509198587,
+          "host_first_method_received_s": 882.056449272,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 10269,
+        "processing_time": 3595,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "0dc1f8b6b542bc731bc2350280f3c9da975bb715dd32930deddfcf4eb8d521e3",
+        "contract_state_hash": "fe0d0fd7640b8ad6ed765278db881d4b4e8a2b77bb8a78ad2334d6b4e4e4e371",
         "pending_transactions": []
       },
       {
         "mode": "validator",
-        "vote": "idle",
+        "vote": "agree",
         "result": {
-          "raw": "AmlkbGU=",
-          "status": "contract_error",
-          "payload": "idle"
+          "raw": "ABQxNQ==",
+          "status": "return",
+          "payload": {
+            "raw": [
+              20,
+              49,
+              53
+            ],
+            "readable": "\"15\""
+          }
         },
-        "calldata": "",
+        "calldata": {
+          "base64": "FgRhcmdzHRQxNewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMMQCNjU2ODJiMjQzY2EyZjM4MDNmMmFmMDU4YWZlNWYzNjJlOTQ0YjgyOQZtZXRob2Rcc3VibWl0X3dvcms=",
+          "raw": [
+            22,
+            4,
+            97,
+            114,
+            103,
+            115,
+            29,
+            20,
+            49,
+            53,
+            236,
+            3,
+            104,
+            116,
+            116,
+            112,
+            115,
+            58,
+            47,
+            47,
+            103,
+            105,
+            116,
+            104,
+            117,
+            98,
+            46,
+            99,
+            111,
+            109,
+            47,
+            104,
+            121,
+            112,
+            101,
+            114,
+            99,
+            121,
+            98,
+            101,
+            114,
+            115,
+            57,
+            57,
+            47,
+            115,
+            104,
+            105,
+            112,
+            45,
+            101,
+            115,
+            99,
+            114,
+            111,
+            119,
+            45,
+            102,
+            105,
+            120,
+            116,
+            117,
+            114,
+            101,
+            115,
+            47,
+            112,
+            117,
+            108,
+            108,
+            47,
+            50,
+            48,
+            196,
+            2,
+            54,
+            53,
+            54,
+            56,
+            50,
+            98,
+            50,
+            52,
+            51,
+            99,
+            97,
+            50,
+            102,
+            51,
+            56,
+            48,
+            51,
+            102,
+            50,
+            97,
+            102,
+            48,
+            53,
+            56,
+            97,
+            102,
+            101,
+            53,
+            102,
+            51,
+            54,
+            50,
+            101,
+            57,
+            52,
+            52,
+            98,
+            56,
+            50,
+            57,
+            6,
+            109,
+            101,
+            116,
+            104,
+            111,
+            100,
+            92,
+            115,
+            117,
+            98,
+            109,
+            105,
+            116,
+            95,
+            119,
+            111,
+            114,
+            107
+          ],
+          "readable": "{\"args\":[\"15\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/20\",\"65682b243ca2f3803f2af058afe5f362e944b829\",]\"method\":\"submit_work\"}"
+        },
         "gas_used": 0,
         "node_config": {
-          "id": 5732,
-          "model": "policy:prd-grok",
           "stake": 100,
-          "config": {
-            "policy_ir": [
-              "policy",
-              [
-                "and",
+          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
+          "primary_model": {
+            "model": "policy:prd-sonnet",
+            "config": {
+              "policy_ir": [
+                "policy",
                 [
-                  "meets_req"
-                ],
-                [
-                  "not",
+                  "and",
                   [
-                    "is",
-                    "disabled"
-                  ]
-                ],
-                [
-                  "cmp",
-                  "success_rate",
-                  "ge",
-                  0.2
-                ],
-                [
-                  "or",
-                  [
-                    "family_eq",
-                    "grok-4.3"
+                    "meets_req"
                   ],
                   [
-                    "family_eq",
-                    "gpt-5.4"
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
                   ],
                   [
-                    "family_eq",
-                    "gemini-3-flash-preview"
-                  ]
-                ]
-              ],
-              [
-                "add",
-                [
-                  "scale",
-                  100,
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
                   [
-                    "gate",
+                    "or",
                     [
                       "family_eq",
-                      "grok-4.3"
+                      "claude-sonnet-4-6"
                     ],
-                    [
-                      "lit",
-                      1
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  10,
-                  [
-                    "gate",
                     [
                       "family_eq",
                       "gpt-5.4"
                     ],
                     [
-                      "lit",
-                      1
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  1,
-                  [
-                    "gate",
-                    [
                       "family_eq",
                       "gemini-3-flash-preview"
-                    ],
-                    [
-                      "lit",
-                      1
                     ]
                   ]
                 ],
                 [
-                  "scale",
-                  0.25,
+                  "add",
                   [
-                    "neg",
+                    "scale",
+                    100,
                     [
-                      "normalize",
+                      "gate",
                       [
-                        "field",
-                        "price_in"
+                        "family_eq",
+                        "claude-sonnet-4-6"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
                       ]
                     ]
                   ]
                 ],
                 [
-                  "scale",
-                  0.45,
-                  [
-                    "neg",
-                    [
-                      "normalize",
-                      [
-                        "field",
-                        "price_out"
-                      ]
-                    ]
-                  ]
+                  "argmax"
                 ],
                 [
-                  "scale",
-                  0.2,
-                  [
-                    "field",
-                    "success_rate"
-                  ]
+                  "id"
                 ],
                 [
-                  "scale",
-                  0.1,
-                  [
-                    "neg",
-                    [
-                      "normalize",
-                      [
-                        "field",
-                        "latency_ms"
-                      ]
-                    ]
-                  ]
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
                 ]
               ],
-              [
-                "argmax"
-              ],
-              [
-                "id"
-              ],
-              [
-                "always",
-                {
-                  "action": "next_candidate"
-                }
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
               ]
-            ],
-            "timeout_ms": 22000,
-            "first_token_timeout_ms": 7000
-          },
-          "plugin": "openai-compatible",
-          "address": "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc",
-          "provider": "llm-router",
-          "plugin_config": {
-            "api_url": "https://router.ygr.ai",
-            "api_key_env_var": "LLM_ROUTER_API_KEY"
-          },
-          "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+            },
+            "plugin": "openai-compatible",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
         },
         "genvm_result": {
-          "stderr": "Validator execution cancelled after quorum",
+          "stderr": "",
           "stdout": "",
-          "raw_error": {
-            "fatal": false,
-            "causes": [
-              "VALIDATOR_QUORUM_REACHED"
-            ]
-          },
-          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
         },
-        "execution_stats": null,
+        "execution_stats": {
+          "llm": {
+            "tokens": {
+              "node-0x336458747913FE397be82c4F0926ACeB3ab13618/policy:prd-sonnet": {
+                "input": 481,
+                "total": 501,
+                "output": 20
+              }
+            }
+          },
+          "call_counts": {
+            "CONSUME_FUEL": 1,
+            "STORAGE_READ": 664,
+            "NOTIFY_FINISHED": 1,
+            "REMAINING_FUEL_AS_GEN": 1
+          },
+          "host_first_method": "STORAGE_READ",
+          "delete_genvm_status": 200,
+          "host_loop_entered_s": 889.910111161,
+          "host_loop_enter_wait_ms": 3040,
+          "host_time_per_method_ms": {
+            "CONSUME_FUEL": 0,
+            "STORAGE_READ": 74,
+            "REMAINING_FUEL_AS_GEN": 0
+          },
+          "host_total_handling_time_ms": 74,
+          "manager_run_attempt_success": {
+            "attempt": 0,
+            "duration_ms": 3018
+          },
+          "host_first_method_received_s": 889.91046441,
+          "host_accept_to_first_method_ms": 0
+        },
         "nondet_disagree": null,
-        "processing_time": 0,
-        "execution_result": "ERROR",
-        "contract_state_hash": null,
+        "processing_time": 9606,
+        "execution_result": "SUCCESS",
+        "contract_state_hash": "fe0d0fd7640b8ad6ed765278db881d4b4e8a2b77bb8a78ad2334d6b4e4e4e371",
         "pending_transactions": []
       }
     ]
   },
   "on_chain_submission": {
     "attempt_number": 1,
-    "bounty_id": "46",
+    "bounty_id": "15",
     "criterion_results": [
       "YES",
-      "YES",
+      "PARTIAL",
       "NO"
     ],
     "dev": "0x6325b360db455435bf5e81d0ae18dc3b249f226c",
     "dev_attempt": 1,
     "gate": "",
     "head_sha": "65682b243ca2f3803f2af058afe5f362e944b829",
-    "id": "16",
+    "id": "15",
     "packet": {
       "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
       "body_sha256": "8977c6bc25e54b61e35c70dffc9c01bb5f7ba0b128b347bc937b199852690838",
       "criteria_hash": "c3b23b2eab55bd3e2e23de32f355f20c74d01b0e9a4e9395dbfff6b87c0dfd15",
       "criterion_results": [
         "YES",
-        "YES",
+        "PARTIAL",
         "NO"
       ],
       "diff_sha256": "ee66df1effd05455a4f3fd796a2e097a89d606bf015d7817ae5dab8a69e688d4",
@@ -1410,13 +1606,13 @@
         "merged": false,
         "state": "open"
       },
-      "payout_pct": 75,
-      "verdict": "RELEASE_75"
+      "payout_pct": 50,
+      "verdict": "RELEASE_50"
     },
-    "packet_sha256": "69574543ae8ddf4bdb82c850533a5a02d7ec5f413cf70146ff6a1e4b81a7f94e",
-    "payout_pct": 75,
+    "packet_sha256": "7ac66dbce32f877bbf14bbcc148a509039b07ed6d6fddbc7e30873975c53a299",
+    "payout_pct": 50,
     "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/20",
-    "verdict": "RELEASE_75"
+    "verdict": "RELEASE_50"
   },
-  "packet_sha256": "69574543ae8ddf4bdb82c850533a5a02d7ec5f413cf70146ff6a1e4b81a7f94e"
+  "packet_sha256": "7ac66dbce32f877bbf14bbcc148a509039b07ed6d6fddbc7e30873975c53a299"
 }

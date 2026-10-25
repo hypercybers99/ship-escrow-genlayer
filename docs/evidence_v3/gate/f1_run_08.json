@@ -1,23 +1,23 @@
 {
   "fixture_id": "F1",
   "run_index": 8,
-  "bounty_id": "39",
-  "submission_id": "9",
+  "bounty_id": "8",
+  "submission_id": "8",
   "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/17",
   "head_sha": "571f1d6a6a957b51a0a1eec4a3ad147bc7ff9396",
-  "create_tx_hash": "0x7629224aab4665415aad7215196697deedb38372d45ff3ba3e0541aa758a9acd",
+  "create_tx_hash": "0x9cd278c0679aaf6a1cbf0650dafb05ed75c7d20992c33c622ce67272925a5b5f",
   "create_receipt_status": "ACCEPTED",
-  "submit_tx_hash": "0x7c0f3466791e1d4a757f86b18e0bd782d728b646ab4418d5d7bce5e3b949d69a",
-  "created_at": "2026-10-25T09:39:35.426409+00:00",
+  "submit_tx_hash": "0x90bcd2ac13a854b4327e8905b1c9275fc65cd8beafdcb331d8a4d934981d18de",
+  "created_at": "2026-10-25T10:39:10.420186+00:00",
   "submit_receipt": {
     "status_name": "ACCEPTED",
     "result_name": "MAJORITY_AGREE",
     "execution_result": "SUCCESS",
     "votes": {
-      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
-      "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
-      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+      "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
       "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+      "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
       "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
     },
     "leader_receipt": [
@@ -25,18 +25,18 @@
         "mode": "leader",
         "vote": null,
         "result": {
-          "raw": "AAw5",
+          "raw": "AAw4",
           "status": "return",
           "payload": {
             "raw": [
               12,
-              57
+              56
             ],
-            "readable": "\"9\""
+            "readable": "\"8\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQzOewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8xN8QCNTcxZjFkNmE2YTk1N2I1MWEwYTFlZWM0YTNhZDE0N2JjN2ZmOTM5NgZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHQw47ANodHRwczovL2dpdGh1Yi5jb20vaHlwZXJjeWJlcnM5OS9zaGlwLWVzY3Jvdy1maXh0dXJlcy9wdWxsLzE3xAI1NzFmMWQ2YTZhOTU3YjUxYTBhMWVlYzRhM2FkMTQ3YmM3ZmY5Mzk2Bm1ldGhvZFxzdWJtaXRfd29yaw==",
           "raw": [
             22,
             4,
@@ -45,9 +45,8 @@
             103,
             115,
             29,
-            20,
-            51,
-            57,
+            12,
+            56,
             236,
             3,
             104,
@@ -173,7 +172,7 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"39\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/17\",\"571f1d6a6a957b51a0a1eec4a3ad147bc7ff9396\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"8\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/17\",\"571f1d6a6a957b51a0a1eec4a3ad147bc7ff9396\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "eq_outputs": {
@@ -1118,19 +1117,19 @@
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
             },
-            "fallback_validator": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434"
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
           },
           "secondary_model": {
-            "model": "google/gemini-3-flash-preview",
+            "model": "anthropic/claude-sonnet-4.6",
             "config": {
               "models": [
-                "google/gemini-3-flash-preview",
+                "anthropic/claude-sonnet-4.6",
                 "openai/gpt-5.4",
-                "anthropic/claude-sonnet-4.6"
+                "google/gemini-3-flash-preview"
               ]
             },
             "plugin": "openai-compatible",
-            "address": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
             "provider": "openrouter",
             "plugin_config": {
               "api_url": "https://openrouter.ai/api",
@@ -1150,38 +1149,38 @@
             "tokens": {
               "node-0xB4EE99165ffe987E64B7b72e45a753309c501eef/policy:prd-deepseek": {
                 "input": 1023,
-                "total": 1043,
-                "output": 20
+                "total": 1039,
+                "output": 16
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 592,
+            "STORAGE_READ": 488,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 10009.654793037,
-          "host_loop_enter_wait_ms": 3,
+          "host_loop_entered_s": 1127.785209059,
+          "host_loop_enter_wait_ms": 6,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 64,
+            "STORAGE_READ": 110,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 64,
+          "host_total_handling_time_ms": 110,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 2
+            "duration_ms": 3
           },
-          "host_first_method_received_s": 10009.654872519,
+          "host_first_method_received_s": 1127.785345231,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 3116,
+        "processing_time": 4103,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "8f7b308f3fc85395b3556d59423a725558685d7d42c85c546df3230e51785f53",
+        "contract_state_hash": "0645c99fb395cb9807b2a854607a0f7fead05d8920553f0dcac9744a34ef7d16",
         "pending_transactions": []
       },
       {
@@ -1356,7 +1355,7 @@
             "api_url": "https://router.ygr.ai",
             "api_key_env_var": "LLM_ROUTER_API_KEY"
           },
-          "fallback_validator": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434"
+          "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
         },
         "genvm_result": {
           "stderr": "Validator execution cancelled after quorum",
@@ -1380,7 +1379,7 @@
   },
   "on_chain_submission": {
     "attempt_number": 1,
-    "bounty_id": "39",
+    "bounty_id": "8",
     "criterion_results": [
       "YES",
       "YES",
@@ -1390,7 +1389,7 @@
     "dev_attempt": 1,
     "gate": "",
     "head_sha": "571f1d6a6a957b51a0a1eec4a3ad147bc7ff9396",
-    "id": "9",
+    "id": "8",
     "packet": {
       "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
       "body_sha256": "9a1cdd741097efa3bb80ed85357d620c5bc596a5d40b520fd5f179bedb3a60d6",

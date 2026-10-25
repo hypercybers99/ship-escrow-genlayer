@@ -1,43 +1,43 @@
 {
   "fixture_id": "F5",
   "run_index": 8,
-  "bounty_id": "59",
-  "submission_id": "29",
+  "bounty_id": "28",
+  "submission_id": "28",
   "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/21",
   "head_sha": "72899aa0d45b3ce6cb013d7c0277e753348e2a9f",
-  "create_tx_hash": "0xc0875ed6c99fbb8445ef724bf49f8f66025e60872e24c70b339e23352c2b0a36",
+  "create_tx_hash": "0xa97bea129616f7cc9450a9d54220da29a5a7aa5f092b578c1e58bfc23ad29ea3",
   "create_receipt_status": "ACCEPTED",
-  "submit_tx_hash": "0x95b1f2ff94f23a71e928bdf7852e9a2ddbea1f25cabdf9d60b155be5c55d3aec",
-  "created_at": "2026-10-25T09:58:53.266395+00:00",
+  "submit_tx_hash": "0x194ffa7f2c335d02416e3392bd75072c5e5cb4ef89df0be8c0cbc7b9cf83589c",
+  "created_at": "2026-10-25T10:58:06.888822+00:00",
   "submit_receipt": {
     "status_name": "ACCEPTED",
     "result_name": "MAJORITY_AGREE",
     "execution_result": "SUCCESS",
     "votes": {
-      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
-      "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
-      "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "disagree",
-      "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
-      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+      "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "disagree"
     },
     "leader_receipt": [
       {
         "mode": "leader",
         "vote": null,
         "result": {
-          "raw": "ABQyOQ==",
+          "raw": "ABQyOA==",
           "status": "return",
           "payload": {
             "raw": [
               20,
               50,
-              57
+              56
             ],
-            "readable": "\"29\""
+            "readable": "\"28\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ1OewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQyOOwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -47,8 +47,8 @@
             115,
             29,
             20,
-            53,
-            57,
+            50,
+            56,
             236,
             3,
             104,
@@ -174,7 +174,7 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"59\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"28\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "eq_outputs": {
@@ -885,25 +885,8 @@
         },
         "node_config": {
           "stake": 100,
-          "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
+          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
           "primary_model": {
-            "model": "openai/gpt-5.4",
-            "config": {
-              "models": [
-                "openai/gpt-5.4",
-                "anthropic/claude-sonnet-4.6",
-                "google/gemini-3-flash-preview"
-              ]
-            },
-            "plugin": "openai-compatible",
-            "provider": "openrouter",
-            "plugin_config": {
-              "api_url": "https://openrouter.ai/api",
-              "api_key_env_var": "OPENROUTERAPIKEY"
-            },
-            "fallback_validator": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8"
-          },
-          "secondary_model": {
             "model": "policy:prd-sonnet",
             "config": {
               "policy_ir": [
@@ -1057,11 +1040,28 @@
               "first_token_timeout_ms": 7000
             },
             "plugin": "openai-compatible",
-            "address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8",
             "provider": "llm-router",
             "plugin_config": {
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
             }
           }
         },
@@ -1075,59 +1075,59 @@
         "execution_stats": {
           "llm": {
             "tokens": {
-              "node-0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4/openai/gpt-5.4": {
-                "input": 253,
-                "total": 263,
+              "node-0x336458747913FE397be82c4F0926ACeB3ab13618/policy:prd-sonnet": {
+                "input": 299,
+                "total": 309,
                 "output": 10
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 928,
+            "STORAGE_READ": 634,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 890.305285454,
-          "host_loop_enter_wait_ms": 54,
+          "host_loop_entered_s": 11219.618396537,
+          "host_loop_enter_wait_ms": 5,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 94,
+            "STORAGE_READ": 156,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 94,
+          "host_total_handling_time_ms": 156,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 53
+            "duration_ms": 3
           },
-          "host_first_method_received_s": 890.305354436,
+          "host_first_method_received_s": 11219.61854935,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 2505,
+        "processing_time": 4767,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "c6ec98faef46376ccf414f81cc7b29be6085ab7509c1cdbbbe3a2c344db8fb94",
+        "contract_state_hash": "9d5ac7673bf4d5d2ee4eec2a2e4a260649e3fe9c76dfd4526814c49b82af7f75",
         "pending_transactions": []
       },
       {
         "mode": "validator",
         "vote": "agree",
         "result": {
-          "raw": "ABQyOQ==",
+          "raw": "ABQyOA==",
           "status": "return",
           "payload": {
             "raw": [
               20,
               50,
-              57
+              56
             ],
-            "readable": "\"29\""
+            "readable": "\"28\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ1OewDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQyOOwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -1137,8 +1137,8 @@
             115,
             29,
             20,
-            53,
-            57,
+            50,
+            56,
             236,
             3,
             104,
@@ -1264,30 +1264,13 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"59\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"28\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "node_config": {
           "stake": 100,
-          "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
+          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
           "primary_model": {
-            "model": "openai/gpt-5.4",
-            "config": {
-              "models": [
-                "openai/gpt-5.4",
-                "anthropic/claude-sonnet-4.6",
-                "google/gemini-3-flash-preview"
-              ]
-            },
-            "plugin": "openai-compatible",
-            "provider": "openrouter",
-            "plugin_config": {
-              "api_url": "https://openrouter.ai/api",
-              "api_key_env_var": "OPENROUTERAPIKEY"
-            },
-            "fallback_validator": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8"
-          },
-          "secondary_model": {
             "model": "policy:prd-sonnet",
             "config": {
               "policy_ir": [
@@ -1441,11 +1424,28 @@
               "first_token_timeout_ms": 7000
             },
             "plugin": "openai-compatible",
-            "address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8",
             "provider": "llm-router",
             "plugin_config": {
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
             }
           }
         },
@@ -1459,47 +1459,47 @@
         "execution_stats": {
           "llm": {
             "tokens": {
-              "node-0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4/openai/gpt-5.4": {
-                "input": 253,
-                "total": 263,
+              "node-0x336458747913FE397be82c4F0926ACeB3ab13618/policy:prd-sonnet": {
+                "input": 299,
+                "total": 309,
                 "output": 10
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 928,
+            "STORAGE_READ": 634,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 897.01717346,
-          "host_loop_enter_wait_ms": 3535,
+          "host_loop_entered_s": 11224.596428604,
+          "host_loop_enter_wait_ms": 12,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 99,
+            "STORAGE_READ": 1037,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 99,
+          "host_total_handling_time_ms": 1037,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 3444
+            "duration_ms": 8
           },
-          "host_first_method_received_s": 897.017465887,
-          "host_accept_to_first_method_ms": 0
+          "host_first_method_received_s": 11224.597589712,
+          "host_accept_to_first_method_ms": 1
         },
         "nondet_disagree": null,
-        "processing_time": 7203,
+        "processing_time": 9349,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "c6ec98faef46376ccf414f81cc7b29be6085ab7509c1cdbbbe3a2c344db8fb94",
+        "contract_state_hash": "9d5ac7673bf4d5d2ee4eec2a2e4a260649e3fe9c76dfd4526814c49b82af7f75",
         "pending_transactions": []
       }
     ]
   },
   "on_chain_submission": {
     "attempt_number": 1,
-    "bounty_id": "59",
+    "bounty_id": "28",
     "criterion_results": [
       "NO"
     ],
@@ -1507,7 +1507,7 @@
     "dev_attempt": 1,
     "gate": "",
     "head_sha": "72899aa0d45b3ce6cb013d7c0277e753348e2a9f",
-    "id": "29",
+    "id": "28",
     "packet": {
       "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
       "body_sha256": "bc4ad13fc7eae2bada0a6e204c47e6c4fd3fc3ff9565d848f7e2c87609e99ca8",

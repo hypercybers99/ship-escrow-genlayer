@@ -127,7 +127,8 @@ class TestLayer3V3MockedContractPipelines(unittest.TestCase):
         sub_id = self.escrow.submit_work(b_id, "https://github.com/hypercybers99/ship-escrow-fixtures/pull/2", head)
 
         bounty = json.loads(self.escrow.get_bounty(b_id))
-        self.assertEqual(bounty["status"], "REFUNDED")
+        self.assertEqual(bounty["status"], "OPEN")
+        self.assertEqual(bounty["attempts"], "1")
 
         sub = json.loads(self.escrow.get_submission(sub_id))
         self.assertEqual(sub["verdict"], "REFUND")
@@ -135,8 +136,8 @@ class TestLayer3V3MockedContractPipelines(unittest.TestCase):
 
         # Bond forfeited to creator: dev balance was 1000 - 50 bond = 950
         self.assertEqual(self.escrow.get_balance(self.dev), "950")
-        # Creator received 100 refund + 50 forfeited bond: was (1000-100)=900 + 150 = 1050
-        self.assertEqual(self.escrow.get_balance(self.creator), "1050")
+        # Creator received 50 forfeited bond (bounty reward remains in escrow): was (1000-100)=900 + 50 = 950
+        self.assertEqual(self.escrow.get_balance(self.creator), "950")
 
     def test_pipeline_f3_test_deleted_review(self):
         head = "aa9a2af9ccb0fa6d13b030a8f176c5235d15a982"

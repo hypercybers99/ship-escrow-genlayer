@@ -1,43 +1,43 @@
 {
   "fixture_id": "F5",
   "run_index": 3,
-  "bounty_id": "54",
-  "submission_id": "24",
+  "bounty_id": "23",
+  "submission_id": "23",
   "pr_url": "https://github.com/hypercybers99/ship-escrow-fixtures/pull/21",
   "head_sha": "72899aa0d45b3ce6cb013d7c0277e753348e2a9f",
-  "create_tx_hash": "0x1ffc07f2598a8aea81ab0e7d49c9db4930af1b761cedc9c9e35a557d3c1ab4a7",
+  "create_tx_hash": "0x65da5f45414cc8a9a17b82974f661037be2426eef37b39c3b6b01d083c182ee0",
   "create_receipt_status": "ACCEPTED",
-  "submit_tx_hash": "0x06e6d18a3b21dc73926d076b13501a8ac3383bc929a4a8aedf25bd20b746d581",
-  "created_at": "2026-10-25T09:53:12.908787+00:00",
+  "submit_tx_hash": "0xbc5ebd42c8e50f05a522faa127891bff35b9d0b3930b3eb0660ae6391a55139d",
+  "created_at": "2026-10-25T10:53:40.848788+00:00",
   "submit_receipt": {
     "status_name": "ACCEPTED",
     "result_name": "MAJORITY_AGREE",
     "execution_result": "SUCCESS",
     "votes": {
-      "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
-      "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
-      "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
-      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "disagree",
-      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+      "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "disagree"
     },
     "leader_receipt": [
       {
         "mode": "leader",
         "vote": null,
         "result": {
-          "raw": "ABQyNA==",
+          "raw": "ABQyMw==",
           "status": "return",
           "payload": {
             "raw": [
               20,
               50,
-              52
+              51
             ],
-            "readable": "\"24\""
+            "readable": "\"23\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ1NOwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQyM+wDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -47,8 +47,8 @@
             115,
             29,
             20,
-            53,
-            52,
+            50,
+            51,
             236,
             3,
             104,
@@ -174,7 +174,7 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"54\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"23\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "eq_outputs": {
@@ -885,9 +885,9 @@
         },
         "node_config": {
           "stake": 100,
-          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
+          "address": "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907",
           "primary_model": {
-            "model": "policy:prd-sonnet",
+            "model": "policy:prd-gemma",
             "config": {
               "policy_ir": [
                 "policy",
@@ -913,15 +913,15 @@
                     "or",
                     [
                       "family_eq",
-                      "claude-sonnet-4-6"
+                      "gemma-4-31b-it"
+                    ],
+                    [
+                      "family_eq",
+                      "gemma-4-26b-a4b-it"
                     ],
                     [
                       "family_eq",
                       "gpt-5.4"
-                    ],
-                    [
-                      "family_eq",
-                      "gemini-3-flash-preview"
                     ]
                   ]
                 ],
@@ -934,7 +934,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "claude-sonnet-4-6"
+                        "gemma-4-31b-it"
                       ],
                       [
                         "lit",
@@ -949,7 +949,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gpt-5.4"
+                        "gemma-4-26b-a4b-it"
                       ],
                       [
                         "lit",
@@ -964,7 +964,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gemini-3-flash-preview"
+                        "gpt-5.4"
                       ],
                       [
                         "lit",
@@ -1045,7 +1045,7 @@
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
             },
-            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+            "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
           },
           "secondary_model": {
             "model": "openai/gpt-5.4",
@@ -1057,7 +1057,7 @@
               ]
             },
             "plugin": "openai-compatible",
-            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
             "provider": "openrouter",
             "plugin_config": {
               "api_url": "https://openrouter.ai/api",
@@ -1075,59 +1075,59 @@
         "execution_stats": {
           "llm": {
             "tokens": {
-              "node-0x336458747913FE397be82c4F0926ACeB3ab13618/policy:prd-sonnet": {
-                "input": 322,
-                "total": 329,
-                "output": 7
+              "node-0x5847AF34a4e5bA96490f8c883598f68EC9B0B907/policy:prd-gemma": {
+                "input": 289,
+                "total": 312,
+                "output": 23
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 927,
+            "STORAGE_READ": 594,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 3228.62012952,
+          "host_loop_entered_s": 3072.557041742,
           "host_loop_enter_wait_ms": 5,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 209,
+            "STORAGE_READ": 160,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 209,
+          "host_total_handling_time_ms": 160,
           "manager_run_attempt_success": {
             "attempt": 0,
             "duration_ms": 3
           },
-          "host_first_method_received_s": 3228.620264302,
+          "host_first_method_received_s": 3072.557192124,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 4436,
+        "processing_time": 3826,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "91d8d4f28e7a24771f887614ef9ad44c370e47da2379dbcce70c43e189948da0",
+        "contract_state_hash": "14c3747ac93c42f7a282db6cd7d363c6b40716fb92e6063fbcb60df4c5f10f31",
         "pending_transactions": []
       },
       {
         "mode": "validator",
         "vote": "agree",
         "result": {
-          "raw": "ABQyNA==",
+          "raw": "ABQyMw==",
           "status": "return",
           "payload": {
             "raw": [
               20,
               50,
-              52
+              51
             ],
-            "readable": "\"24\""
+            "readable": "\"23\""
           }
         },
         "calldata": {
-          "base64": "FgRhcmdzHRQ1NOwDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
+          "base64": "FgRhcmdzHRQyM+wDaHR0cHM6Ly9naXRodWIuY29tL2h5cGVyY3liZXJzOTkvc2hpcC1lc2Nyb3ctZml4dHVyZXMvcHVsbC8yMcQCNzI4OTlhYTBkNDViM2NlNmNiMDEzZDdjMDI3N2U3NTMzNDhlMmE5ZgZtZXRob2Rcc3VibWl0X3dvcms=",
           "raw": [
             22,
             4,
@@ -1137,8 +1137,8 @@
             115,
             29,
             20,
-            53,
-            52,
+            50,
+            51,
             236,
             3,
             104,
@@ -1264,14 +1264,14 @@
             114,
             107
           ],
-          "readable": "{\"args\":[\"54\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
+          "readable": "{\"args\":[\"23\",\"https://github.com/hypercybers99/ship-escrow-fixtures/pull/21\",\"72899aa0d45b3ce6cb013d7c0277e753348e2a9f\",]\"method\":\"submit_work\"}"
         },
         "gas_used": 0,
         "node_config": {
           "stake": 100,
-          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
+          "address": "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907",
           "primary_model": {
-            "model": "policy:prd-sonnet",
+            "model": "policy:prd-gemma",
             "config": {
               "policy_ir": [
                 "policy",
@@ -1297,15 +1297,15 @@
                     "or",
                     [
                       "family_eq",
-                      "claude-sonnet-4-6"
+                      "gemma-4-31b-it"
+                    ],
+                    [
+                      "family_eq",
+                      "gemma-4-26b-a4b-it"
                     ],
                     [
                       "family_eq",
                       "gpt-5.4"
-                    ],
-                    [
-                      "family_eq",
-                      "gemini-3-flash-preview"
                     ]
                   ]
                 ],
@@ -1318,7 +1318,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "claude-sonnet-4-6"
+                        "gemma-4-31b-it"
                       ],
                       [
                         "lit",
@@ -1333,7 +1333,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gpt-5.4"
+                        "gemma-4-26b-a4b-it"
                       ],
                       [
                         "lit",
@@ -1348,7 +1348,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gemini-3-flash-preview"
+                        "gpt-5.4"
                       ],
                       [
                         "lit",
@@ -1429,7 +1429,7 @@
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
             },
-            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+            "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
           },
           "secondary_model": {
             "model": "openai/gpt-5.4",
@@ -1441,7 +1441,7 @@
               ]
             },
             "plugin": "openai-compatible",
-            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
             "provider": "openrouter",
             "plugin_config": {
               "api_url": "https://openrouter.ai/api",
@@ -1459,47 +1459,47 @@
         "execution_stats": {
           "llm": {
             "tokens": {
-              "node-0x336458747913FE397be82c4F0926ACeB3ab13618/policy:prd-sonnet": {
-                "input": 322,
-                "total": 335,
-                "output": 13
+              "node-0x5847AF34a4e5bA96490f8c883598f68EC9B0B907/policy:prd-gemma": {
+                "input": 289,
+                "total": 312,
+                "output": 23
               }
             }
           },
           "call_counts": {
             "CONSUME_FUEL": 1,
-            "STORAGE_READ": 927,
+            "STORAGE_READ": 594,
             "NOTIFY_FINISHED": 1,
             "REMAINING_FUEL_AS_GEN": 1
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 3233.41795353,
-          "host_loop_enter_wait_ms": 10,
+          "host_loop_entered_s": 3076.657145888,
+          "host_loop_enter_wait_ms": 13,
           "host_time_per_method_ms": {
             "CONSUME_FUEL": 0,
-            "STORAGE_READ": 1075,
+            "STORAGE_READ": 706,
             "REMAINING_FUEL_AS_GEN": 0
           },
-          "host_total_handling_time_ms": 1075,
+          "host_total_handling_time_ms": 706,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 6
+            "duration_ms": 9
           },
-          "host_first_method_received_s": 3233.418974625,
-          "host_accept_to_first_method_ms": 1
+          "host_first_method_received_s": 3076.659306246,
+          "host_accept_to_first_method_ms": 2
         },
         "nondet_disagree": null,
-        "processing_time": 9527,
+        "processing_time": 7269,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "91d8d4f28e7a24771f887614ef9ad44c370e47da2379dbcce70c43e189948da0",
+        "contract_state_hash": "14c3747ac93c42f7a282db6cd7d363c6b40716fb92e6063fbcb60df4c5f10f31",
         "pending_transactions": []
       }
     ]
   },
   "on_chain_submission": {
     "attempt_number": 1,
-    "bounty_id": "54",
+    "bounty_id": "23",
     "criterion_results": [
       "NO"
     ],
@@ -1507,7 +1507,7 @@
     "dev_attempt": 1,
     "gate": "",
     "head_sha": "72899aa0d45b3ce6cb013d7c0277e753348e2a9f",
-    "id": "24",
+    "id": "23",
     "packet": {
       "base_sha": "05fedc3b516a90c1dd49f348db45c864a19d1148",
       "body_sha256": "bc4ad13fc7eae2bada0a6e204c47e6c4fd3fc3ff9565d848f7e2c87609e99ca8",

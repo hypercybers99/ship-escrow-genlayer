@@ -1,11 +1,11 @@
 {
-  "hash": "0x60c0ec4425d7f13a74871d3d29df36917f1e340704f9c240ec47e8af68b63fe7",
+  "hash": "0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef",
   "from_address": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C",
-  "to_address": "0x796Fe265c97419f259478a486F5d43ff0720D69e",
+  "to_address": "0x31F0955Ad7bA06C1902d83B876308e5F125865dF",
   "data": {
-    "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+    "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
     "contract_code": "IyB2MC4yLjE2CiMgeyAiRGVwZW5kcyI6ICJweS1nZW5sYXllcjoxamI0NWFhOHluaDJhOWM5eG4zYjdxcWg4c201cTkzaHdmcDdqcW13c2ZoaDhqcHowOWg2IiB9CgppbXBvcnQganNvbgpmcm9tIGdlbmxheWVyIGltcG9ydCAqCgoKZGVmIGNhbm9uaWNhbF9qc29uKG9iaikgLT4gc3RyOgogICAgcmV0dXJuIGpzb24uZHVtcHMob2JqLCBzb3J0X2tleXM9VHJ1ZSwgc2VwYXJhdG9ycz0oIiwiLCAiOiIpKQoKCmNsYXNzIFNoaXBSZXB1dGF0aW9uVjIoZ2wuQ29udHJhY3QpOgogICAgX19nbF9jb250cmFjdF9fID0gVHJ1ZQogICAgZXNjcm93X2FkZHJlc3M6IEFkZHJlc3MKICAgIHByb2Nlc3NlZDogVHJlZU1hcFtzdHIsIHN0cl0KICAgIGRldl9zY29yZXM6IFRyZWVNYXBbc3RyLCBzdHJdCiAgICBjcmVhdG9yX3Njb3JlczogVHJlZU1hcFtzdHIsIHN0cl0KICAgIG1ldGE6IFRyZWVNYXBbc3RyLCBzdHJdCgogICAgZGVmIF9faW5pdF9fKHNlbGYsIGVzY3Jvd19hZGRyZXNzX3N0cjogc3RyKToKICAgICAgICAjIERvIG5vdCBhc3NpZ24gVHJlZU1hcCgpIGluIF9faW5pdF9fCiAgICAgICAgc2VsZi5lc2Nyb3dfYWRkcmVzcyA9IEFkZHJlc3MoZXNjcm93X2FkZHJlc3Nfc3RyKQoKICAgIEBnbC5wdWJsaWMudmlldwogICAgZGVmIGdldF9lc2Nyb3dfYWRkcmVzcyhzZWxmKSAtPiBzdHI6CiAgICAgICAgcmV0dXJuIHNlbGYuZXNjcm93X2FkZHJlc3MuYXNfaGV4CgogICAgQGdsLnB1YmxpYy52aWV3CiAgICBkZWYgZ2V0X2Rldl9zY29yZShzZWxmLCBhZGRyOiBzdHIpIC0+IHN0cjoKICAgICAgICBhZGRyX2xvd2VyID0gYWRkci5sb3dlcigpCiAgICAgICAgaWYgYWRkcl9sb3dlciBpbiBzZWxmLmRldl9zY29yZXM6CiAgICAgICAgICAgIHJldHVybiBzZWxmLmRldl9zY29yZXNbYWRkcl9sb3dlcl0KICAgICAgICByZXR1cm4gY2Fub25pY2FsX2pzb24oewogICAgICAgICAgICAiYmVzdF92ZXJkaWN0X2NvdW50cyI6IHt9LAogICAgICAgICAgICAic2NoZW1hX3ZlcnNpb24iOiAiMiIsCiAgICAgICAgICAgICJzZXR0bGVkX2NvdW50IjogMCwKICAgICAgICAgICAgInVuaXRzX2Vhcm5lZCI6ICIwIiwKICAgICAgICB9KQoKICAgIEBnbC5wdWJsaWMudmlldwogICAgZGVmIGdldF9jcmVhdG9yX3Njb3JlKHNlbGYsIGFkZHI6IHN0cikgLT4gc3RyOgogICAgICAgIGFkZHJfbG93ZXIgPSBhZGRyLmxvd2VyKCkKICAgICAgICBpZiBhZGRyX2xvd2VyIGluIHNlbGYuY3JlYXRvcl9zY29yZXM6CiAgICAgICAgICAgIHJldHVybiBzZWxmLmNyZWF0b3Jfc2NvcmVzW2FkZHJfbG93ZXJdCiAgICAgICAgcmV0dXJuIGNhbm9uaWNhbF9qc29uKHsKICAgICAgICAgICAgImJvdW50aWVzX3NldHRsZWQiOiAwLAogICAgICAgICAgICAic2NoZW1hX3ZlcnNpb24iOiAiMiIsCiAgICAgICAgICAgICJ1bml0c19wYWlkIjogIjAiLAogICAgICAgICAgICAidW5pdHNfcmVmdW5kZWQiOiAiMCIsCiAgICAgICAgfSkKCiAgICBAZ2wucHVibGljLnZpZXcKICAgIGRlZiBsaXN0X3JlY2VudChzZWxmLCBsaW1pdDogaW50ID0gMTApIC0+IGxpc3Rbc3RyXToKICAgICAgICBsaW0gPSBtaW4obWF4KDEsIGxpbWl0KSwgMjApCiAgICAgICAgcmVjZW50X2pzb24gPSBzZWxmLm1ldGEuZ2V0KCJyZWNlbnRfc3luY2VkIiwgIltdIikKICAgICAgICB0cnk6CiAgICAgICAgICAgIGl0ZW1zID0ganNvbi5sb2FkcyhyZWNlbnRfanNvbikKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICBpdGVtcyA9IFtdCiAgICAgICAgcmV0dXJuIGl0ZW1zWzpsaW1dCgogICAgQGdsLnB1YmxpYy53cml0ZQogICAgZGVmIHN5bmMoc2VsZiwgYm91bnR5X2lkOiBzdHIsIG1pbl9wYXlvdXRfcGN0OiBpbnQgPSAyNSkgLT4gTm9uZToKICAgICAgICBiaWQgPSBzdHIoYm91bnR5X2lkKS5zdHJpcCgpCiAgICAgICAgaWYgbm90IGJpZDoKICAgICAgICAgICAgcmFpc2UgZ2wudm0uVXNlckVycm9yKCJCb3VudHkgaWQgY2Fubm90IGJlIGVtcHR5IikKCiAgICAgICAgaWYgYmlkIGluIHNlbGYucHJvY2Vzc2VkOgogICAgICAgICAgICByYWlzZSBnbC52bS5Vc2VyRXJyb3IoIkJvdW50eSBzZXR0bGVtZW50IGFscmVhZHkgcHJvY2Vzc2VkIikKCiAgICAgICAgZXNjcm93ID0gZ2wuZ2V0X2NvbnRyYWN0X2F0KHNlbGYuZXNjcm93X2FkZHJlc3MpCiAgICAgICAgcmF3X3NldHRsZW1lbnQgPSBlc2Nyb3cudmlldygpLmdldF9zZXR0bGVtZW50KGJpZCkKCiAgICAgICAgaWYgbm90IHJhd19zZXR0bGVtZW50OgogICAgICAgICAgICByYWlzZSBnbC52bS5Vc2VyRXJyb3IoIlNldHRsZW1lbnQgbm90IGZvdW5kIGluIGVzY3JvdyIpCgogICAgICAgIHRyeToKICAgICAgICAgICAgc2V0dGxlbWVudCA9IGpzb24ubG9hZHMocmF3X3NldHRsZW1lbnQpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgcmFpc2UgZ2wudm0uVXNlckVycm9yKCJGYWlsZWQgdG8gZGVjb2RlIHNldHRsZW1lbnQgSlNPTiIpCgogICAgICAgIGRldiA9IHNldHRsZW1lbnQuZ2V0KCJkZXYiLCAiIikuc3RyaXAoKS5sb3dlcigpCiAgICAgICAgY3JlYXRvciA9IHNldHRsZW1lbnQuZ2V0KCJjcmVhdG9yIiwgIiIpLnN0cmlwKCkubG93ZXIoKQogICAgICAgIGNyaXRlcmlhX2hhc2ggPSBzZXR0bGVtZW50LmdldCgiY3JpdGVyaWFfaGFzaCIsICIiKS5zdHJpcCgpCiAgICAgICAgaGVhZF9zaGEgPSBzZXR0bGVtZW50LmdldCgiaGVhZF9zaGEiLCAiIikuc3RyaXAoKQogICAgICAgIHZlcmRpY3QgPSBzZXR0bGVtZW50LmdldCgidmVyZGljdCIsICIiKS5zdHJpcCgpCiAgICAgICAgcGFja2V0X3NoYTI1NiA9IHNldHRsZW1lbnQuZ2V0KCJwYWNrZXRfc2hhMjU2IiwgIiIpLnN0cmlwKCkKICAgICAgICBkZXZfYW10X3N0ciA9IHNldHRsZW1lbnQuZ2V0KCJkZXZfYW1vdW50IiwgIjAiKQogICAgICAgIGNyZWF0b3JfYW10X3N0ciA9IHNldHRsZW1lbnQuZ2V0KCJjcmVhdG9yX2Ftb3VudCIsICIwIikKICAgICAgICBwYXlvdXRfcGN0X3N0ciA9IHNldHRsZW1lbnQuZ2V0KCJwYXlvdXRfcGN0IiwgIjAiKQoKICAgICAgICBpZiBub3QgZGV2IG9yIG5vdCBjcml0ZXJpYV9oYXNoIG9yIG5vdCBoZWFkX3NoYSBvciBub3QgcGFja2V0X3NoYTI1NjoKICAgICAgICAgICAgcmFpc2UgZ2wudm0uVXNlckVycm9yKCJJbnZhbGlkIHNldHRsZW1lbnQgcmVjb3JkOiBtaXNzaW5nIHJlcXVpcmVkIGZpZWxkcyIpCgogICAgICAgIHRyeToKICAgICAgICAgICAgZGV2X2FtdCA9IGludChkZXZfYW10X3N0cikKICAgICAgICAgICAgY3JlYXRvcl9hbXQgPSBpbnQoY3JlYXRvcl9hbXRfc3RyKQogICAgICAgICAgICBwYXlvdXRfcGN0ID0gaW50KHBheW91dF9wY3Rfc3RyKQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHJhaXNlIGdsLnZtLlVzZXJFcnJvcigiSW52YWxpZCBzZXR0bGVtZW50IGFtb3VudHMiKQoKICAgICAgICAjIFJlZnVzYWwgY2hlY2s6IHBheW91dCBwZXJjZW50YWdlIGJlbG93IHJlcXVpcmVkIHRocmVzaG9sZAogICAgICAgIGNsYW1wZWRfbWluID0gbWluKG1heCgyNSwgbWluX3BheW91dF9wY3QpLCAxMDApCiAgICAgICAgaWYgcGF5b3V0X3BjdCA8IGNsYW1wZWRfbWluOgogICAgICAgICAgICByYWlzZSBnbC52bS5Vc2VyRXJyb3IoIlNldHRsZW1lbnQgcGF5b3V0IHBlcmNlbnRhZ2UgYmVsb3cgcmVxdWlyZWQgdGhyZXNob2xkIikKCiAgICAgICAgIyAxLiBVcGRhdGUgRGV2IFNjb3JlCiAgICAgICAgZGV2X3Njb3JlID0gewogICAgICAgICAgICAiYmVzdF92ZXJkaWN0X2NvdW50cyI6IHt9LAogICAgICAgICAgICAic2NoZW1hX3ZlcnNpb24iOiAiMiIsCiAgICAgICAgICAgICJzZXR0bGVkX2NvdW50IjogMCwKICAgICAgICAgICAgInVuaXRzX2Vhcm5lZCI6ICIwIiwKICAgICAgICB9CiAgICAgICAgaWYgZGV2IGluIHNlbGYuZGV2X3Njb3JlczoKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgZGV2X3Njb3JlID0ganNvbi5sb2FkcyhzZWxmLmRldl9zY29yZXNbZGV2XSkKICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgICAgIHBhc3MKCiAgICAgICAgZGV2X3Njb3JlWyJzZXR0bGVkX2NvdW50Il0gPSBpbnQoZGV2X3Njb3JlLmdldCgic2V0dGxlZF9jb3VudCIsIDApKSArIDEKICAgICAgICBjdXJyX2Vhcm5lZCA9IGludChkZXZfc2NvcmUuZ2V0KCJ1bml0c19lYXJuZWQiLCAiMCIpKQogICAgICAgIGRldl9zY29yZVsidW5pdHNfZWFybmVkIl0gPSBzdHIoY3Vycl9lYXJuZWQgKyBkZXZfYW10KQoKICAgICAgICBjb3VudHMgPSBkZXZfc2NvcmUuZ2V0KCJiZXN0X3ZlcmRpY3RfY291bnRzIiwge30pCiAgICAgICAgY291bnRzW3ZlcmRpY3RdID0gaW50KGNvdW50cy5nZXQodmVyZGljdCwgMCkpICsgMQogICAgICAgIGRldl9zY29yZVsiYmVzdF92ZXJkaWN0X2NvdW50cyJdID0gY291bnRzCgogICAgICAgIHNlbGYuZGV2X3Njb3Jlc1tkZXZdID0gY2Fub25pY2FsX2pzb24oZGV2X3Njb3JlKQoKICAgICAgICAjIDIuIFVwZGF0ZSBDcmVhdG9yIFNjb3JlCiAgICAgICAgY3JlYXRvcl9zY29yZSA9IHsKICAgICAgICAgICAgImJvdW50aWVzX3NldHRsZWQiOiAwLAogICAgICAgICAgICAic2NoZW1hX3ZlcnNpb24iOiAiMiIsCiAgICAgICAgICAgICJ1bml0c19wYWlkIjogIjAiLAogICAgICAgICAgICAidW5pdHNfcmVmdW5kZWQiOiAiMCIsCiAgICAgICAgfQogICAgICAgIGlmIGNyZWF0b3IgaW4gc2VsZi5jcmVhdG9yX3Njb3JlczoKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgY3JlYXRvcl9zY29yZSA9IGpzb24ubG9hZHMoc2VsZi5jcmVhdG9yX3Njb3Jlc1tjcmVhdG9yXSkKICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgICAgIHBhc3MKCiAgICAgICAgY3JlYXRvcl9zY29yZVsiYm91bnRpZXNfc2V0dGxlZCJdID0gaW50KGNyZWF0b3Jfc2NvcmUuZ2V0KCJib3VudGllc19zZXR0bGVkIiwgMCkpICsgMQogICAgICAgIGN1cnJfcGFpZCA9IGludChjcmVhdG9yX3Njb3JlLmdldCgidW5pdHNfcGFpZCIsICIwIikpCiAgICAgICAgY3Vycl9yZWYgPSBpbnQoY3JlYXRvcl9zY29yZS5nZXQoInVuaXRzX3JlZnVuZGVkIiwgIjAiKSkKICAgICAgICBjcmVhdG9yX3Njb3JlWyJ1bml0c19wYWlkIl0gPSBzdHIoY3Vycl9wYWlkICsgZGV2X2FtdCkKICAgICAgICBjcmVhdG9yX3Njb3JlWyJ1bml0c19yZWZ1bmRlZCJdID0gc3RyKGN1cnJfcmVmICsgY3JlYXRvcl9hbXQpCgogICAgICAgIHNlbGYuY3JlYXRvcl9zY29yZXNbY3JlYXRvcl0gPSBjYW5vbmljYWxfanNvbihjcmVhdG9yX3Njb3JlKQoKICAgICAgICAjIDMuIE1hcmsgUHJvY2Vzc2VkICYgVXBkYXRlIFJlY2VudAogICAgICAgIHNlbGYucHJvY2Vzc2VkW2JpZF0gPSAiMSIKCiAgICAgICAgcmVjZW50X2pzb24gPSBzZWxmLm1ldGEuZ2V0KCJyZWNlbnRfc3luY2VkIiwgIltdIikKICAgICAgICB0cnk6CiAgICAgICAgICAgIHJlY2VudHMgPSBqc29uLmxvYWRzKHJlY2VudF9qc29uKQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHJlY2VudHMgPSBbXQogICAgICAgIHVwZGF0ZWRfcmVjZW50cyA9IFtiaWRdICsgW3ggZm9yIHggaW4gcmVjZW50cyBpZiB4ICE9IGJpZF1bOjQ5XQogICAgICAgIHNlbGYubWV0YVsicmVjZW50X3N5bmNlZCJdID0gY2Fub25pY2FsX2pzb24odXBkYXRlZF9yZWNlbnRzKQo=",
-    "contract_address": "0x796Fe265c97419f259478a486F5d43ff0720D69e"
+    "contract_address": "0x31F0955Ad7bA06C1902d83B876308e5F125865dF"
   },
   "value": 0,
   "type": 1,
@@ -13,211 +13,22 @@
   "result": 6,
   "consensus_data": {
     "votes": {
-      "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
-      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
-      "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
-      "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
-      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+      "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+      "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
     },
     "validators": [
       {
         "mode": "validator",
-        "vote": "idle",
-        "result": "AmlkbGU=",
-        "calldata": "",
-        "gas_used": 0,
-        "node_config": {
-          "id": 5734,
-          "model": "policy:prd-kimi",
-          "stake": 100,
-          "config": {
-            "policy_ir": [
-              "policy",
-              [
-                "and",
-                [
-                  "meets_req"
-                ],
-                [
-                  "not",
-                  [
-                    "is",
-                    "disabled"
-                  ]
-                ],
-                [
-                  "cmp",
-                  "success_rate",
-                  "ge",
-                  0.2
-                ],
-                [
-                  "or",
-                  [
-                    "family_eq",
-                    "kimi-k2.7-code"
-                  ],
-                  [
-                    "family_eq",
-                    "claude-sonnet-4-6"
-                  ],
-                  [
-                    "family_eq",
-                    "gpt-5.4"
-                  ]
-                ]
-              ],
-              [
-                "add",
-                [
-                  "scale",
-                  100,
-                  [
-                    "gate",
-                    [
-                      "family_eq",
-                      "kimi-k2.7-code"
-                    ],
-                    [
-                      "lit",
-                      1
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  10,
-                  [
-                    "gate",
-                    [
-                      "family_eq",
-                      "claude-sonnet-4-6"
-                    ],
-                    [
-                      "lit",
-                      1
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  1,
-                  [
-                    "gate",
-                    [
-                      "family_eq",
-                      "gpt-5.4"
-                    ],
-                    [
-                      "lit",
-                      1
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  0.25,
-                  [
-                    "neg",
-                    [
-                      "normalize",
-                      [
-                        "field",
-                        "price_in"
-                      ]
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  0.45,
-                  [
-                    "neg",
-                    [
-                      "normalize",
-                      [
-                        "field",
-                        "price_out"
-                      ]
-                    ]
-                  ]
-                ],
-                [
-                  "scale",
-                  0.2,
-                  [
-                    "field",
-                    "success_rate"
-                  ]
-                ],
-                [
-                  "scale",
-                  0.1,
-                  [
-                    "neg",
-                    [
-                      "normalize",
-                      [
-                        "field",
-                        "latency_ms"
-                      ]
-                    ]
-                  ]
-                ]
-              ],
-              [
-                "argmax"
-              ],
-              [
-                "id"
-              ],
-              [
-                "always",
-                {
-                  "action": "next_candidate"
-                }
-              ]
-            ],
-            "timeout_ms": 22000,
-            "first_token_timeout_ms": 7000
-          },
-          "plugin": "openai-compatible",
-          "address": "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B",
-          "provider": "llm-router",
-          "plugin_config": {
-            "api_url": "https://router.ygr.ai",
-            "api_key_env_var": "LLM_ROUTER_API_KEY"
-          },
-          "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
-        },
-        "genvm_result": {
-          "stderr": "Validator execution cancelled after quorum",
-          "stdout": "",
-          "raw_error": {
-            "fatal": false,
-            "causes": [
-              "VALIDATOR_QUORUM_REACHED"
-            ]
-          },
-          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
-        },
-        "contract_state": {},
-        "execution_stats": null,
-        "nondet_disagree": null,
-        "processing_time": 0,
-        "execution_result": "ERROR",
-        "contract_state_hash": null,
-        "pending_transactions": []
-      },
-      {
-        "mode": "validator",
         "vote": "agree",
         "result": "AAA=",
-        "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+        "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
         "gas_used": 0,
         "node_config": {
           "stake": 100,
-          "address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+          "address": "0x045291B293B9D68969c18B6637A8258038cf787A",
           "primary_model": {
             "model": "policy:prd-gpt-5-4",
             "config": {
@@ -377,19 +188,19 @@
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
             },
-            "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
           },
           "secondary_model": {
-            "model": "openai/gpt-5.4",
+            "model": "anthropic/claude-sonnet-4.6",
             "config": {
               "models": [
-                "openai/gpt-5.4",
                 "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
                 "google/gemini-3-flash-preview"
               ]
             },
             "plugin": "openai-compatible",
-            "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
             "provider": "openrouter",
             "plugin_config": {
               "api_url": "https://openrouter.ai/api",
@@ -412,52 +223,35 @@
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 774.686902883,
-          "host_loop_enter_wait_ms": 5,
+          "host_loop_entered_s": 648.886608114,
+          "host_loop_enter_wait_ms": 10,
           "host_time_per_method_ms": {
-            "STORAGE_READ": 2
+            "STORAGE_READ": 4
           },
-          "host_total_handling_time_ms": 2,
+          "host_total_handling_time_ms": 4,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 3
+            "duration_ms": 7
           },
-          "host_first_method_received_s": 774.686970365,
+          "host_first_method_received_s": 648.886778777,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 1257,
+        "processing_time": 1289,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+        "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
         "pending_transactions": []
       },
       {
         "mode": "validator",
         "vote": "agree",
         "result": "AAA=",
-        "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+        "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
         "gas_used": 0,
         "node_config": {
           "stake": 100,
-          "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+          "address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8",
           "primary_model": {
-            "model": "anthropic/claude-sonnet-4.6",
-            "config": {
-              "models": [
-                "anthropic/claude-sonnet-4.6",
-                "openai/gpt-5.4",
-                "google/gemini-3-flash-preview"
-              ]
-            },
-            "plugin": "openai-compatible",
-            "provider": "openrouter",
-            "plugin_config": {
-              "api_url": "https://openrouter.ai/api",
-              "api_key_env_var": "OPENROUTERAPIKEY"
-            },
-            "fallback_validator": "0x336458747913FE397be82c4F0926ACeB3ab13618"
-          },
-          "secondary_model": {
             "model": "policy:prd-sonnet",
             "config": {
               "policy_ir": [
@@ -611,11 +405,28 @@
               "first_token_timeout_ms": 7000
             },
             "plugin": "openai-compatible",
-            "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
             "provider": "llm-router",
             "plugin_config": {
               "api_url": "https://router.ygr.ai",
               "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
             }
           }
         },
@@ -634,23 +445,23 @@
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 774.687839197,
-          "host_loop_enter_wait_ms": 5,
+          "host_loop_entered_s": 648.885208745,
+          "host_loop_enter_wait_ms": 8,
           "host_time_per_method_ms": {
-            "STORAGE_READ": 2
+            "STORAGE_READ": 3
           },
-          "host_total_handling_time_ms": 2,
+          "host_total_handling_time_ms": 3,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 3
+            "duration_ms": 5
           },
-          "host_first_method_received_s": 774.68796428,
+          "host_first_method_received_s": 648.885335307,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 1114,
+        "processing_time": 1100,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+        "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
         "pending_transactions": []
       },
       {
@@ -660,8 +471,53 @@
         "calldata": "",
         "gas_used": 0,
         "node_config": {
-          "id": 5736,
-          "model": "policy:prd-glm",
+          "id": 5740,
+          "model": "openai/gpt-5.4",
+          "stake": 100,
+          "config": {
+            "models": [
+              "openai/gpt-5.4",
+              "anthropic/claude-sonnet-4.6",
+              "google/gemini-3-flash-preview"
+            ]
+          },
+          "plugin": "openai-compatible",
+          "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+          "provider": "openrouter",
+          "plugin_config": {
+            "api_url": "https://openrouter.ai/api",
+            "api_key_env_var": "OPENROUTERAPIKEY"
+          },
+          "fallback_validator": "0xB4EE99165ffe987E64B7b72e45a753309c501eef"
+        },
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "contract_state": {},
+        "execution_stats": null,
+        "nondet_disagree": null,
+        "processing_time": 0,
+        "execution_result": "ERROR",
+        "contract_state_hash": null,
+        "pending_transactions": []
+      },
+      {
+        "mode": "validator",
+        "vote": "idle",
+        "result": "AmlkbGU=",
+        "calldata": "",
+        "gas_used": 0,
+        "node_config": {
+          "id": 5728,
+          "model": "policy:prd-sonnet",
           "stake": 100,
           "config": {
             "policy_ir": [
@@ -688,15 +544,15 @@
                   "or",
                   [
                     "family_eq",
-                    "glm-5.1"
-                  ],
-                  [
-                    "family_eq",
-                    "gpt-oss-120b"
+                    "claude-sonnet-4-6"
                   ],
                   [
                     "family_eq",
                     "gpt-5.4"
+                  ],
+                  [
+                    "family_eq",
+                    "gemini-3-flash-preview"
                   ]
                 ]
               ],
@@ -709,7 +565,7 @@
                     "gate",
                     [
                       "family_eq",
-                      "glm-5.1"
+                      "claude-sonnet-4-6"
                     ],
                     [
                       "lit",
@@ -724,7 +580,7 @@
                     "gate",
                     [
                       "family_eq",
-                      "gpt-oss-120b"
+                      "gpt-5.4"
                     ],
                     [
                       "lit",
@@ -739,7 +595,7 @@
                     "gate",
                     [
                       "family_eq",
-                      "gpt-5.4"
+                      "gemini-3-flash-preview"
                     ],
                     [
                       "lit",
@@ -815,13 +671,13 @@
             "first_token_timeout_ms": 7000
           },
           "plugin": "openai-compatible",
-          "address": "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB",
+          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
           "provider": "llm-router",
           "plugin_config": {
             "api_url": "https://router.ygr.ai",
             "api_key_env_var": "LLM_ROUTER_API_KEY"
           },
-          "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
         },
         "genvm_result": {
           "stderr": "Validator execution cancelled after quorum",
@@ -848,14 +704,14 @@
         "mode": "leader",
         "vote": null,
         "result": "AAA=",
-        "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+        "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
         "gas_used": 0,
         "eq_outputs": {},
         "node_config": {
           "stake": 100,
-          "address": "0x5e84e17266a193077728229751aC8A1dD24be146",
+          "address": "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
           "primary_model": {
-            "model": "policy:prd-gpt-5-4",
+            "model": "policy:prd-deepseek",
             "config": {
               "policy_ir": [
                 "policy",
@@ -881,15 +737,15 @@
                     "or",
                     [
                       "family_eq",
-                      "gpt-5.4"
-                    ],
-                    [
-                      "family_eq",
-                      "gemini-3-flash-preview"
+                      "deepseek-v3.2"
                     ],
                     [
                       "family_eq",
                       "gpt-oss-120b"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
                     ]
                   ]
                 ],
@@ -902,7 +758,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gpt-5.4"
+                        "deepseek-v3.2"
                       ],
                       [
                         "lit",
@@ -917,7 +773,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gemini-3-flash-preview"
+                        "gpt-oss-120b"
                       ],
                       [
                         "lit",
@@ -932,7 +788,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gpt-oss-120b"
+                        "gpt-5.4"
                       ],
                       [
                         "lit",
@@ -1047,36 +903,36 @@
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 773.41392638,
-          "host_loop_enter_wait_ms": 4,
+          "host_loop_entered_s": 647.615306303,
+          "host_loop_enter_wait_ms": 5,
           "host_time_per_method_ms": {
-            "STORAGE_READ": 2
+            "STORAGE_READ": 3
           },
-          "host_total_handling_time_ms": 2,
+          "host_total_handling_time_ms": 3,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 2
+            "duration_ms": 3
           },
-          "host_first_method_received_s": 773.413995802,
+          "host_first_method_received_s": 647.615431254,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 1008,
+        "processing_time": 1014,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+        "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
         "pending_transactions": []
       },
       {
         "mode": "validator",
         "vote": "agree",
         "result": "AAA=",
-        "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+        "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
         "gas_used": 0,
         "node_config": {
           "stake": 100,
-          "address": "0x5e84e17266a193077728229751aC8A1dD24be146",
+          "address": "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
           "primary_model": {
-            "model": "policy:prd-gpt-5-4",
+            "model": "policy:prd-deepseek",
             "config": {
               "policy_ir": [
                 "policy",
@@ -1102,15 +958,15 @@
                     "or",
                     [
                       "family_eq",
-                      "gpt-5.4"
-                    ],
-                    [
-                      "family_eq",
-                      "gemini-3-flash-preview"
+                      "deepseek-v3.2"
                     ],
                     [
                       "family_eq",
                       "gpt-oss-120b"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
                     ]
                   ]
                 ],
@@ -1123,7 +979,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gpt-5.4"
+                        "deepseek-v3.2"
                       ],
                       [
                         "lit",
@@ -1138,7 +994,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gemini-3-flash-preview"
+                        "gpt-oss-120b"
                       ],
                       [
                         "lit",
@@ -1153,7 +1009,7 @@
                       "gate",
                       [
                         "family_eq",
-                        "gpt-oss-120b"
+                        "gpt-5.4"
                       ],
                       [
                         "lit",
@@ -1268,33 +1124,33 @@
           },
           "host_first_method": "STORAGE_READ",
           "delete_genvm_status": 200,
-          "host_loop_entered_s": 774.687495028,
-          "host_loop_enter_wait_ms": 6,
+          "host_loop_entered_s": 648.886724716,
+          "host_loop_enter_wait_ms": 10,
           "host_time_per_method_ms": {
-            "STORAGE_READ": 2
+            "STORAGE_READ": 4
           },
-          "host_total_handling_time_ms": 2,
+          "host_total_handling_time_ms": 4,
           "manager_run_attempt_success": {
             "attempt": 0,
-            "duration_ms": 4
+            "duration_ms": 8
           },
-          "host_first_method_received_s": 774.687698463,
+          "host_first_method_received_s": 648.887090271,
           "host_accept_to_first_method_ms": 0
         },
         "nondet_disagree": null,
-        "processing_time": 1165,
+        "processing_time": 1235,
         "execution_result": "SUCCESS",
-        "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+        "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
         "pending_transactions": []
       }
     ]
   },
-  "gaslimit": 323,
-  "nonce": 323,
+  "gaslimit": 415,
+  "nonce": 415,
   "r": null,
   "s": null,
   "v": null,
-  "created_at": "2026-10-25T07:30:26.168148+00:00",
+  "created_at": "2026-10-25T10:31:11.361221+00:00",
   "leader_only": false,
   "execution_mode": "NORMAL",
   "origin_address": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C",
@@ -1302,101 +1158,101 @@
   "triggered_on": null,
   "triggered_transactions": [],
   "appealed": false,
-  "timestamp_awaiting_finalization": 1792913430,
+  "timestamp_awaiting_finalization": 1792924274,
   "appeal_failed": 0,
   "appeal_undetermined": false,
   "consensus_history": {
     "consensus_results": [
       {
         "monitoring": {
-          "PENDING": 1792913427.9302096,
-          "ACCEPTED": 1792913430.912655,
-          "PROPOSING": 1792913428.0128329,
-          "REVEALING": 1792913430.7940996,
-          "COMMITTING": 1792913429.1979902,
-          "PROPOSING.LEADER.DEPLOY_END": 1792913429.1685653,
-          "PROPOSING.LEADER.EXEC_START": 1792913428.1137586,
-          "PROPOSING.LEADER.DEPLOY_START": 1792913428.120783,
-          "PROPOSING.VALIDATORS_SELECTED": 1792913428.084938,
-          "COMMITTING.VALIDATORS_PREPARED": 1792913429.2083023,
-          "PROPOSING.TRANSACTION_EXECUTED": 1792913429.1792738,
-          "PROPOSING.LEADER.DECODE_COMPLETE": 1792913428.1252644,
-          "PROPOSING.LEADER.RECEIPT_CREATED": 1792913429.1739943,
-          "COMMITTING.VALIDATOR_0.DEPLOY_END": 1792913430.4612474,
-          "COMMITTING.VALIDATOR_0.EXEC_START": 1792913429.2430649,
-          "COMMITTING.VALIDATOR_1.EXEC_START": 1792913429.2802966,
-          "COMMITTING.VALIDATOR_2.DEPLOY_END": 1792913430.6410415,
-          "COMMITTING.VALIDATOR_2.EXEC_START": 1792913429.3210084,
-          "COMMITTING.VALIDATOR_3.DEPLOY_END": 1792913430.5309482,
-          "COMMITTING.VALIDATOR_3.EXEC_START": 1792913429.35518,
-          "COMMITTING.VALIDATOR_4.EXEC_START": 1792913429.3902402,
-          "COMMITTING.VALIDATORS_EXECUTION_END": 1792913430.745353,
-          "COMMITTING.VALIDATOR_0.DEPLOY_START": 1792913429.2488663,
-          "COMMITTING.VALIDATOR_1.DEPLOY_START": 1792913429.290414,
-          "COMMITTING.VALIDATOR_2.DEPLOY_START": 1792913429.325778,
-          "COMMITTING.VALIDATOR_3.DEPLOY_START": 1792913429.3597324,
-          "COMMITTING.VALIDATOR_4.DEPLOY_START": 1792913429.3948445,
-          "PROPOSING.LEADER.EXECUTION_FINISHED": 1792913429.1631298,
-          "COMMITTING.VALIDATOR_0_END.attempt_0": 1792913430.5783198,
-          "COMMITTING.VALIDATOR_2_END.attempt_0": 1792913430.7324228,
-          "COMMITTING.VALIDATOR_3_END.attempt_0": 1792913430.7057447,
-          "COMMITTING.VALIDATORS_EXECUTION_START": 1792913429.2127764,
-          "COMMITTING.VALIDATION_RESULTS_GATHERED": 1792913430.7601485,
-          "COMMITTING.VALIDATOR_0.DECODE_COMPLETE": 1792913429.2539537,
-          "COMMITTING.VALIDATOR_0.RECEIPT_CREATED": 1792913430.4910407,
-          "COMMITTING.VALIDATOR_0_START.attempt_0": 1792913429.2177567,
-          "COMMITTING.VALIDATOR_1.DECODE_COMPLETE": 1792913429.2957451,
-          "COMMITTING.VALIDATOR_1_START.attempt_0": 1792913429.2225907,
-          "COMMITTING.VALIDATOR_2.DECODE_COMPLETE": 1792913429.3305767,
-          "COMMITTING.VALIDATOR_2.RECEIPT_CREATED": 1792913430.6711686,
-          "COMMITTING.VALIDATOR_2_START.attempt_0": 1792913429.2273538,
-          "COMMITTING.VALIDATOR_3.DECODE_COMPLETE": 1792913429.3648765,
-          "COMMITTING.VALIDATOR_3.RECEIPT_CREATED": 1792913430.553206,
-          "COMMITTING.VALIDATOR_3_START.attempt_0": 1792913429.2329142,
-          "COMMITTING.VALIDATOR_4.DECODE_COMPLETE": 1792913429.399619,
-          "COMMITTING.VALIDATOR_4_START.attempt_0": 1792913429.2381208,
-          "PROPOSING.LEADER.GENVM_EXECUTION_START": 1792913428.14968,
-          "PROPOSING.LEADER.SNAPSHOT_CREATION_END": 1792913428.1388538,
-          "PROPOSING.LEADER_NODE_CREATED.attempt_0": 1792913428.1058204,
-          "PROPOSING.LEADER.GENVM_PREPARATION_START": 1792913428.1298137,
-          "PROPOSING.LEADER.SNAPSHOT_CREATION_START": 1792913428.1342626,
-          "COMMITTING.VALIDATOR_0.EXECUTION_FINISHED": 1792913430.4460948,
-          "COMMITTING.VALIDATOR_2.EXECUTION_FINISHED": 1792913430.6125567,
-          "COMMITTING.VALIDATOR_3.EXECUTION_FINISHED": 1792913430.5049684,
-          "COMMITTING.VALIDATOR_0.GENVM_EXECUTION_START": 1792913429.2747834,
-          "COMMITTING.VALIDATOR_0.SNAPSHOT_CREATION_END": 1792913429.269341,
-          "COMMITTING.VALIDATOR_1.GENVM_EXECUTION_START": 1792913429.3157985,
-          "COMMITTING.VALIDATOR_1.SNAPSHOT_CREATION_END": 1792913429.3109057,
-          "COMMITTING.VALIDATOR_2.GENVM_EXECUTION_START": 1792913429.3503428,
-          "COMMITTING.VALIDATOR_2.SNAPSHOT_CREATION_END": 1792913429.3456368,
-          "COMMITTING.VALIDATOR_3.GENVM_EXECUTION_START": 1792913429.3848813,
-          "COMMITTING.VALIDATOR_3.SNAPSHOT_CREATION_END": 1792913429.3794012,
-          "COMMITTING.VALIDATOR_4.GENVM_EXECUTION_START": 1792913429.4202237,
-          "COMMITTING.VALIDATOR_4.SNAPSHOT_CREATION_END": 1792913429.4150677,
-          "COMMITTING.VALIDATOR_0.GENVM_PREPARATION_START": 1792913429.2591953,
-          "COMMITTING.VALIDATOR_0.SNAPSHOT_CREATION_START": 1792913429.264127,
-          "COMMITTING.VALIDATOR_1.GENVM_PREPARATION_START": 1792913429.3009043,
-          "COMMITTING.VALIDATOR_1.SNAPSHOT_CREATION_START": 1792913429.3058655,
-          "COMMITTING.VALIDATOR_2.GENVM_PREPARATION_START": 1792913429.3356671,
-          "COMMITTING.VALIDATOR_2.SNAPSHOT_CREATION_START": 1792913429.340646,
-          "COMMITTING.VALIDATOR_3.GENVM_PREPARATION_START": 1792913429.3696456,
-          "COMMITTING.VALIDATOR_3.SNAPSHOT_CREATION_START": 1792913429.3746722,
-          "COMMITTING.VALIDATOR_4.GENVM_PREPARATION_START": 1792913429.4045637,
-          "COMMITTING.VALIDATOR_4.SNAPSHOT_CREATION_START": 1792913429.410135
+          "PENDING": 1792924271.537579,
+          "ACCEPTED": 1792924274.4722755,
+          "PROPOSING": 1792924271.5508177,
+          "REVEALING": 1792924274.3788373,
+          "COMMITTING": 1792924272.651812,
+          "PROPOSING.LEADER.DEPLOY_END": 1792924272.62394,
+          "PROPOSING.LEADER.EXEC_START": 1792924271.5741,
+          "PROPOSING.LEADER.DEPLOY_START": 1792924271.5784686,
+          "PROPOSING.VALIDATORS_SELECTED": 1792924271.564925,
+          "COMMITTING.VALIDATORS_PREPARED": 1792924272.662114,
+          "PROPOSING.TRANSACTION_EXECUTED": 1792924272.6334376,
+          "PROPOSING.LEADER.DECODE_COMPLETE": 1792924271.582694,
+          "PROPOSING.LEADER.RECEIPT_CREATED": 1792924272.6284037,
+          "COMMITTING.VALIDATOR_0.DEPLOY_END": 1792924274.020052,
+          "COMMITTING.VALIDATOR_0.EXEC_START": 1792924272.6978378,
+          "COMMITTING.VALIDATOR_1.DEPLOY_END": 1792924274.0919812,
+          "COMMITTING.VALIDATOR_1.EXEC_START": 1792924272.7395866,
+          "COMMITTING.VALIDATOR_2.DEPLOY_END": 1792924273.9358025,
+          "COMMITTING.VALIDATOR_2.EXEC_START": 1792924272.7734516,
+          "COMMITTING.VALIDATOR_3.EXEC_START": 1792924272.8084407,
+          "COMMITTING.VALIDATOR_4.EXEC_START": 1792924272.8397107,
+          "COMMITTING.VALIDATORS_EXECUTION_END": 1792924274.262843,
+          "COMMITTING.VALIDATOR_0.DEPLOY_START": 1792924272.7091954,
+          "COMMITTING.VALIDATOR_1.DEPLOY_START": 1792924272.7439723,
+          "COMMITTING.VALIDATOR_2.DEPLOY_START": 1792924272.7779384,
+          "COMMITTING.VALIDATOR_3.DEPLOY_START": 1792924272.813151,
+          "COMMITTING.VALIDATOR_4.DEPLOY_START": 1792924272.8440742,
+          "PROPOSING.LEADER.EXECUTION_FINISHED": 1792924272.6189826,
+          "COMMITTING.VALIDATOR_0_END.attempt_0": 1792924274.2059886,
+          "COMMITTING.VALIDATOR_1_END.attempt_0": 1792924274.240395,
+          "COMMITTING.VALIDATOR_2_END.attempt_0": 1792924273.9672425,
+          "COMMITTING.VALIDATORS_EXECUTION_START": 1792924272.6663988,
+          "COMMITTING.VALIDATION_RESULTS_GATHERED": 1792924274.286518,
+          "COMMITTING.VALIDATOR_0.DECODE_COMPLETE": 1792924272.713687,
+          "COMMITTING.VALIDATOR_0.RECEIPT_CREATED": 1792924274.039252,
+          "COMMITTING.VALIDATOR_0_START.attempt_0": 1792924272.6710005,
+          "COMMITTING.VALIDATOR_1.DECODE_COMPLETE": 1792924272.7499762,
+          "COMMITTING.VALIDATOR_1.RECEIPT_CREATED": 1792924274.161432,
+          "COMMITTING.VALIDATOR_1_START.attempt_0": 1792924272.675493,
+          "COMMITTING.VALIDATOR_2.DECODE_COMPLETE": 1792924272.7826653,
+          "COMMITTING.VALIDATOR_2.RECEIPT_CREATED": 1792924273.9503431,
+          "COMMITTING.VALIDATOR_2_START.attempt_0": 1792924272.6800418,
+          "COMMITTING.VALIDATOR_3.DECODE_COMPLETE": 1792924272.8176093,
+          "COMMITTING.VALIDATOR_3_START.attempt_0": 1792924272.6888835,
+          "COMMITTING.VALIDATOR_4.DECODE_COMPLETE": 1792924272.8484867,
+          "COMMITTING.VALIDATOR_4_START.attempt_0": 1792924272.6934683,
+          "PROPOSING.LEADER.GENVM_EXECUTION_START": 1792924271.5997672,
+          "PROPOSING.LEADER.SNAPSHOT_CREATION_END": 1792924271.595544,
+          "PROPOSING.LEADER_NODE_CREATED.attempt_0": 1792924271.5696573,
+          "PROPOSING.LEADER.GENVM_PREPARATION_START": 1792924271.5869908,
+          "PROPOSING.LEADER.SNAPSHOT_CREATION_START": 1792924271.5911758,
+          "COMMITTING.VALIDATOR_0.EXECUTION_FINISHED": 1792924273.9752157,
+          "COMMITTING.VALIDATOR_1.EXECUTION_FINISHED": 1792924274.0635874,
+          "COMMITTING.VALIDATOR_2.EXECUTION_FINISHED": 1792924273.9092102,
+          "COMMITTING.VALIDATOR_0.GENVM_EXECUTION_START": 1792924272.7337835,
+          "COMMITTING.VALIDATOR_0.SNAPSHOT_CREATION_END": 1792924272.7281475,
+          "COMMITTING.VALIDATOR_1.GENVM_EXECUTION_START": 1792924272.7679906,
+          "COMMITTING.VALIDATOR_1.SNAPSHOT_CREATION_END": 1792924272.7633674,
+          "COMMITTING.VALIDATOR_2.GENVM_EXECUTION_START": 1792924272.803683,
+          "COMMITTING.VALIDATOR_2.SNAPSHOT_CREATION_END": 1792924272.7992196,
+          "COMMITTING.VALIDATOR_3.GENVM_EXECUTION_START": 1792924272.8349512,
+          "COMMITTING.VALIDATOR_3.SNAPSHOT_CREATION_END": 1792924272.8306084,
+          "COMMITTING.VALIDATOR_4.GENVM_EXECUTION_START": 1792924272.8661227,
+          "COMMITTING.VALIDATOR_4.SNAPSHOT_CREATION_END": 1792924272.8617992,
+          "COMMITTING.VALIDATOR_0.GENVM_PREPARATION_START": 1792924272.7188127,
+          "COMMITTING.VALIDATOR_0.SNAPSHOT_CREATION_START": 1792924272.7237017,
+          "COMMITTING.VALIDATOR_1.GENVM_PREPARATION_START": 1792924272.7543201,
+          "COMMITTING.VALIDATOR_1.SNAPSHOT_CREATION_START": 1792924272.7587502,
+          "COMMITTING.VALIDATOR_2.GENVM_PREPARATION_START": 1792924272.7876832,
+          "COMMITTING.VALIDATOR_2.SNAPSHOT_CREATION_START": 1792924272.7943175,
+          "COMMITTING.VALIDATOR_3.GENVM_PREPARATION_START": 1792924272.821894,
+          "COMMITTING.VALIDATOR_3.SNAPSHOT_CREATION_START": 1792924272.8262715,
+          "COMMITTING.VALIDATOR_4.GENVM_PREPARATION_START": 1792924272.853014,
+          "COMMITTING.VALIDATOR_4.SNAPSHOT_CREATION_START": 1792924272.857338
         },
         "leader_result": [
           {
             "mode": "leader",
             "vote": null,
             "result": "AAA=",
-            "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+            "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
             "gas_used": 0,
             "eq_outputs": {},
             "node_config": {
               "stake": 100,
-              "address": "0x5e84e17266a193077728229751aC8A1dD24be146",
+              "address": "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
               "primary_model": {
-                "model": "policy:prd-gpt-5-4",
+                "model": "policy:prd-deepseek",
                 "config": {
                   "policy_ir": [
                     "policy",
@@ -1422,15 +1278,15 @@
                         "or",
                         [
                           "family_eq",
-                          "gpt-5.4"
-                        ],
-                        [
-                          "family_eq",
-                          "gemini-3-flash-preview"
+                          "deepseek-v3.2"
                         ],
                         [
                           "family_eq",
                           "gpt-oss-120b"
+                        ],
+                        [
+                          "family_eq",
+                          "gpt-5.4"
                         ]
                       ]
                     ],
@@ -1443,7 +1299,7 @@
                           "gate",
                           [
                             "family_eq",
-                            "gpt-5.4"
+                            "deepseek-v3.2"
                           ],
                           [
                             "lit",
@@ -1458,7 +1314,7 @@
                           "gate",
                           [
                             "family_eq",
-                            "gemini-3-flash-preview"
+                            "gpt-oss-120b"
                           ],
                           [
                             "lit",
@@ -1473,7 +1329,7 @@
                           "gate",
                           [
                             "family_eq",
-                            "gpt-oss-120b"
+                            "gpt-5.4"
                           ],
                           [
                             "lit",
@@ -1589,36 +1445,36 @@
               },
               "host_first_method": "STORAGE_READ",
               "delete_genvm_status": 200,
-              "host_loop_entered_s": 773.41392638,
-              "host_loop_enter_wait_ms": 4,
+              "host_loop_entered_s": 647.615306303,
+              "host_loop_enter_wait_ms": 5,
               "host_time_per_method_ms": {
-                "STORAGE_READ": 2
+                "STORAGE_READ": 3
               },
-              "host_total_handling_time_ms": 2,
+              "host_total_handling_time_ms": 3,
               "manager_run_attempt_success": {
                 "attempt": 0,
-                "duration_ms": 2
+                "duration_ms": 3
               },
-              "host_first_method_received_s": 773.413995802,
+              "host_first_method_received_s": 647.615431254,
               "host_accept_to_first_method_ms": 0
             },
             "nondet_disagree": null,
-            "processing_time": 1008,
+            "processing_time": 1014,
             "execution_result": "SUCCESS",
-            "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+            "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
             "pending_transactions": []
           },
           {
             "mode": "validator",
             "vote": "agree",
             "result": "AAA=",
-            "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+            "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
             "gas_used": 0,
             "node_config": {
               "stake": 100,
-              "address": "0x5e84e17266a193077728229751aC8A1dD24be146",
+              "address": "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
               "primary_model": {
-                "model": "policy:prd-gpt-5-4",
+                "model": "policy:prd-deepseek",
                 "config": {
                   "policy_ir": [
                     "policy",
@@ -1644,15 +1500,15 @@
                         "or",
                         [
                           "family_eq",
-                          "gpt-5.4"
-                        ],
-                        [
-                          "family_eq",
-                          "gemini-3-flash-preview"
+                          "deepseek-v3.2"
                         ],
                         [
                           "family_eq",
                           "gpt-oss-120b"
+                        ],
+                        [
+                          "family_eq",
+                          "gpt-5.4"
                         ]
                       ]
                     ],
@@ -1665,7 +1521,7 @@
                           "gate",
                           [
                             "family_eq",
-                            "gpt-5.4"
+                            "deepseek-v3.2"
                           ],
                           [
                             "lit",
@@ -1680,7 +1536,7 @@
                           "gate",
                           [
                             "family_eq",
-                            "gemini-3-flash-preview"
+                            "gpt-oss-120b"
                           ],
                           [
                             "lit",
@@ -1695,7 +1551,7 @@
                           "gate",
                           [
                             "family_eq",
-                            "gpt-oss-120b"
+                            "gpt-5.4"
                           ],
                           [
                             "lit",
@@ -1811,23 +1667,23 @@
               },
               "host_first_method": "STORAGE_READ",
               "delete_genvm_status": 200,
-              "host_loop_entered_s": 774.687495028,
-              "host_loop_enter_wait_ms": 6,
+              "host_loop_entered_s": 648.886724716,
+              "host_loop_enter_wait_ms": 10,
               "host_time_per_method_ms": {
-                "STORAGE_READ": 2
+                "STORAGE_READ": 4
               },
-              "host_total_handling_time_ms": 2,
+              "host_total_handling_time_ms": 4,
               "manager_run_attempt_success": {
                 "attempt": 0,
-                "duration_ms": 4
+                "duration_ms": 8
               },
-              "host_first_method_received_s": 774.687698463,
+              "host_first_method_received_s": 648.887090271,
               "host_accept_to_first_method_ms": 0
             },
             "nondet_disagree": null,
-            "processing_time": 1165,
+            "processing_time": 1235,
             "execution_result": "SUCCESS",
-            "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+            "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
             "pending_transactions": []
           }
         ],
@@ -1842,202 +1698,13 @@
         "validator_results": [
           {
             "mode": "validator",
-            "vote": "idle",
-            "result": "AmlkbGU=",
-            "calldata": "",
-            "gas_used": 0,
-            "node_config": {
-              "id": 5734,
-              "model": "policy:prd-kimi",
-              "stake": 100,
-              "config": {
-                "policy_ir": [
-                  "policy",
-                  [
-                    "and",
-                    [
-                      "meets_req"
-                    ],
-                    [
-                      "not",
-                      [
-                        "is",
-                        "disabled"
-                      ]
-                    ],
-                    [
-                      "cmp",
-                      "success_rate",
-                      "ge",
-                      0.2
-                    ],
-                    [
-                      "or",
-                      [
-                        "family_eq",
-                        "kimi-k2.7-code"
-                      ],
-                      [
-                        "family_eq",
-                        "claude-sonnet-4-6"
-                      ],
-                      [
-                        "family_eq",
-                        "gpt-5.4"
-                      ]
-                    ]
-                  ],
-                  [
-                    "add",
-                    [
-                      "scale",
-                      100,
-                      [
-                        "gate",
-                        [
-                          "family_eq",
-                          "kimi-k2.7-code"
-                        ],
-                        [
-                          "lit",
-                          1
-                        ]
-                      ]
-                    ],
-                    [
-                      "scale",
-                      10,
-                      [
-                        "gate",
-                        [
-                          "family_eq",
-                          "claude-sonnet-4-6"
-                        ],
-                        [
-                          "lit",
-                          1
-                        ]
-                      ]
-                    ],
-                    [
-                      "scale",
-                      1,
-                      [
-                        "gate",
-                        [
-                          "family_eq",
-                          "gpt-5.4"
-                        ],
-                        [
-                          "lit",
-                          1
-                        ]
-                      ]
-                    ],
-                    [
-                      "scale",
-                      0.25,
-                      [
-                        "neg",
-                        [
-                          "normalize",
-                          [
-                            "field",
-                            "price_in"
-                          ]
-                        ]
-                      ]
-                    ],
-                    [
-                      "scale",
-                      0.45,
-                      [
-                        "neg",
-                        [
-                          "normalize",
-                          [
-                            "field",
-                            "price_out"
-                          ]
-                        ]
-                      ]
-                    ],
-                    [
-                      "scale",
-                      0.2,
-                      [
-                        "field",
-                        "success_rate"
-                      ]
-                    ],
-                    [
-                      "scale",
-                      0.1,
-                      [
-                        "neg",
-                        [
-                          "normalize",
-                          [
-                            "field",
-                            "latency_ms"
-                          ]
-                        ]
-                      ]
-                    ]
-                  ],
-                  [
-                    "argmax"
-                  ],
-                  [
-                    "id"
-                  ],
-                  [
-                    "always",
-                    {
-                      "action": "next_candidate"
-                    }
-                  ]
-                ],
-                "timeout_ms": 22000,
-                "first_token_timeout_ms": 7000
-              },
-              "plugin": "openai-compatible",
-              "address": "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B",
-              "provider": "llm-router",
-              "plugin_config": {
-                "api_url": "https://router.ygr.ai",
-                "api_key_env_var": "LLM_ROUTER_API_KEY"
-              },
-              "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
-            },
-            "genvm_result": {
-              "stderr": "Validator execution cancelled after quorum",
-              "stdout": "",
-              "raw_error": {
-                "fatal": false,
-                "causes": [
-                  "VALIDATOR_QUORUM_REACHED"
-                ]
-              },
-              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
-            },
-            "contract_state": {},
-            "execution_stats": null,
-            "nondet_disagree": null,
-            "processing_time": 0,
-            "execution_result": "ERROR",
-            "contract_state_hash": null,
-            "pending_transactions": []
-          },
-          {
-            "mode": "validator",
             "vote": "agree",
             "result": "AAA=",
-            "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+            "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
             "gas_used": 0,
             "node_config": {
               "stake": 100,
-              "address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+              "address": "0x045291B293B9D68969c18B6637A8258038cf787A",
               "primary_model": {
                 "model": "policy:prd-gpt-5-4",
                 "config": {
@@ -2197,19 +1864,19 @@
                   "api_url": "https://router.ygr.ai",
                   "api_key_env_var": "LLM_ROUTER_API_KEY"
                 },
-                "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
+                "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
               },
               "secondary_model": {
-                "model": "openai/gpt-5.4",
+                "model": "anthropic/claude-sonnet-4.6",
                 "config": {
                   "models": [
-                    "openai/gpt-5.4",
                     "anthropic/claude-sonnet-4.6",
+                    "openai/gpt-5.4",
                     "google/gemini-3-flash-preview"
                   ]
                 },
                 "plugin": "openai-compatible",
-                "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
+                "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
                 "provider": "openrouter",
                 "plugin_config": {
                   "api_url": "https://openrouter.ai/api",
@@ -2232,52 +1899,35 @@
               },
               "host_first_method": "STORAGE_READ",
               "delete_genvm_status": 200,
-              "host_loop_entered_s": 774.686902883,
-              "host_loop_enter_wait_ms": 5,
+              "host_loop_entered_s": 648.886608114,
+              "host_loop_enter_wait_ms": 10,
               "host_time_per_method_ms": {
-                "STORAGE_READ": 2
+                "STORAGE_READ": 4
               },
-              "host_total_handling_time_ms": 2,
+              "host_total_handling_time_ms": 4,
               "manager_run_attempt_success": {
                 "attempt": 0,
-                "duration_ms": 3
+                "duration_ms": 7
               },
-              "host_first_method_received_s": 774.686970365,
+              "host_first_method_received_s": 648.886778777,
               "host_accept_to_first_method_ms": 0
             },
             "nondet_disagree": null,
-            "processing_time": 1257,
+            "processing_time": 1289,
             "execution_result": "SUCCESS",
-            "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+            "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
             "pending_transactions": []
           },
           {
             "mode": "validator",
             "vote": "agree",
             "result": "AAA=",
-            "calldata": "DgRhcmdzDdQCMHgzMjBjYjNDMzk4N0IzOTUwOTlFMTk1NDRGMDU1NjM0N2Y0NEQ5QjM2",
+            "calldata": "DgRhcmdzDdQCMHhEZjhBZGI1MjBGZUU1MTBkODc5M2JDNWQwMUM3YUY3NTFBNGZFNzcy",
             "gas_used": 0,
             "node_config": {
               "stake": 100,
-              "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+              "address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8",
               "primary_model": {
-                "model": "anthropic/claude-sonnet-4.6",
-                "config": {
-                  "models": [
-                    "anthropic/claude-sonnet-4.6",
-                    "openai/gpt-5.4",
-                    "google/gemini-3-flash-preview"
-                  ]
-                },
-                "plugin": "openai-compatible",
-                "provider": "openrouter",
-                "plugin_config": {
-                  "api_url": "https://openrouter.ai/api",
-                  "api_key_env_var": "OPENROUTERAPIKEY"
-                },
-                "fallback_validator": "0x336458747913FE397be82c4F0926ACeB3ab13618"
-              },
-              "secondary_model": {
                 "model": "policy:prd-sonnet",
                 "config": {
                   "policy_ir": [
@@ -2431,11 +2081,28 @@
                   "first_token_timeout_ms": 7000
                 },
                 "plugin": "openai-compatible",
-                "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
                 "provider": "llm-router",
                 "plugin_config": {
                   "api_url": "https://router.ygr.ai",
                   "api_key_env_var": "LLM_ROUTER_API_KEY"
+                },
+                "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+              },
+              "secondary_model": {
+                "model": "openai/gpt-5.4",
+                "config": {
+                  "models": [
+                    "openai/gpt-5.4",
+                    "anthropic/claude-sonnet-4.6",
+                    "google/gemini-3-flash-preview"
+                  ]
+                },
+                "plugin": "openai-compatible",
+                "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+                "provider": "openrouter",
+                "plugin_config": {
+                  "api_url": "https://openrouter.ai/api",
+                  "api_key_env_var": "OPENROUTERAPIKEY"
                 }
               }
             },
@@ -2454,23 +2121,23 @@
               },
               "host_first_method": "STORAGE_READ",
               "delete_genvm_status": 200,
-              "host_loop_entered_s": 774.687839197,
-              "host_loop_enter_wait_ms": 5,
+              "host_loop_entered_s": 648.885208745,
+              "host_loop_enter_wait_ms": 8,
               "host_time_per_method_ms": {
-                "STORAGE_READ": 2
+                "STORAGE_READ": 3
               },
-              "host_total_handling_time_ms": 2,
+              "host_total_handling_time_ms": 3,
               "manager_run_attempt_success": {
                 "attempt": 0,
-                "duration_ms": 3
+                "duration_ms": 5
               },
-              "host_first_method_received_s": 774.68796428,
+              "host_first_method_received_s": 648.885335307,
               "host_accept_to_first_method_ms": 0
             },
             "nondet_disagree": null,
-            "processing_time": 1114,
+            "processing_time": 1100,
             "execution_result": "SUCCESS",
-            "contract_state_hash": "003b501e5ac6977e77e828fb34f87bdbd1016744b1b2306eb167a69bcdf138a2",
+            "contract_state_hash": "104d34daef0822efed426ab97d21cdff139d67d69c40c21b7507d0931b80c437",
             "pending_transactions": []
           },
           {
@@ -2480,8 +2147,53 @@
             "calldata": "",
             "gas_used": 0,
             "node_config": {
-              "id": 5736,
-              "model": "policy:prd-glm",
+              "id": 5740,
+              "model": "openai/gpt-5.4",
+              "stake": 100,
+              "config": {
+                "models": [
+                  "openai/gpt-5.4",
+                  "anthropic/claude-sonnet-4.6",
+                  "google/gemini-3-flash-preview"
+                ]
+              },
+              "plugin": "openai-compatible",
+              "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+              "provider": "openrouter",
+              "plugin_config": {
+                "api_url": "https://openrouter.ai/api",
+                "api_key_env_var": "OPENROUTERAPIKEY"
+              },
+              "fallback_validator": "0xB4EE99165ffe987E64B7b72e45a753309c501eef"
+            },
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "contract_state": {},
+            "execution_stats": null,
+            "nondet_disagree": null,
+            "processing_time": 0,
+            "execution_result": "ERROR",
+            "contract_state_hash": null,
+            "pending_transactions": []
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "result": "AmlkbGU=",
+            "calldata": "",
+            "gas_used": 0,
+            "node_config": {
+              "id": 5728,
+              "model": "policy:prd-sonnet",
               "stake": 100,
               "config": {
                 "policy_ir": [
@@ -2508,15 +2220,15 @@
                       "or",
                       [
                         "family_eq",
-                        "glm-5.1"
-                      ],
-                      [
-                        "family_eq",
-                        "gpt-oss-120b"
+                        "claude-sonnet-4-6"
                       ],
                       [
                         "family_eq",
                         "gpt-5.4"
+                      ],
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
                       ]
                     ]
                   ],
@@ -2529,7 +2241,7 @@
                         "gate",
                         [
                           "family_eq",
-                          "glm-5.1"
+                          "claude-sonnet-4-6"
                         ],
                         [
                           "lit",
@@ -2544,7 +2256,7 @@
                         "gate",
                         [
                           "family_eq",
-                          "gpt-oss-120b"
+                          "gpt-5.4"
                         ],
                         [
                           "lit",
@@ -2559,7 +2271,7 @@
                         "gate",
                         [
                           "family_eq",
-                          "gpt-5.4"
+                          "gemini-3-flash-preview"
                         ],
                         [
                           "lit",
@@ -2635,13 +2347,13 @@
                 "first_token_timeout_ms": 7000
               },
               "plugin": "openai-compatible",
-              "address": "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB",
+              "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
               "provider": "llm-router",
               "plugin_config": {
                 "api_url": "https://router.ygr.ai",
                 "api_key_env_var": "LLM_ROUTER_API_KEY"
               },
-              "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+              "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
             },
             "genvm_result": {
               "stderr": "Validator execution cancelled after quorum",
@@ -2666,12 +2378,12 @@
       }
     ],
     "current_monitoring": {
-      "COMMITTING.VALIDATOR_1.DEPLOY_END": 1792913431.1240091,
-      "COMMITTING.VALIDATOR_4.DEPLOY_END": 1792913431.2482083,
-      "COMMITTING.VALIDATOR_1.RECEIPT_CREATED": 1792913431.1692178,
-      "COMMITTING.VALIDATOR_4.RECEIPT_CREATED": 1792913431.2710626,
-      "COMMITTING.VALIDATOR_1.EXECUTION_FINISHED": 1792913431.0981278,
-      "COMMITTING.VALIDATOR_4.EXECUTION_FINISHED": 1792913431.234795
+      "COMMITTING.VALIDATOR_3.DEPLOY_END": 1792924275.2418213,
+      "COMMITTING.VALIDATOR_4.DEPLOY_END": 1792924275.1213427,
+      "COMMITTING.VALIDATOR_3.RECEIPT_CREATED": 1792924275.2811582,
+      "COMMITTING.VALIDATOR_4.RECEIPT_CREATED": 1792924275.1610847,
+      "COMMITTING.VALIDATOR_3.EXECUTION_FINISHED": 1792924275.2001367,
+      "COMMITTING.VALIDATOR_4.EXECUTION_FINISHED": 1792924275.0800612
     },
     "current_status_changes": []
   },
@@ -2679,32 +2391,32 @@
   "appeal_processing_time": 0,
   "config_rotation_rounds": 3,
   "num_of_initial_validators": 5,
-  "last_vote_timestamp": "1792913430",
+  "last_vote_timestamp": "1792924274",
   "rotation_count": 0,
   "appeal_leader_timeout": false,
   "leader_timeout_validators": [],
   "appeal_validators_timeout": false,
   "sim_config": {
-    "signed_rollup_transaction": "0xf917ab820143808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b9174427241a990000000000000000000000006325b360db455435bf5e81d0ae18dc3b249f226c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000166ff9166cb91634232076302e322e31360a23207b2022446570656e6473223a202270792d67656e6c617965723a316a623435616138796e683261396339786e33623771716838736d3571393368776670376a716d7773666868386a707a3039683622207d0a0a696d706f7274206a736f6e0a66726f6d2067656e6c6179657220696d706f7274202a0a0a0a6465662063616e6f6e6963616c5f6a736f6e286f626a29202d3e207374723a0a2020202072657475726e206a736f6e2e64756d7073286f626a2c20736f72745f6b6579733d547275652c20736570617261746f72733d28222c222c20223a2229290a0a0a636c617373205368697052657075746174696f6e563228676c2e436f6e7472616374293a0a202020205f5f676c5f636f6e74726163745f5f203d20547275650a20202020657363726f775f616464726573733a20416464726573730a2020202070726f6365737365643a20547265654d61705b7374722c207374725d0a202020206465765f73636f7265733a20547265654d61705b7374722c207374725d0a2020202063726561746f725f73636f7265733a20547265654d61705b7374722c207374725d0a202020206d6574613a20547265654d61705b7374722c207374725d0a0a20202020646566205f5f696e69745f5f2873656c662c20657363726f775f616464726573735f7374723a20737472293a0a20202020202020202320446f206e6f742061737369676e20547265654d6170282920696e205f5f696e69745f5f0a202020202020202073656c662e657363726f775f61646472657373203d204164647265737328657363726f775f616464726573735f737472290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f657363726f775f616464726573732873656c6629202d3e207374723a0a202020202020202072657475726e2073656c662e657363726f775f616464726573732e61735f6865780a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f6465765f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e6465765f73636f7265733a0a20202020202020202020202072657475726e2073656c662e6465765f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f63726561746f725f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e63726561746f725f73636f7265733a0a20202020202020202020202072657475726e2073656c662e63726561746f725f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206c6973745f726563656e742873656c662c206c696d69743a20696e74203d20313029202d3e206c6973745b7374725d3a0a20202020202020206c696d203d206d696e286d617828312c206c696d6974292c203230290a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a2020202020202020202020206974656d73203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a2020202020202020202020206974656d73203d205b5d0a202020202020202072657475726e206974656d735b3a6c696d5d0a0a2020202040676c2e7075626c69632e77726974650a202020206465662073796e632873656c662c20626f756e74795f69643a207374722c206d696e5f7061796f75745f7063743a20696e74203d20323529202d3e204e6f6e653a0a2020202020202020626964203d2073747228626f756e74795f6964292e737472697028290a20202020202020206966206e6f74206269643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e74792069642063616e6e6f7420626520656d70747922290a0a202020202020202069662062696420696e2073656c662e70726f6365737365643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e747920736574746c656d656e7420616c72656164792070726f63657373656422290a0a2020202020202020657363726f77203d20676c2e6765745f636f6e74726163745f61742873656c662e657363726f775f61646472657373290a20202020202020207261775f736574746c656d656e74203d20657363726f772e7669657728292e6765745f736574746c656d656e7428626964290a0a20202020202020206966206e6f74207261775f736574746c656d656e743a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74206e6f7420666f756e6420696e20657363726f7722290a0a20202020202020207472793a0a202020202020202020202020736574746c656d656e74203d206a736f6e2e6c6f616473287261775f736574746c656d656e74290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f7228224661696c656420746f206465636f646520736574746c656d656e74204a534f4e22290a0a2020202020202020646576203d20736574746c656d656e742e6765742822646576222c202222292e737472697028292e6c6f77657228290a202020202020202063726561746f72203d20736574746c656d656e742e676574282263726561746f72222c202222292e737472697028292e6c6f77657228290a202020202020202063726974657269615f68617368203d20736574746c656d656e742e676574282263726974657269615f68617368222c202222292e737472697028290a2020202020202020686561645f736861203d20736574746c656d656e742e6765742822686561645f736861222c202222292e737472697028290a202020202020202076657264696374203d20736574746c656d656e742e676574282276657264696374222c202222292e737472697028290a20202020202020207061636b65745f736861323536203d20736574746c656d656e742e67657428227061636b65745f736861323536222c202222292e737472697028290a20202020202020206465765f616d745f737472203d20736574746c656d656e742e67657428226465765f616d6f756e74222c20223022290a202020202020202063726561746f725f616d745f737472203d20736574746c656d656e742e676574282263726561746f725f616d6f756e74222c20223022290a20202020202020207061796f75745f7063745f737472203d20736574746c656d656e742e67657428227061796f75745f706374222c20223022290a0a20202020202020206966206e6f7420646576206f72206e6f742063726974657269615f68617368206f72206e6f7420686561645f736861206f72206e6f74207061636b65745f7368613235363a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e74207265636f72643a206d697373696e67207265717569726564206669656c647322290a0a20202020202020207472793a0a2020202020202020202020206465765f616d74203d20696e74286465765f616d745f737472290a20202020202020202020202063726561746f725f616d74203d20696e742863726561746f725f616d745f737472290a2020202020202020202020207061796f75745f706374203d20696e74287061796f75745f7063745f737472290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e7420616d6f756e747322290a0a202020202020202023205265667573616c20636865636b3a207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c640a2020202020202020636c616d7065645f6d696e203d206d696e286d61782832352c206d696e5f7061796f75745f706374292c20313030290a20202020202020206966207061796f75745f706374203c20636c616d7065645f6d696e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c6422290a0a20202020202020202320312e20557064617465204465762053636f72650a20202020202020206465765f73636f7265203d207b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d0a202020202020202069662064657620696e2073656c662e6465765f73636f7265733a0a2020202020202020202020207472793a0a202020202020202020202020202020206465765f73636f7265203d206a736f6e2e6c6f6164732873656c662e6465765f73636f7265735b6465765d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a20202020202020206465765f73636f72655b22736574746c65645f636f756e74225d203d20696e74286465765f73636f72652e6765742822736574746c65645f636f756e74222c20302929202b20310a2020202020202020637572725f6561726e6564203d20696e74286465765f73636f72652e6765742822756e6974735f6561726e6564222c2022302229290a20202020202020206465765f73636f72655b22756e6974735f6561726e6564225d203d2073747228637572725f6561726e6564202b206465765f616d74290a0a2020202020202020636f756e7473203d206465765f73636f72652e6765742822626573745f766572646963745f636f756e7473222c207b7d290a2020202020202020636f756e74735b766572646963745d203d20696e7428636f756e74732e67657428766572646963742c20302929202b20310a20202020202020206465765f73636f72655b22626573745f766572646963745f636f756e7473225d203d20636f756e74730a0a202020202020202073656c662e6465765f73636f7265735b6465765d203d2063616e6f6e6963616c5f6a736f6e286465765f73636f7265290a0a20202020202020202320322e205570646174652043726561746f722053636f72650a202020202020202063726561746f725f73636f7265203d207b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d0a202020202020202069662063726561746f7220696e2073656c662e63726561746f725f73636f7265733a0a2020202020202020202020207472793a0a2020202020202020202020202020202063726561746f725f73636f7265203d206a736f6e2e6c6f6164732873656c662e63726561746f725f73636f7265735b63726561746f725d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a202020202020202063726561746f725f73636f72655b22626f756e746965735f736574746c6564225d203d20696e742863726561746f725f73636f72652e6765742822626f756e746965735f736574746c6564222c20302929202b20310a2020202020202020637572725f70616964203d20696e742863726561746f725f73636f72652e6765742822756e6974735f70616964222c2022302229290a2020202020202020637572725f726566203d20696e742863726561746f725f73636f72652e6765742822756e6974735f726566756e646564222c2022302229290a202020202020202063726561746f725f73636f72655b22756e6974735f70616964225d203d2073747228637572725f70616964202b206465765f616d74290a202020202020202063726561746f725f73636f72655b22756e6974735f726566756e646564225d203d2073747228637572725f726566202b2063726561746f725f616d74290a0a202020202020202073656c662e63726561746f725f73636f7265735b63726561746f725d203d2063616e6f6e6963616c5f6a736f6e2863726561746f725f73636f7265290a0a20202020202020202320332e204d61726b2050726f63657373656420262055706461746520526563656e740a202020202020202073656c662e70726f6365737365645b6269645d203d202231220a0a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a202020202020202020202020726563656e7473203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726563656e7473203d205b5d0a2020202020202020757064617465645f726563656e7473203d205b6269645d202b205b7820666f72207820696e20726563656e7473206966207820213d206269645d5b3a34395d0a202020202020202073656c662e6d6574615b22726563656e745f73796e636564225d203d2063616e6f6e6963616c5f6a736f6e28757064617465645f726563656e7473290ab30e04617267730dd4023078333230636233433339383742333935303939453139353434463035353633343766343444394233360000000000000000000000000000000000008301e481a03fe961032b074987b9e35a9c0854571b51474193c7b4e46ac247fb66aafc1bf8a058deb96357e7939460c4186f87a730dddc1fcc6ea75364a1c72977492158768d"
+    "signed_rollup_transaction": "0xf917ab82019f808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b9174427241a990000000000000000000000006325b360db455435bf5e81d0ae18dc3b249f226c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000166ff9166cb91634232076302e322e31360a23207b2022446570656e6473223a202270792d67656e6c617965723a316a623435616138796e683261396339786e33623771716838736d3571393368776670376a716d7773666868386a707a3039683622207d0a0a696d706f7274206a736f6e0a66726f6d2067656e6c6179657220696d706f7274202a0a0a0a6465662063616e6f6e6963616c5f6a736f6e286f626a29202d3e207374723a0a2020202072657475726e206a736f6e2e64756d7073286f626a2c20736f72745f6b6579733d547275652c20736570617261746f72733d28222c222c20223a2229290a0a0a636c617373205368697052657075746174696f6e563228676c2e436f6e7472616374293a0a202020205f5f676c5f636f6e74726163745f5f203d20547275650a20202020657363726f775f616464726573733a20416464726573730a2020202070726f6365737365643a20547265654d61705b7374722c207374725d0a202020206465765f73636f7265733a20547265654d61705b7374722c207374725d0a2020202063726561746f725f73636f7265733a20547265654d61705b7374722c207374725d0a202020206d6574613a20547265654d61705b7374722c207374725d0a0a20202020646566205f5f696e69745f5f2873656c662c20657363726f775f616464726573735f7374723a20737472293a0a20202020202020202320446f206e6f742061737369676e20547265654d6170282920696e205f5f696e69745f5f0a202020202020202073656c662e657363726f775f61646472657373203d204164647265737328657363726f775f616464726573735f737472290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f657363726f775f616464726573732873656c6629202d3e207374723a0a202020202020202072657475726e2073656c662e657363726f775f616464726573732e61735f6865780a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f6465765f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e6465765f73636f7265733a0a20202020202020202020202072657475726e2073656c662e6465765f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f63726561746f725f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e63726561746f725f73636f7265733a0a20202020202020202020202072657475726e2073656c662e63726561746f725f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206c6973745f726563656e742873656c662c206c696d69743a20696e74203d20313029202d3e206c6973745b7374725d3a0a20202020202020206c696d203d206d696e286d617828312c206c696d6974292c203230290a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a2020202020202020202020206974656d73203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a2020202020202020202020206974656d73203d205b5d0a202020202020202072657475726e206974656d735b3a6c696d5d0a0a2020202040676c2e7075626c69632e77726974650a202020206465662073796e632873656c662c20626f756e74795f69643a207374722c206d696e5f7061796f75745f7063743a20696e74203d20323529202d3e204e6f6e653a0a2020202020202020626964203d2073747228626f756e74795f6964292e737472697028290a20202020202020206966206e6f74206269643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e74792069642063616e6e6f7420626520656d70747922290a0a202020202020202069662062696420696e2073656c662e70726f6365737365643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e747920736574746c656d656e7420616c72656164792070726f63657373656422290a0a2020202020202020657363726f77203d20676c2e6765745f636f6e74726163745f61742873656c662e657363726f775f61646472657373290a20202020202020207261775f736574746c656d656e74203d20657363726f772e7669657728292e6765745f736574746c656d656e7428626964290a0a20202020202020206966206e6f74207261775f736574746c656d656e743a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74206e6f7420666f756e6420696e20657363726f7722290a0a20202020202020207472793a0a202020202020202020202020736574746c656d656e74203d206a736f6e2e6c6f616473287261775f736574746c656d656e74290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f7228224661696c656420746f206465636f646520736574746c656d656e74204a534f4e22290a0a2020202020202020646576203d20736574746c656d656e742e6765742822646576222c202222292e737472697028292e6c6f77657228290a202020202020202063726561746f72203d20736574746c656d656e742e676574282263726561746f72222c202222292e737472697028292e6c6f77657228290a202020202020202063726974657269615f68617368203d20736574746c656d656e742e676574282263726974657269615f68617368222c202222292e737472697028290a2020202020202020686561645f736861203d20736574746c656d656e742e6765742822686561645f736861222c202222292e737472697028290a202020202020202076657264696374203d20736574746c656d656e742e676574282276657264696374222c202222292e737472697028290a20202020202020207061636b65745f736861323536203d20736574746c656d656e742e67657428227061636b65745f736861323536222c202222292e737472697028290a20202020202020206465765f616d745f737472203d20736574746c656d656e742e67657428226465765f616d6f756e74222c20223022290a202020202020202063726561746f725f616d745f737472203d20736574746c656d656e742e676574282263726561746f725f616d6f756e74222c20223022290a20202020202020207061796f75745f7063745f737472203d20736574746c656d656e742e67657428227061796f75745f706374222c20223022290a0a20202020202020206966206e6f7420646576206f72206e6f742063726974657269615f68617368206f72206e6f7420686561645f736861206f72206e6f74207061636b65745f7368613235363a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e74207265636f72643a206d697373696e67207265717569726564206669656c647322290a0a20202020202020207472793a0a2020202020202020202020206465765f616d74203d20696e74286465765f616d745f737472290a20202020202020202020202063726561746f725f616d74203d20696e742863726561746f725f616d745f737472290a2020202020202020202020207061796f75745f706374203d20696e74287061796f75745f7063745f737472290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e7420616d6f756e747322290a0a202020202020202023205265667573616c20636865636b3a207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c640a2020202020202020636c616d7065645f6d696e203d206d696e286d61782832352c206d696e5f7061796f75745f706374292c20313030290a20202020202020206966207061796f75745f706374203c20636c616d7065645f6d696e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c6422290a0a20202020202020202320312e20557064617465204465762053636f72650a20202020202020206465765f73636f7265203d207b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d0a202020202020202069662064657620696e2073656c662e6465765f73636f7265733a0a2020202020202020202020207472793a0a202020202020202020202020202020206465765f73636f7265203d206a736f6e2e6c6f6164732873656c662e6465765f73636f7265735b6465765d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a20202020202020206465765f73636f72655b22736574746c65645f636f756e74225d203d20696e74286465765f73636f72652e6765742822736574746c65645f636f756e74222c20302929202b20310a2020202020202020637572725f6561726e6564203d20696e74286465765f73636f72652e6765742822756e6974735f6561726e6564222c2022302229290a20202020202020206465765f73636f72655b22756e6974735f6561726e6564225d203d2073747228637572725f6561726e6564202b206465765f616d74290a0a2020202020202020636f756e7473203d206465765f73636f72652e6765742822626573745f766572646963745f636f756e7473222c207b7d290a2020202020202020636f756e74735b766572646963745d203d20696e7428636f756e74732e67657428766572646963742c20302929202b20310a20202020202020206465765f73636f72655b22626573745f766572646963745f636f756e7473225d203d20636f756e74730a0a202020202020202073656c662e6465765f73636f7265735b6465765d203d2063616e6f6e6963616c5f6a736f6e286465765f73636f7265290a0a20202020202020202320322e205570646174652043726561746f722053636f72650a202020202020202063726561746f725f73636f7265203d207b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d0a202020202020202069662063726561746f7220696e2073656c662e63726561746f725f73636f7265733a0a2020202020202020202020207472793a0a2020202020202020202020202020202063726561746f725f73636f7265203d206a736f6e2e6c6f6164732873656c662e63726561746f725f73636f7265735b63726561746f725d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a202020202020202063726561746f725f73636f72655b22626f756e746965735f736574746c6564225d203d20696e742863726561746f725f73636f72652e6765742822626f756e746965735f736574746c6564222c20302929202b20310a2020202020202020637572725f70616964203d20696e742863726561746f725f73636f72652e6765742822756e6974735f70616964222c2022302229290a2020202020202020637572725f726566203d20696e742863726561746f725f73636f72652e6765742822756e6974735f726566756e646564222c2022302229290a202020202020202063726561746f725f73636f72655b22756e6974735f70616964225d203d2073747228637572725f70616964202b206465765f616d74290a202020202020202063726561746f725f73636f72655b22756e6974735f726566756e646564225d203d2073747228637572725f726566202b2063726561746f725f616d74290a0a202020202020202073656c662e63726561746f725f73636f7265735b63726561746f725d203d2063616e6f6e6963616c5f6a736f6e2863726561746f725f73636f7265290a0a20202020202020202320332e204d61726b2050726f63657373656420262055706461746520526563656e740a202020202020202073656c662e70726f6365737365645b6269645d203d202231220a0a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a202020202020202020202020726563656e7473203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726563656e7473203d205b5d0a2020202020202020757064617465645f726563656e7473203d205b6269645d202b205b7820666f72207820696e20726563656e7473206966207820213d206269645d5b3a34395d0a202020202020202073656c662e6d6574615b22726563656e745f73796e636564225d203d2063616e6f6e6963616c5f6a736f6e28757064617465645f726563656e7473290ab30e04617267730dd4023078446638416462353230466545353130643837393362433564303143376146373531413466453737320000000000000000000000000000000000008301e481a0a466e5859dfa3c4324543fea4eb4e7d8498b72054db5402a32a6ccebf31d825aa0734091b46a0a2163d0c4521f1231d10c8b0514ea8f384449206f18172186310b"
   },
   "value_credited": false,
-  "current_timestamp": "1792913435",
+  "current_timestamp": "1792924276",
   "sender": "0x6325B360Db455435BF5e81D0aE18DC3b249f226C",
-  "recipient": "0x796Fe265c97419f259478a486F5d43ff0720D69e",
+  "recipient": "0x31F0955Ad7bA06C1902d83B876308e5F125865dF",
   "tx_slot": "0",
-  "created_timestamp": "1792913426",
+  "created_timestamp": "1792924271",
   "random_seed": "0x0000000000000000000000000000000000000000000000000000000000000000",
-  "tx_id": "0x60c0ec4425d7f13a74871d3d29df36917f1e340704f9c240ec47e8af68b63fe7",
+  "tx_id": "0x2640f87b15949ae4dff0505a015f4696795f34496ab40843430a493f7cd73cef",
   "read_state_block_range": {
     "activation_block": "0",
     "processing_block": "0",
     "proposal_block": "0"
   },
-  "activator": "0x5e84e17266a193077728229751aC8A1dD24be146",
-  "last_leader": "0x5e84e17266a193077728229751aC8A1dD24be146",
+  "activator": "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
+  "last_leader": "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
   "result_name": "MAJORITY_AGREE",
-  "tx_data": "f9166cb91634232076302e322e31360a23207b2022446570656e6473223a202270792d67656e6c617965723a316a623435616138796e683261396339786e33623771716838736d3571393368776670376a716d7773666868386a707a3039683622207d0a0a696d706f7274206a736f6e0a66726f6d2067656e6c6179657220696d706f7274202a0a0a0a6465662063616e6f6e6963616c5f6a736f6e286f626a29202d3e207374723a0a2020202072657475726e206a736f6e2e64756d7073286f626a2c20736f72745f6b6579733d547275652c20736570617261746f72733d28222c222c20223a2229290a0a0a636c617373205368697052657075746174696f6e563228676c2e436f6e7472616374293a0a202020205f5f676c5f636f6e74726163745f5f203d20547275650a20202020657363726f775f616464726573733a20416464726573730a2020202070726f6365737365643a20547265654d61705b7374722c207374725d0a202020206465765f73636f7265733a20547265654d61705b7374722c207374725d0a2020202063726561746f725f73636f7265733a20547265654d61705b7374722c207374725d0a202020206d6574613a20547265654d61705b7374722c207374725d0a0a20202020646566205f5f696e69745f5f2873656c662c20657363726f775f616464726573735f7374723a20737472293a0a20202020202020202320446f206e6f742061737369676e20547265654d6170282920696e205f5f696e69745f5f0a202020202020202073656c662e657363726f775f61646472657373203d204164647265737328657363726f775f616464726573735f737472290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f657363726f775f616464726573732873656c6629202d3e207374723a0a202020202020202072657475726e2073656c662e657363726f775f616464726573732e61735f6865780a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f6465765f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e6465765f73636f7265733a0a20202020202020202020202072657475726e2073656c662e6465765f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f63726561746f725f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e63726561746f725f73636f7265733a0a20202020202020202020202072657475726e2073656c662e63726561746f725f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206c6973745f726563656e742873656c662c206c696d69743a20696e74203d20313029202d3e206c6973745b7374725d3a0a20202020202020206c696d203d206d696e286d617828312c206c696d6974292c203230290a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a2020202020202020202020206974656d73203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a2020202020202020202020206974656d73203d205b5d0a202020202020202072657475726e206974656d735b3a6c696d5d0a0a2020202040676c2e7075626c69632e77726974650a202020206465662073796e632873656c662c20626f756e74795f69643a207374722c206d696e5f7061796f75745f7063743a20696e74203d20323529202d3e204e6f6e653a0a2020202020202020626964203d2073747228626f756e74795f6964292e737472697028290a20202020202020206966206e6f74206269643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e74792069642063616e6e6f7420626520656d70747922290a0a202020202020202069662062696420696e2073656c662e70726f6365737365643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e747920736574746c656d656e7420616c72656164792070726f63657373656422290a0a2020202020202020657363726f77203d20676c2e6765745f636f6e74726163745f61742873656c662e657363726f775f61646472657373290a20202020202020207261775f736574746c656d656e74203d20657363726f772e7669657728292e6765745f736574746c656d656e7428626964290a0a20202020202020206966206e6f74207261775f736574746c656d656e743a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74206e6f7420666f756e6420696e20657363726f7722290a0a20202020202020207472793a0a202020202020202020202020736574746c656d656e74203d206a736f6e2e6c6f616473287261775f736574746c656d656e74290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f7228224661696c656420746f206465636f646520736574746c656d656e74204a534f4e22290a0a2020202020202020646576203d20736574746c656d656e742e6765742822646576222c202222292e737472697028292e6c6f77657228290a202020202020202063726561746f72203d20736574746c656d656e742e676574282263726561746f72222c202222292e737472697028292e6c6f77657228290a202020202020202063726974657269615f68617368203d20736574746c656d656e742e676574282263726974657269615f68617368222c202222292e737472697028290a2020202020202020686561645f736861203d20736574746c656d656e742e6765742822686561645f736861222c202222292e737472697028290a202020202020202076657264696374203d20736574746c656d656e742e676574282276657264696374222c202222292e737472697028290a20202020202020207061636b65745f736861323536203d20736574746c656d656e742e67657428227061636b65745f736861323536222c202222292e737472697028290a20202020202020206465765f616d745f737472203d20736574746c656d656e742e67657428226465765f616d6f756e74222c20223022290a202020202020202063726561746f725f616d745f737472203d20736574746c656d656e742e676574282263726561746f725f616d6f756e74222c20223022290a20202020202020207061796f75745f7063745f737472203d20736574746c656d656e742e67657428227061796f75745f706374222c20223022290a0a20202020202020206966206e6f7420646576206f72206e6f742063726974657269615f68617368206f72206e6f7420686561645f736861206f72206e6f74207061636b65745f7368613235363a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e74207265636f72643a206d697373696e67207265717569726564206669656c647322290a0a20202020202020207472793a0a2020202020202020202020206465765f616d74203d20696e74286465765f616d745f737472290a20202020202020202020202063726561746f725f616d74203d20696e742863726561746f725f616d745f737472290a2020202020202020202020207061796f75745f706374203d20696e74287061796f75745f7063745f737472290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e7420616d6f756e747322290a0a202020202020202023205265667573616c20636865636b3a207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c640a2020202020202020636c616d7065645f6d696e203d206d696e286d61782832352c206d696e5f7061796f75745f706374292c20313030290a20202020202020206966207061796f75745f706374203c20636c616d7065645f6d696e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c6422290a0a20202020202020202320312e20557064617465204465762053636f72650a20202020202020206465765f73636f7265203d207b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d0a202020202020202069662064657620696e2073656c662e6465765f73636f7265733a0a2020202020202020202020207472793a0a202020202020202020202020202020206465765f73636f7265203d206a736f6e2e6c6f6164732873656c662e6465765f73636f7265735b6465765d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a20202020202020206465765f73636f72655b22736574746c65645f636f756e74225d203d20696e74286465765f73636f72652e6765742822736574746c65645f636f756e74222c20302929202b20310a2020202020202020637572725f6561726e6564203d20696e74286465765f73636f72652e6765742822756e6974735f6561726e6564222c2022302229290a20202020202020206465765f73636f72655b22756e6974735f6561726e6564225d203d2073747228637572725f6561726e6564202b206465765f616d74290a0a2020202020202020636f756e7473203d206465765f73636f72652e6765742822626573745f766572646963745f636f756e7473222c207b7d290a2020202020202020636f756e74735b766572646963745d203d20696e7428636f756e74732e67657428766572646963742c20302929202b20310a20202020202020206465765f73636f72655b22626573745f766572646963745f636f756e7473225d203d20636f756e74730a0a202020202020202073656c662e6465765f73636f7265735b6465765d203d2063616e6f6e6963616c5f6a736f6e286465765f73636f7265290a0a20202020202020202320322e205570646174652043726561746f722053636f72650a202020202020202063726561746f725f73636f7265203d207b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d0a202020202020202069662063726561746f7220696e2073656c662e63726561746f725f73636f7265733a0a2020202020202020202020207472793a0a2020202020202020202020202020202063726561746f725f73636f7265203d206a736f6e2e6c6f6164732873656c662e63726561746f725f73636f7265735b63726561746f725d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a202020202020202063726561746f725f73636f72655b22626f756e746965735f736574746c6564225d203d20696e742863726561746f725f73636f72652e6765742822626f756e746965735f736574746c6564222c20302929202b20310a2020202020202020637572725f70616964203d20696e742863726561746f725f73636f72652e6765742822756e6974735f70616964222c2022302229290a2020202020202020637572725f726566203d20696e742863726561746f725f73636f72652e6765742822756e6974735f726566756e646564222c2022302229290a202020202020202063726561746f725f73636f72655b22756e6974735f70616964225d203d2073747228637572725f70616964202b206465765f616d74290a202020202020202063726561746f725f73636f72655b22756e6974735f726566756e646564225d203d2073747228637572725f726566202b2063726561746f725f616d74290a0a202020202020202073656c662e63726561746f725f73636f7265735b63726561746f725d203d2063616e6f6e6963616c5f6a736f6e2863726561746f725f73636f7265290a0a20202020202020202320332e204d61726b2050726f63657373656420262055706461746520526563656e740a202020202020202073656c662e70726f6365737365645b6269645d203d202231220a0a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a202020202020202020202020726563656e7473203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726563656e7473203d205b5d0a2020202020202020757064617465645f726563656e7473203d205b6269645d202b205b7820666f72207820696e20726563656e7473206966207820213d206269645d5b3a34395d0a202020202020202073656c662e6d6574615b22726563656e745f73796e636564225d203d2063616e6f6e6963616c5f6a736f6e28757064617465645f726563656e7473290ab30e04617267730dd40230783332306362334333393837423339353039394531393534344630353536333437663434443942333600",
-  "tx_execution_hash": "0xf0d9eb2b5882b0e23b730054be4c5cd7e91f822dae0137cbf4a3f7175b3634d8",
+  "tx_data": "f9166cb91634232076302e322e31360a23207b2022446570656e6473223a202270792d67656e6c617965723a316a623435616138796e683261396339786e33623771716838736d3571393368776670376a716d7773666868386a707a3039683622207d0a0a696d706f7274206a736f6e0a66726f6d2067656e6c6179657220696d706f7274202a0a0a0a6465662063616e6f6e6963616c5f6a736f6e286f626a29202d3e207374723a0a2020202072657475726e206a736f6e2e64756d7073286f626a2c20736f72745f6b6579733d547275652c20736570617261746f72733d28222c222c20223a2229290a0a0a636c617373205368697052657075746174696f6e563228676c2e436f6e7472616374293a0a202020205f5f676c5f636f6e74726163745f5f203d20547275650a20202020657363726f775f616464726573733a20416464726573730a2020202070726f6365737365643a20547265654d61705b7374722c207374725d0a202020206465765f73636f7265733a20547265654d61705b7374722c207374725d0a2020202063726561746f725f73636f7265733a20547265654d61705b7374722c207374725d0a202020206d6574613a20547265654d61705b7374722c207374725d0a0a20202020646566205f5f696e69745f5f2873656c662c20657363726f775f616464726573735f7374723a20737472293a0a20202020202020202320446f206e6f742061737369676e20547265654d6170282920696e205f5f696e69745f5f0a202020202020202073656c662e657363726f775f61646472657373203d204164647265737328657363726f775f616464726573735f737472290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f657363726f775f616464726573732873656c6629202d3e207374723a0a202020202020202072657475726e2073656c662e657363726f775f616464726573732e61735f6865780a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f6465765f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e6465765f73636f7265733a0a20202020202020202020202072657475726e2073656c662e6465765f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206765745f63726561746f725f73636f72652873656c662c20616464723a2073747229202d3e207374723a0a2020202020202020616464725f6c6f776572203d20616464722e6c6f77657228290a2020202020202020696620616464725f6c6f77657220696e2073656c662e63726561746f725f73636f7265733a0a20202020202020202020202072657475726e2073656c662e63726561746f725f73636f7265735b616464725f6c6f7765725d0a202020202020202072657475726e2063616e6f6e6963616c5f6a736f6e287b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d290a0a2020202040676c2e7075626c69632e766965770a20202020646566206c6973745f726563656e742873656c662c206c696d69743a20696e74203d20313029202d3e206c6973745b7374725d3a0a20202020202020206c696d203d206d696e286d617828312c206c696d6974292c203230290a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a2020202020202020202020206974656d73203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a2020202020202020202020206974656d73203d205b5d0a202020202020202072657475726e206974656d735b3a6c696d5d0a0a2020202040676c2e7075626c69632e77726974650a202020206465662073796e632873656c662c20626f756e74795f69643a207374722c206d696e5f7061796f75745f7063743a20696e74203d20323529202d3e204e6f6e653a0a2020202020202020626964203d2073747228626f756e74795f6964292e737472697028290a20202020202020206966206e6f74206269643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e74792069642063616e6e6f7420626520656d70747922290a0a202020202020202069662062696420696e2073656c662e70726f6365737365643a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822426f756e747920736574746c656d656e7420616c72656164792070726f63657373656422290a0a2020202020202020657363726f77203d20676c2e6765745f636f6e74726163745f61742873656c662e657363726f775f61646472657373290a20202020202020207261775f736574746c656d656e74203d20657363726f772e7669657728292e6765745f736574746c656d656e7428626964290a0a20202020202020206966206e6f74207261775f736574746c656d656e743a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74206e6f7420666f756e6420696e20657363726f7722290a0a20202020202020207472793a0a202020202020202020202020736574746c656d656e74203d206a736f6e2e6c6f616473287261775f736574746c656d656e74290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f7228224661696c656420746f206465636f646520736574746c656d656e74204a534f4e22290a0a2020202020202020646576203d20736574746c656d656e742e6765742822646576222c202222292e737472697028292e6c6f77657228290a202020202020202063726561746f72203d20736574746c656d656e742e676574282263726561746f72222c202222292e737472697028292e6c6f77657228290a202020202020202063726974657269615f68617368203d20736574746c656d656e742e676574282263726974657269615f68617368222c202222292e737472697028290a2020202020202020686561645f736861203d20736574746c656d656e742e6765742822686561645f736861222c202222292e737472697028290a202020202020202076657264696374203d20736574746c656d656e742e676574282276657264696374222c202222292e737472697028290a20202020202020207061636b65745f736861323536203d20736574746c656d656e742e67657428227061636b65745f736861323536222c202222292e737472697028290a20202020202020206465765f616d745f737472203d20736574746c656d656e742e67657428226465765f616d6f756e74222c20223022290a202020202020202063726561746f725f616d745f737472203d20736574746c656d656e742e676574282263726561746f725f616d6f756e74222c20223022290a20202020202020207061796f75745f7063745f737472203d20736574746c656d656e742e67657428227061796f75745f706374222c20223022290a0a20202020202020206966206e6f7420646576206f72206e6f742063726974657269615f68617368206f72206e6f7420686561645f736861206f72206e6f74207061636b65745f7368613235363a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e74207265636f72643a206d697373696e67207265717569726564206669656c647322290a0a20202020202020207472793a0a2020202020202020202020206465765f616d74203d20696e74286465765f616d745f737472290a20202020202020202020202063726561746f725f616d74203d20696e742863726561746f725f616d745f737472290a2020202020202020202020207061796f75745f706374203d20696e74287061796f75745f7063745f737472290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822496e76616c696420736574746c656d656e7420616d6f756e747322290a0a202020202020202023205265667573616c20636865636b3a207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c640a2020202020202020636c616d7065645f6d696e203d206d696e286d61782832352c206d696e5f7061796f75745f706374292c20313030290a20202020202020206966207061796f75745f706374203c20636c616d7065645f6d696e3a0a202020202020202020202020726169736520676c2e766d2e557365724572726f722822536574746c656d656e74207061796f75742070657263656e746167652062656c6f77207265717569726564207468726573686f6c6422290a0a20202020202020202320312e20557064617465204465762053636f72650a20202020202020206465765f73636f7265203d207b0a20202020202020202020202022626573745f766572646963745f636f756e7473223a207b7d2c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022736574746c65645f636f756e74223a20302c0a20202020202020202020202022756e6974735f6561726e6564223a202230222c0a20202020202020207d0a202020202020202069662064657620696e2073656c662e6465765f73636f7265733a0a2020202020202020202020207472793a0a202020202020202020202020202020206465765f73636f7265203d206a736f6e2e6c6f6164732873656c662e6465765f73636f7265735b6465765d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a20202020202020206465765f73636f72655b22736574746c65645f636f756e74225d203d20696e74286465765f73636f72652e6765742822736574746c65645f636f756e74222c20302929202b20310a2020202020202020637572725f6561726e6564203d20696e74286465765f73636f72652e6765742822756e6974735f6561726e6564222c2022302229290a20202020202020206465765f73636f72655b22756e6974735f6561726e6564225d203d2073747228637572725f6561726e6564202b206465765f616d74290a0a2020202020202020636f756e7473203d206465765f73636f72652e6765742822626573745f766572646963745f636f756e7473222c207b7d290a2020202020202020636f756e74735b766572646963745d203d20696e7428636f756e74732e67657428766572646963742c20302929202b20310a20202020202020206465765f73636f72655b22626573745f766572646963745f636f756e7473225d203d20636f756e74730a0a202020202020202073656c662e6465765f73636f7265735b6465765d203d2063616e6f6e6963616c5f6a736f6e286465765f73636f7265290a0a20202020202020202320322e205570646174652043726561746f722053636f72650a202020202020202063726561746f725f73636f7265203d207b0a20202020202020202020202022626f756e746965735f736574746c6564223a20302c0a20202020202020202020202022736368656d615f76657273696f6e223a202232222c0a20202020202020202020202022756e6974735f70616964223a202230222c0a20202020202020202020202022756e6974735f726566756e646564223a202230222c0a20202020202020207d0a202020202020202069662063726561746f7220696e2073656c662e63726561746f725f73636f7265733a0a2020202020202020202020207472793a0a2020202020202020202020202020202063726561746f725f73636f7265203d206a736f6e2e6c6f6164732873656c662e63726561746f725f73636f7265735b63726561746f725d290a20202020202020202020202065786365707420457863657074696f6e3a0a20202020202020202020202020202020706173730a0a202020202020202063726561746f725f73636f72655b22626f756e746965735f736574746c6564225d203d20696e742863726561746f725f73636f72652e6765742822626f756e746965735f736574746c6564222c20302929202b20310a2020202020202020637572725f70616964203d20696e742863726561746f725f73636f72652e6765742822756e6974735f70616964222c2022302229290a2020202020202020637572725f726566203d20696e742863726561746f725f73636f72652e6765742822756e6974735f726566756e646564222c2022302229290a202020202020202063726561746f725f73636f72655b22756e6974735f70616964225d203d2073747228637572725f70616964202b206465765f616d74290a202020202020202063726561746f725f73636f72655b22756e6974735f726566756e646564225d203d2073747228637572725f726566202b2063726561746f725f616d74290a0a202020202020202073656c662e63726561746f725f73636f7265735b63726561746f725d203d2063616e6f6e6963616c5f6a736f6e2863726561746f725f73636f7265290a0a20202020202020202320332e204d61726b2050726f63657373656420262055706461746520526563656e740a202020202020202073656c662e70726f6365737365645b6269645d203d202231220a0a2020202020202020726563656e745f6a736f6e203d2073656c662e6d6574612e6765742822726563656e745f73796e636564222c20225b5d22290a20202020202020207472793a0a202020202020202020202020726563656e7473203d206a736f6e2e6c6f61647328726563656e745f6a736f6e290a202020202020202065786365707420457863657074696f6e3a0a202020202020202020202020726563656e7473203d205b5d0a2020202020202020757064617465645f726563656e7473203d205b6269645d202b205b7820666f72207820696e20726563656e7473206966207820213d206269645d5b3a34395d0a202020202020202073656c662e6d6574615b22726563656e745f73796e636564225d203d2063616e6f6e6963616c5f6a736f6e28757064617465645f726563656e7473290ab30e04617267730dd40230784466384164623532304665453531306438373933624335643031433761463735314134664537373200",
+  "tx_execution_hash": "0xf9bfe397fadef3c5076522fb4ff1ff447d04e1b84d3dcd5b5a94d9523c109862",
   "eq_blocks_outputs": "0xcdc6c28000c0c080c5c480c28000",
   "messages": [],
   "queue_type": "2",
@@ -2719,31 +2431,31 @@
     "rotations_left": "3",
     "result": 6,
     "round_validators": [
-      "0x5e84e17266a193077728229751aC8A1dD24be146",
-      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B",
-      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
-      "0x007d6451555Df7765c707284F844137927aE4e5E",
-      "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB"
+      "0xB4EE99165ffe987E64B7b72e45a753309c501eef",
+      "0x045291B293B9D68969c18B6637A8258038cf787A",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+      "0x336458747913FE397be82c4F0926ACeB3ab13618"
     ],
     "validator_votes_hash": [
-      "0x797c97f1d466c4af2b0e190a9734f768da6aabb0095d9efd6372f55b2c8b5ee6",
-      "0x77ef2633b3c615f2272a4e16d1d48ecc65981f1977125d82a4ddb39f6ea6e127",
-      "0x82db44516812709dc50b8d2393e7c5877030e6dff8bc7410c44ee22e5c47429f",
-      "0x5cbaab8cb131e0dc1f9d8cdff35ecdd60ab4847466b2651c12b29a1bfcd1ab22",
-      "0x67ffbbfad5945b2e7b18b359b0946b459db3f3f8f8abc9e83bc1a4925672ae10"
+      "0x3fe65d5793f1f0b1bbb8015663d31679445ac1cc37637ad15c072e529e898e2e",
+      "0x5b8a92c84cf05da4f145d346a7b2b22fe55ce41657730a15c271aa2170002f0d",
+      "0x455cdcb9ed2f8a8f10f99f3710ba522b3a480f5f8ae6f5ebfb5626fd865a178c",
+      "0x07c6391365c981d6fc652b90f4c4d37c51a9fdeb5155de2fad88e37a048b25b6",
+      "0xe6fd07e51c811d38f816d74fb17270d78a15ad5aade2151e4570bbab5aebca79"
     ],
     "validator_votes": [
       1,
+      1,
+      1,
       5,
-      1,
-      1,
       5
     ],
     "validator_votes_name": [
       "AGREE",
+      "AGREE",
+      "AGREE",
       "IDLE",
-      "AGREE",
-      "AGREE",
       "IDLE"
     ]
   }

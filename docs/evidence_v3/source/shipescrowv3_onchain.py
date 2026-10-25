@@ -952,49 +952,32 @@ class ShipEscrowV3(gl.Contract):
 
             settle_obj = {
                 "bounty_id": bounty_id,
+                "creator": creator,
+                "creator_amount": str(creator_refund),
                 "criteria_hash": bounty["criteria_hash"],
                 "dev": dev,
+                "dev_amount": str(dev_payout),
                 "final_payout_amount": str(dev_payout),
                 "final_payout_pct": payout_pct,
                 "head_sha": valid_head_sha,
+                "packet_sha256": packet_sha256,
+                "payout_pct": str(payout_pct),
+                "pr_url": pr_url,
                 "refund_amount": str(creator_refund),
+                "schema_version": "3",
                 "submission_id": sub_id,
                 "verdict": verdict,
             }
             self.settlements[bounty_id] = canonical_json(settle_obj)
 
-        elif verdict == "REFUND":
-            # 100% refund to creator
-            self.escrowed[bounty_id] = "0"
-            self._set_counter("total_escrowed", self._get_counter("total_escrowed") - reward_total)
-            self._add_balance(creator, reward_total)
-            self._set_counter("total_balances", self._get_counter("total_balances") + reward_total)
+        else:
+            # REFUND or REVIEW: non-settling attempts
+            if verdict == "REFUND":
+                # Bond forfeited to creator on malicious or failing submission
+                self._deduct_balance(dev, SUBMISSION_BOND_AMOUNT)
+                self._add_balance(creator, SUBMISSION_BOND_AMOUNT)
+                self._set_counter("total_forfeited", self._get_counter("total_forfeited") + SUBMISSION_BOND_AMOUNT)
 
-            # Bond forfeited to creator on malicious or failing submission
-            self._deduct_balance(dev, SUBMISSION_BOND_AMOUNT)
-            self._add_balance(creator, SUBMISSION_BOND_AMOUNT)
-            self._set_counter("total_forfeited", self._get_counter("total_forfeited") + SUBMISSION_BOND_AMOUNT)
-
-            bounty["status"] = "REFUNDED"
-            bounty["attempts"] = str(new_bounty_attempts)
-            self.bounties[bounty_id] = canonical_json(bounty)
-            self._set_counter("stat_refunded", self._get_counter("stat_refunded") + 1)
-
-            settle_obj = {
-                "bounty_id": bounty_id,
-                "criteria_hash": bounty["criteria_hash"],
-                "dev": dev,
-                "final_payout_amount": "0",
-                "final_payout_pct": 0,
-                "head_sha": valid_head_sha,
-                "refund_amount": str(reward_total),
-                "submission_id": sub_id,
-                "verdict": verdict,
-            }
-            self.settlements[bounty_id] = canonical_json(settle_obj)
-
-        elif verdict == "REVIEW":
-            # REVIEW: Non-fatal, bond returned to dev (no deduction)
             if new_bounty_attempts >= MAX_BOUNTY_ATTEMPTS:
                 bounty["status"] = "EXHAUSTED"
                 self._set_counter("stat_exhausted", self._get_counter("stat_exhausted") + 1)
