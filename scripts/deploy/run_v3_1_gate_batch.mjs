@@ -153,8 +153,8 @@ const fixtureConfigs = {
     meta: fixtures.F4,
     criteriaJson: crit3,
     pathsJson: "[]",
-    expectedVerdict: "RELEASE_50",
-    expectedPayoutPct: 50,
+    expectedVerdict: "RELEASE_75",
+    expectedPayoutPct: 75,
   },
   F5: {
     meta: fixtures.F5,

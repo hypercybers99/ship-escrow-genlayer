@@ -1,0 +1,50 @@
+{
+  "executedAt": "2026-10-25T12:18:16.922Z",
+  "escrowAddress": "0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e",
+  "evaluation": {
+    "F1": {
+      "attempts": 10,
+      "successes": 10,
+      "failures": 0,
+      "reliabilityPct": 100,
+      "expectedVerdict": "RELEASE_100",
+      "expectedPayoutPct": 100,
+      "outcomeMatches": 9,
+      "modalVector": "[\"YES\",\"YES\",\"YES\"]",
+      "modalVectorCount": 9,
+      "successGate": "PASS",
+      "outcomeGate": "PASS",
+      "overall": "PASS"
+    },
+    "F4": {
+      "attempts": 10,
+      "successes": 10,
+      "failures": 0,
+      "reliabilityPct": 100,
+      "expectedVerdict": "RELEASE_75",
+      "expectedPayoutPct": 75,
+      "outcomeMatches": 9,
+      "modalVector": "[\"YES\",\"YES\",\"NO\"]",
+      "modalVectorCount": 9,
+      "successGate": "PASS",
+      "outcomeGate": "PASS",
+      "overall": "PASS"
+    },
+    "F5": {
+      "attempts": 10,
+      "successes": 10,
+      "failures": 0,
+      "reliabilityPct": 100,
+      "expectedVerdict": "REFUND",
+      "expectedPayoutPct": 0,
+      "outcomeMatches": 10,
+      "modalVector": "[\"NO\"]",
+      "modalVectorCount": 10,
+      "successGate": "PASS",
+      "outcomeGate": "PASS",
+      "overall": "PASS"
+    }
+  },
+  "gateDecision": "ADOPT_V3_1",
+  "adopted": true
+}
