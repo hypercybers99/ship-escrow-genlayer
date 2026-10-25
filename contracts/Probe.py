@@ -346,3 +346,103 @@ class Probe(gl.Contract):
         decision = gl.eq_principle.strict_eq(run_burst)
         self.results["burst_endpoints"] = decision
 
+    # =========================================================================
+    # V3 PROBES: info/refs, patch trailer, compare diff, REST contrast
+    # =========================================================================
+
+    @gl.public.write
+    def probe_v3_quad(self, owner: str, repo: str, pr_number: str, base_sha: str, expected_head_sha: str, run_key: str) -> None:
+        """Probe items a, b, c, d in a single on-chain transaction across validators."""
+        info_refs_url = f"https://github.com/{owner}/{repo}.git/info/refs?service=git-upload-pack"
+        patch_url = f"https://github.com/{owner}/{repo}/pull/{pr_number}.patch"
+        diff_url = f"https://github.com/{owner}/{repo}/compare/{base_sha}...{expected_head_sha}.diff"
+        rest_url = f"https://api.github.com/repos/{owner}/{repo}/pulls/{pr_number}"
+
+        def compute_probe() -> dict:
+            # Item (a): info/refs
+            res_a = gl.nondet.web.get(info_refs_url)
+            status_a = int(res_a.status)
+            bytes_a = res_a.body if isinstance(res_a.body, (bytes, bytearray)) else str(res_a.body).encode("utf-8")
+            text_a = bytes_a.decode("utf-8", errors="replace")
+
+            m_head = re.search(r"([0-9a-f]{40})\s+refs/pull/" + str(pr_number) + r"/head", text_a)
+            head_sha_a = m_head.group(1).lower() if m_head else ""
+
+            m_sym = re.search(r"symref=HEAD:refs/heads/(\S+)", text_a)
+            default_branch = m_sym.group(1) if m_sym else ""
+
+            branches = re.findall(r"([0-9a-f]{40})\s+refs/heads/(\S+)", text_a)
+            branch_tips = [b[0].lower() for b in branches]
+            is_same_repo = (head_sha_a in branch_tips) if head_sha_a else False
+
+            # Item (b): patch & commit trailer
+            res_b = gl.nondet.web.get(patch_url)
+            status_b = int(res_b.status)
+            bytes_b = res_b.body if isinstance(res_b.body, (bytes, bytearray)) else str(res_b.body).encode("utf-8")
+            text_b = bytes_b.decode("utf-8", errors="replace")
+
+            commits = re.findall(r"^From\s+([0-9a-f]{40})", text_b, re.MULTILINE)
+            last_commit = commits[-1].lower() if commits else ""
+            patch_head_matches = (last_commit == head_sha_a) if (last_commit and head_sha_a) else False
+
+            trailers = re.findall(r"ship-escrow-wallet:\s*(0x[0-9a-fA-F]{40})", text_b)
+            trailer_found = len(trailers) == 1
+
+            # Item (c): compare diff
+            res_c = gl.nondet.web.get(diff_url)
+            status_c = int(res_c.status)
+            bytes_c = res_c.body if isinstance(res_c.body, (bytes, bytearray)) else str(res_c.body).encode("utf-8")
+            diff_sha256 = hashlib.sha256(bytes_c).hexdigest()
+
+            # Item (d): REST API baseline contrast
+            try:
+                res_d = gl.nondet.web.get(rest_url)
+                status_d = int(res_d.status)
+            except Exception:
+                status_d = -1
+
+            return {
+                "status_a": status_a,
+                "head_sha_a": head_sha_a,
+                "default_branch": default_branch,
+                "branches_count": len(branches),
+                "is_same_repo": is_same_repo,
+                "status_b": status_b,
+                "commits_count": len(commits),
+                "last_commit": last_commit,
+                "patch_head_matches": patch_head_matches,
+                "trailer_found": trailer_found,
+                "status_c": status_c,
+                "diff_sha256": diff_sha256,
+                "diff_length": len(bytes_c),
+                "status_d": status_d,
+            }
+
+        def leader_fn() -> str:
+            data = compute_probe()
+            return json.dumps(data)
+
+        def validator_fn(result) -> bool:
+            if not isinstance(result, gl.vm.Return):
+                return False
+            leader_json = gl.vm.unpack_result(result)
+            leader_data = json.loads(leader_json)
+            val_data = compute_probe()
+
+            if leader_data.get("status_a") != val_data.get("status_a"):
+                return False
+            if leader_data.get("head_sha_a") != val_data.get("head_sha_a"):
+                return False
+            if leader_data.get("status_b") != val_data.get("status_b"):
+                return False
+            if leader_data.get("last_commit") != val_data.get("last_commit"):
+                return False
+            if leader_data.get("status_c") != val_data.get("status_c"):
+                return False
+            if leader_data.get("diff_sha256") != val_data.get("diff_sha256"):
+                return False
+            return True
+
+        decision = gl.vm.run_nondet(leader_fn, validator_fn)
+        self.results[run_key] = decision
+
