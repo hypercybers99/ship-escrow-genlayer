@@ -1,0 +1,9 @@
+{
+  "contract_address": "0x1c6A511af937d6AECFbcF77Fb5f9A4de2C19CE81",
+  "deploy_tx_hash": "0xc53853ed9546eba4a1730b33a18dcddc61d6476a1bba3bd8f78900a706a0dc90",
+  "source_sha256": "6c00489943a20395362cdd15e6dc7e60a65603e34942c4983ec263616c74f89c",
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "execution_result": "SUCCESS",
+  "deployed_at": "2026-10-25T11:31:36.334Z"
+}
