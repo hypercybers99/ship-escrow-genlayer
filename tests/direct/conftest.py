@@ -20,7 +20,7 @@ def _patched_find_contract_class(module):
         if name.startswith("_") or name in ("Contract", "gl.Contract"):
             continue
         obj = getattr(module, name)
-        if isinstance(obj, type) and name in ("ShipEscrowV2", "ShipReputationV2", "ShipEscrowV3", "ShipReputationV3"):
+        if isinstance(obj, type) and name in ("ShipEscrowV2", "ShipReputationV2", "ShipEscrowV3", "ShipReputationV3", "ShipEscrowV3_1"):
             return obj
     return _orig_find(module)
 
