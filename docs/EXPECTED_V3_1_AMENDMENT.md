@@ -52,3 +52,36 @@
     1. At least 9 of 10 attempts succeed (`status == ACCEPTED || FINALIZED`, `MAJORITY_AGREE`, `exec == SUCCESS`).
     2. Verdict and payout_pct match the expected fixture value in at least 9 of 10 successful runs.
   - Label vector identity is reported per fixture but is not an adoption gate condition.
+
+---
+
+## 6. Pre-Registration: Section 4 Cases S4-5 & S4-6 Execution Protocols (V3.1-A6)
+
+### S4-5: Sybil Attribution & Unbound Submission Protection
+- **Protocol**:
+  1. Creator creates a fresh 100-credit bounty targeting `hypercybers99/ship-escrow-fixtures`. Initial status: `OPEN`, `attempts == 0`.
+  2. Caller 1 (Attacker) calls `submit_work` using a PR bearing Dev's wallet trailer -> Reverts with `UserError("Pull request is not bound to the submitting wallet")`.
+  3. Caller 2 (Dev3) calls `submit_work` using a PR bearing Attacker's wallet trailer -> Reverts with `UserError("Pull request is not bound to the submitting wallet")`.
+  4. Caller 3 (Attacker) calls `submit_work` copying the first PR's head SHA -> Reverts with `UserError("Pull request is not bound to the submitting wallet")`.
+  5. Snapshot Verification: For all 3 failed attempts, 0 credits are debited from the submitters, and `bounty.attempts` remains strictly `0`.
+  6. Legitimate Developer (Dev) calls `submit_work` with genuine PR #17 -> Succeeds with `RELEASE_100`.
+  7. Final Snapshot Verification: `bounty.attempts == 1`, status is `SETTLED`, developer credited +100.
+
+### S4-6: Submission Bond Accounting Invariants (Release & Refund Traces)
+- **Trace 1 (Release Flow - Bond Refunded)**:
+  1. Creator creates 100-credit bounty. Initial balances captured.
+  2. Developer submits PR #17 (`F1` clean implementation).
+  3. 50-credit submission bond is debited upon submit.
+  4. Consensus evaluates to `RELEASE_100`.
+  5. Contract refunds the 50-credit bond to Developer and transfers the 100-credit reward to Developer.
+  6. Net balance changes: Developer +100, Creator debited 100 on bounty creation. Bond invariant holds.
+- **Trace 2 (Refund Flow - Bond Forfeited)**:
+  1. Creator creates 100-credit bounty. Initial balances captured.
+  2. Developer submits PR #18 (`F2` trap missing path -> `REFUND`).
+  3. 50-credit submission bond is debited upon submit.
+  4. Consensus evaluates to `REFUND` (0% payout).
+  5. Contract refunds the 100-credit escrow deposit to Creator and forfeits the 50-credit bond to Creator.
+  6. Net balance changes: Creator +50 credits (forfeited bond), Developer -50 credits (lost bond).
+- **Conserved Ledger Invariant**:
+  - `total_balances + total_escrowed == total_minted` confirmed via `get_ledger_invariant` after both traces.
+

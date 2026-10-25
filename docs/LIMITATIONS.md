@@ -14,10 +14,10 @@ This document outlines the architectural trust assumptions, honest boundaries, a
 
 ## 1. Trust Assumptions & Attribution Binding
 
-### Git Commit Trailer (`Ship-Escrow-Dev: 0x<address>`)
+### Git Commit Trailer (`ship-escrow-wallet: 0x<address>`)
 - **Mechanism**: The submitter must ensure that the HEAD commit message of the pull request contains the exact commit trailer:
   ```
-  Ship-Escrow-Dev: 0x<caller_address>
+  ship-escrow-wallet: 0x<caller_address>
   ```
 - **Trust Model**: The commit message is signed into the commit hash (`head_sha`). It is immutable once created. Validators parse this trailer from the raw git patch (`pull/{n}.patch`).
 - **Threat Mitigated**: Third parties cannot observe an open PR and submit it to claim another contributor's reward; any submit call from a wallet that does not match the trailer reverts with `"Pull request is not bound to the submitting wallet"`.
@@ -31,8 +31,9 @@ This document outlines the architectural trust assumptions, honest boundaries, a
 1. **Head SHA**: Checked against `refs/pull/{n}/head` in `info/refs?service=git-upload-pack`.
 2. **Base SHA**: Checked against the repository default branch tip identified by the `HEAD` symref in git advertisement.
 3. **Same-Repo Verification**: Checked by ensuring `refs/heads/{branch}` matches `refs/pull/{n}/head` in the same git advertisement.
-4. **Wallet Binding**: Checked via the `Ship-Escrow-Dev: <wallet>` trailer in the HEAD commit message of `pull/{n}.patch`.
+4. **Wallet Binding**: Checked via the `ship-escrow-wallet: 0x<wallet>` trailer in the HEAD commit message of `pull/{n}.patch`.
 5. **Open Status**: Checked via the presence of `refs/pull/{n}/merge` in git advertisement. If absent, the pull request is rejected with `"Pull request is not open"`.
+   - **Merge Conflicts Limitation**: A PR that GitHub cannot merge (conflicts) has no merge ref and is rejected with `"Pull request is not open"`; rebase the branch and submit again.
 
 ### Which Pull Request Facts Are NOT Checked:
 1. **Author Login**: Not checked. Smart-HTTP git advertisement does not include GitHub account usernames. Attribution is enforced solely via cryptographic wallet binding in the commit trailer.

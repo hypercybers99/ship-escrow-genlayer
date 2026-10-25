@@ -32,9 +32,9 @@ Milestone 1 eliminated this architectural dependency by migrating head authentic
 | **Same-Repo Verification** | REST JSON `head.repo.full_name == base.repo.full_name` | Branch tip check: `refs/heads/{branch}` equals `refs/pull/{n}/head` |
 | **Base Commit Resolution** | REST API `base.sha` | `HEAD` symref in git advertisement |
 | **Diff Retrieval** | `pull/{n}.diff` | Pinned `compare/{base}...{head}.diff` |
-| **Wallet Binding** | Regex parsing of pull request body text | `Ship-Escrow-Dev: <wallet>` trailer in HEAD commit message (`pull/{n}.patch`) |
+| **Wallet Binding** | Regex parsing of pull request body text | `ship-escrow-wallet: 0x<wallet>` trailer in HEAD commit message (`pull/{n}.patch`) |
 | **PR State Checking** | REST JSON `state == "open"`, `draft == false` | Enforced presence of `refs/pull/{n}/merge` (rejects closed/merged PRs) |
-| **HTTP Error Handling** | Generic HTTP failures | Specific error strings: 301/302 (moved), 429 (rate limit), 503 (service unavailable) |
+| **HTTP Error Handling** | Generic HTTP failures | Specific error strings: 301/302/307/308 ("Repository moved: use the current owner/repo name"), 403/429 ("GitHub rate limit reached, retry later"), 5xx ("GitHub source unreachable") |
 | **Validator Consensus** | 7 fields compared; labels leader-attested | 7 fields compared; labels leader-attested & hash-committed |
 
 ---
@@ -97,6 +97,7 @@ Extracted directly by script (`scripts/tools/extract_compared_fields.py`) from t
 
 1. **Default-Branch Bounties Only**: The base commit is resolved from the repository's default branch symref advertised in git smart-HTTP.
 2. **PR Branch Must Exist During Submission**: Same-repo verification verifies that `refs/heads/{branch}` matches `refs/pull/{n}/head`. If the developer deletes their branch prior to submission, verification will reject.
-3. **Commit Trailer Required**: The developer's wallet address must appear as a `Ship-Escrow-Dev: <wallet>` trailer in the HEAD commit message.
+3. **Commit Trailer Required**: The developer's wallet address must appear as a `ship-escrow-wallet: 0x<wallet>` trailer in the HEAD commit message.
 4. **Draft Status Not Checked**: As proven by Stage 1b validator probe data, GitHub git smart-HTTP advertisement produces identical advertisements for open and draft PRs (`refs/pull/{n}/head` and `refs/pull/{n}/merge` are both present). Closed and merged PRs are reliably rejected.
 5. **Base Drift Limitation**: If the default branch advances between the leader validator fetch and a consensus validator fetch, the base SHA and diff will differ, causing a transaction revert. In this event, no credits are debited, no submission attempts are consumed, and the developer may retry.
+6. **Open PRs with Merge Conflicts**: A PR that GitHub cannot merge (conflicts) has no merge ref and is rejected with `'Pull request is not open'`; rebase the branch and submit again.

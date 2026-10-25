@@ -1,6 +1,7 @@
 import unittest
 import json
 import hashlib
+import re
 import sys
 import os
 
@@ -157,6 +158,15 @@ class TestV3_1PureFunctions(unittest.TestCase):
             "ship-escrow-wallet: 0x0000000000000000000000000000000000000000\n"
         )
         self.assertEqual(parse_wallet_trailer(msg), "")
+
+    def test_docs_trailer_example_matches_parser(self):
+        with open("docs/LIMITATIONS.md", "r", encoding="utf-8") as f:
+            doc_text = f.read()
+        match = re.search(r"ship-escrow-wallet:\s*(0x[0-9a-fA-F]{40}|0x<[^>]+>)", doc_text)
+        self.assertIsNotNone(match, "Documented trailer format not found in docs/LIMITATIONS.md")
+        example = match.group(0).replace("<caller_address>", "6325B360Db455435BF5e81D0aE18DC3b249f226C").replace("<address>", "6325B360Db455435BF5e81D0aE18DC3b249f226C")
+        parsed = parse_wallet_trailer(f"Commit subject\n\n{example}\n")
+        self.assertEqual(parsed, "0x6325b360db455435bf5e81d0ae18dc3b249f226c")
 
     def test_http_error_strings_pinning(self):
         # 301/302/307/308

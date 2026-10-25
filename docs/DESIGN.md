@@ -129,7 +129,7 @@ Fuzz tested over 5,000 randomized operations with 100% invariant preservation.
 ### Quota-Free Git Infrastructure
 Candidate V3 and Adopted V3.1 replace the unauthenticated GitHub REST API with Git's smart HTTP transport:
 1. **`info/refs?service=git-upload-pack`**: Provides authoritative PR head commit SHAs (`refs/pull/{n}/head`), open status via `refs/pull/{n}/merge`, same-repo verification via `refs/heads/{branch}`, and default branch symrefs without consuming unauthenticated REST API quotas.
-2. **`pull/{n}.patch`**: HEAD commit message is parsed for the wallet marker trailer (`Ship-Escrow-Dev: <caller_address>`).
+2. **`pull/{n}.patch`**: HEAD commit message is parsed for the wallet marker trailer (`ship-escrow-wallet: 0x<caller_address>`).
 3. **`compare/{base}...{head}.diff`**: Pinned immutable comparison diff between the base and head commits.
 
 ### V3 Candidate Outcome (Tried, Not Adopted)
