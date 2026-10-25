@@ -19,6 +19,15 @@ function ghCmd(cmd) {
   return execSync(`gh ${cmd}`, { cwd: fixturesRepoDir, encoding: 'utf8' }).trim();
 }
 
+function commitWithMsg(msg) {
+  const tmpPath = path.join(fixturesRepoDir, '.git', 'COMMIT_MSG_TMP');
+  fs.writeFileSync(tmpPath, msg, 'utf8');
+  gitCmd('commit -F .git/COMMIT_MSG_TMP');
+  if (fs.existsSync(tmpPath)) {
+    fs.unlinkSync(tmpPath);
+  }
+}
+
 console.log("==================================================================");
 console.log("CREATING V3 FIXTURE PRS WITH COMMIT MESSAGE TRAILERS");
 console.log("==================================================================");
@@ -69,7 +78,7 @@ const scenarios = [
         // Create then delete to record deletion
         fs.writeFileSync(path.join(fixturesRepoDir, 'tests/test_old.py'), 'def test_old(): pass\n');
         gitCmd('add tests/test_old.py');
-        gitCmd('commit -m "chore: add temp test"');
+        commitWithMsg('chore: add temp test');
         gitCmd('rm tests/test_old.py');
       }
       gitCmd('add src/slug.py');
@@ -108,12 +117,12 @@ const scenarios = [
       fs.mkdirSync(path.join(fixturesRepoDir, 'src'), { recursive: true });
       fs.writeFileSync(path.join(fixturesRepoDir, 'src/slug.py'), '# initial skeleton\n');
       gitCmd('add src/slug.py');
-      gitCmd('commit -m "feat: initial slugify skeleton\n\nIntermediate commit without target trailer."');
+      commitWithMsg('feat: initial slugify skeleton\n\nIntermediate commit without target trailer.');
 
       fs.mkdirSync(path.join(fixturesRepoDir, 'tests'), { recursive: true });
       fs.writeFileSync(path.join(fixturesRepoDir, 'tests/test_slug.py'), 'def test_slug(): pass\n');
       gitCmd('add tests/test_slug.py');
-      gitCmd('commit -m "test: add slugify test skeleton\n\nSecond intermediate commit."');
+      commitWithMsg('test: add slugify test skeleton\n\nSecond intermediate commit.');
 
       fs.writeFileSync(path.join(fixturesRepoDir, 'src/slug.py'), 'def slugify(text: str) -> str:\n    import re\n    return re.sub(r"[^a-zA-Z0-9]+", "-", text.strip().lower()).strip("-")\n');
       fs.writeFileSync(path.join(fixturesRepoDir, 'README.md'), '# Slugify\nMulti-commit implementation.\n');
@@ -130,7 +139,7 @@ const scenarios = [
       fs.mkdirSync(path.join(fixturesRepoDir, 'src'), { recursive: true });
       fs.writeFileSync(path.join(fixturesRepoDir, 'src/slug.py'), '# commit 1\ndef slugify(t):\n    return t\n');
       gitCmd('add src/slug.py');
-      gitCmd('commit -m "feat: initial commit for advancing head"');
+      commitWithMsg('feat: initial commit for advancing head\n\nship-escrow-wallet: ' + devWallet);
 
       // Update for head
       fs.writeFileSync(path.join(fixturesRepoDir, 'src/slug.py'), 'def slugify(text: str) -> str:\n    import re\n    return re.sub(r"[^a-zA-Z0-9]+", "-", text.strip().lower()).strip("-")\n');
@@ -254,17 +263,16 @@ for (const sc of scenarios) {
     commitMsg += `\n\nship-escrow-wallet: ${sc.trailer}`;
   }
 
+  commitWithMsg(commitMsg);
+  const headSha = gitCmd('rev-parse HEAD');
+  console.log(`  Head SHA: ${headSha}`);
+
   // Check if stale sha needed
   let staleSha = null;
   if (sc.stale_sha_needed) {
-    // In sc.setup, we already committed commit 1
     staleSha = gitCmd('rev-parse HEAD~1');
     console.log(`  Recorded stale SHA: ${staleSha}`);
   }
-
-  gitCmd(`commit -m "${commitMsg.replace(/"/g, '\\"')}"`);
-  const headSha = gitCmd('rev-parse HEAD');
-  console.log(`  Head SHA: ${headSha}`);
 
   // Push branch to remote
   console.log(`  Pushing ${sc.branch} to origin...`);
