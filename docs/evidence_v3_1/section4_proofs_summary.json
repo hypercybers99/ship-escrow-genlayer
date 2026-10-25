@@ -1,0 +1,30 @@
+{
+  "executed_at": "2026-10-25T13:34:16.299Z",
+  "escrow_address": "0x00B2EAD4d361DF5A80Bb111d9D98b8f44EB6E59e",
+  "cases": {
+    "S4_5": {
+      "bounty_id": "45",
+      "attacker_attempt1_tx": "0x02b94de1b7f3f924a1d897ff22ed800ac799bd2df607765b309cb28177dcea96",
+      "dev3_attempt2_tx": "0x7dee6538791df4ed20e25f392e33136168a70d8d43061141e952d7b09c5712cf",
+      "attacker_attempt3_tx": "0x439da70aacff458828f7136d493eda2396771ad747a35cafa009550592ad34ec",
+      "dev_settle_tx": "0xd1f89311a2e56f25e04d11707c32a85f40b57d01c3e6e8ff9c8c90fd182ae420"
+    },
+    "S4_6": {
+      "trace1_release": {
+        "bounty_id": "46",
+        "tx": "0x91541208e8797045351fdf667bd6d49e4d17994bcc94343c6e4c1957e4f87250"
+      },
+      "trace2_refund": {
+        "bounty_id": "47",
+        "tx": "0xb02adb26258909fdd81d222f79e4b67964cddd9eebdffe24c0c2198dac0f3056"
+      },
+      "ledger_invariant": {
+        "invariant_holds": true,
+        "total_balances": "3000",
+        "total_escrowed": "1000",
+        "total_forfeited": "950",
+        "total_minted": "4000"
+      }
+    }
+  }
+}
